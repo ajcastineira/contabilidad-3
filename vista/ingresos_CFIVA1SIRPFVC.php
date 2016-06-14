@@ -1383,6 +1383,8 @@ if(isset($datos['cuentas'])){
     }
 }
 
+//var_dump($datos);die;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -1395,7 +1397,16 @@ librerias_jQuery_Mobile();
 ?>
 
 </head> 
-    <body>
+    <body onLoad="fechaMes_MovilAsiento(document.getElementById('datFecha'));
+                  formateoColoresCampo('<?php echo $_GET['esAbono'];?>');
+                  <?php
+                  if($datos['optTipo'] === 1){
+                      echo "ActivaSelecBanco(document.getElementById('pantalla'));";
+                  }
+                  ?>
+                  <?php if(isset($_GET['borrar'])&& $_GET['borrar']=='si'){echo 'borrarAsiento('. $_GET['Asiento'].');';}?>
+                  <?php if(!isset($_GET['editar']) && !isset($_GET['datFecha'])){echo 'focusFecha();';} ?>"
+          class="api jquery-mobile archive category category-widgets category-2 listing single-author"> 
         
     <div data-role="page" id="altafacturaLineas">
 <?php
@@ -1503,7 +1514,101 @@ function desFormateaNumeroContabilidad2(numero) {
 
     <div data-role="content" data-theme="a">
         <form name="form1" method="post" action="../vista/ingresos_CFIVA1SIRPFVC.php" data-ajax="false">
+            <table border="0" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 22%;"></td>
+                        <td style="width: 23%;"></td>
+                        <td style="width: 23%;"></td>
+                        <td style="width: 22%;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <article id="post-2" class="hentry">
+                            <div class="entry-summary">
+                                <table border="0" style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 50%;"></td>
+                                        <td style="width: 50%;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Empresa:</label>
+                                        </td>
+                                        <td>
+                                            <label><font color="2e9b46"><b><?php echo $_SESSION['sesion'];?></b></font></label>
+                                            <input type="hidden" name="strEmpresa" value="<?php echo $_SESSION['sesion'];?>" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Periodo:</label>
+                                        </td>
+                                        <td>
+                                            <label><font color="2e9b46"><b><span id="strPeriodo"></span></b></font></label>
+                                            <input type="hidden"  name="strPeriodo" value="<?php echo $datos['strPeriodo']; ?>" />
+                                            <input type="hidden" id="lngPeriodo" name="lngPeriodo" value="<?php echo $datos['lngPeriodo']; ?>"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Ejercicio:</label>
+                                        </td>
+                                        <td>
+                                            <label><font color="2e9b46"><b><span id="lngEjercicio"></span></b></font></label>
+                                            <input type="hidden" id="lngEjercicioH" name="lngEjercicio" value="<?php echo $datos['lngEjercicio']; ?>" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            </article>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Fecha</label>
+                            <?php
+                            date_default_timezone_set('Europe/Madrid');
+                            $fechaForm=date('d/m/Y');
+                            datepicker_español('datFecha');
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="datFecha" name="datFecha" maxlength="38" 
+                                   placeholder="<?php if(isset($datos['datFecha'])){echo $datos['datFecha'];}else {echo $fechaForm;}?>" 
+                                   onKeyUp="this.value=formateafechaEntrada(this.value);" 
+                                   value="<?php if(isset($datos['datFecha'])){echo $datos['datFecha'];}else {echo $fechaForm;}?>"
+                                   onfocus="onFocusInputTextM(this);<?php if(!isset($datos['datFecha'])){echo 'limpiaCampoFecha(this)';}?>"
+                                   onblur="comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes_MovilAsiento(this);"
+                                   onchange="fechaMes_MovilAsiento(this);comprobarFechaEsCerrada(this);" />
+                        </td>
+                    </tr>
+                    <tr> 
+                      <td colspan="4"> 
+                          <div align="left">
+                          <label class="nombreCampo">Cliente</label>
+                          <?php
+                          //funcion general
+                          autocomplete_cuentas_SubGrupo4('strCuentaCli',43);
+                          ?>
+                          <input type="text" id="strCuentaCli" name="strCuentaCli" tabindex="2" value="<?php echo htmlentities($datos['strCuentaCli'],ENT_QUOTES,'UTF-8');?>"
+                                onKeyUp="comprobarCuenta(this,document.getElementById('okStrCuentaCli'));"  
+                                onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOutInputText(this);"
+                                onfocus="onFocusInputTextM(this);desactivaCampoComprobacionCuenta(document.getElementById('okStrCuentaCli'));"
+                                onblur="onBlurInputText(this);comprobarCuentaBlur(this,document.getElementById('okStrCuentaCli'));" />
+                          <input type="hidden" id="okStrCuentaCli" name="okStrCuentaCli" value="<?php if($NoE==='nuevo'){echo 'NO';}else if($NoE==='edicion'){echo 'SI';} ?>" />
+                          </div>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        
         <?php
+        //$datosPresupuesto = $datos;
+        
         if(isset($datosPresupuesto['numFactura'])){
             $num=$datosPresupuesto['numFactura'];
         }else
@@ -1513,6 +1618,7 @@ function desFormateaNumeroContabilidad2(numero) {
         ?>
         <h3 align="center" color="#FFCC66"><font size="3px">Factura <?php echo $num; ?></font></h3>
         <?php
+        //REVISAR ESTO 14/6/2016
         if($datosPresupuesto['Estado']==='Contabilizada'){
         ?>
             <h3><center><font color="FF0000">Factura contabilizada. Sólo se editan los conceptos</font></center></h3>
@@ -1812,93 +1918,15 @@ function desFormateaNumeroContabilidad2(numero) {
     </form>
     </div>
 
-    </div>  
+<!--    </div>  -->
         
-    <div data-role="page" id="altafacturaLineasEnvio">
+<!--    <div data-role="page" id="altafacturaLineasEnvio">-->
 <?php
-eventosInputText();
+//eventosInputText();
 ?>
 <script language="JavaScript">
-function rellenarDatos(objeto,opcion){
-    if(objeto==='Nuevo'){
-        location.href="../vista/altacliprov.php?tipo=cliente";
-    }else{
-        var dividirTexto=objeto.split(".");
-        var tipo=dividirTexto[0];
-        var numero=dividirTexto[1];
 
-        $.ajax({
-          data:{"q":tipo,"numero":numero},  
-          url: '../vista/ajax/datosCliente.php',
-          type:"get",
-          success: function(data) {
-            var cliente = JSON.parse(data);
-//            $('#Cliente').val(cliente.Cliente);
-//            $('#CIF').val(cliente.CIF);
-//            $('#direccion').val(cliente.direccion);
-//            $('#poblacion').val(cliente.poblacion);
-//            $('#provincia').val(cliente.provincia);
-            $('#email').val(cliente.Correo);
-//            if(opcion==='Nuevo'){
-//                $('#FormaPagoHabitual').val(cliente.FormaPagoHabitual);
-//            }
-          }
-        });
-    }
-}
 
-function EnviarForm(){
-  esValido=true;
-  textoError='';
-    
-    //comprobacion del campo 'email'
-    if (document.contact.email.value === ''){
-          textoError=textoError+"Debe introducir datos en el campo Para.\n";
-          document.contact.email.style.borderColor='#FF0000';
-          document.contact.email.title ='Debe introducir datos en el campo Para';
-          esValido=false;
-    }else{
-      //compruebo que el e-mail tenga un formato correcto 'admin@admin.com'  
-      expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      if ( !expr.test(document.contact.email.value) ){
-          textoError=textoError+"El E-mail del campo '" + document.contact.email.value + "' es incorrecto.\n";
-          document.contact.email.style.borderColor='#FF0000';
-          document.contact.email.title ='El E-mail del campo Para es incorrecto';
-          esValido=false;
-      }
-    }
-    
-    //comprobacion del campo 'emailCC'
-    if (document.contact.emailCC.value === ''){
-    }else{
-      //compruebo que el e-mail tenga un formato correcto 'admin@admin.com'  
-      expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      if ( !expr.test(document.contact.emailCC.value) ){
-          textoError=textoError+"El E-mail del campo C.C. '" + document.contact.emailCC.value + "' es incorrecto.\n";
-          document.contact.emailCC.style.borderColor='#FF0000';
-          document.contact.emailCC.title ='El E-mail del campo C.C. es incorrecto';
-          esValido=false;
-      }
-    }
-    
-    
-    if(esValido===true){
-        $('#send').button('disable'); 
-        document.contact.submit();
-    }else{
-        if(textoError===''){textoError='Revise los datos. NO estan correctos';}
-        alert(textoError);
-        return false;
-    }  
-}
-
-function preparaURL(i,opcion){
-        var datos='IdFactura='+i;
-        datos=datos+'&opcion='+opcion;
-        
-        datos=encodeURI(datos);
-        return datos;
-}
 
 //function DesactivaImprimir(){
 //    document.form1.SePuedeImprimir.value='NO';
@@ -1906,25 +1934,8 @@ function preparaURL(i,opcion){
 
 </script>
     <?php
-    include_once '../movil/cabeceraMovil.php';
+//    include_once '../movil/cabeceraMovil.php';
     ?>
-
-    <div data-role="content" data-theme="a">
-	<h2>Envio PDF</h2>
-
-        <form id="contact" name="contact" action="../vista/facturaEnviar.php" method="post">
-		<label for="email">Para</label>
-		<input type="email" id="email" name="email"><br/>
-		<label for="emailCC">C.C.</label>
-		<input type="email" id="emailCC" name="emailCC"><br/>
-		<br>
-		<label for="msg">Mensaje</label>
-                <textarea id="msg" name="msg" rows="5"></textarea>
-		
-		<input type="button" id="send" onclick="EnviarForm(<?php echo $_SESSION['presupuestoActivo']['IdFactura']; ?>);" value="Envio" />
-                <input type="hidden" name="IdFactura" value="<?php echo $_SESSION['presupuestoActivo']['IdFactura'];?>"/>     
-	</form>
-    </div>
 
     </div>
         

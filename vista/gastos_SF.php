@@ -778,6 +778,11 @@ librerias_jQuery_Mobile();
 </head>
 <body onLoad="fechaMes_MovilAsiento(document.getElementById('datFecha'));
               formateoColoresCampo('<?php echo $_GET['esAbono'];?>');
+              <?php
+              if($datos['optTipo'] === 1){
+                  echo "ActivaSelecBanco(document.getElementById('pantalla'));";
+              }
+              ?>
               <?php if(isset($_GET['borrar'])&& $_GET['borrar']=='si'){echo 'borrarAsiento('. $_GET['Asiento'].');';}?>
               <?php if(!isset($_GET['editar']) && !isset($_GET['datFecha'])){echo 'focusFecha();';} ?>"
       class="api jquery-mobile archive category category-widgets category-2 listing single-author"> 
@@ -1087,10 +1092,10 @@ function borrarAsiento(id){
                         <td colspan="4">
                         <div class="ui-field-contain">
                             <fieldset data-role="controlgroup" data-mini="true">
-                                <input type="radio" name="optTipo" value="0" id="optTipo0" class="custom" checked="checked"
+                                <input type="radio" name="optTipo" value="0" id="optTipo0" class="custom" <?php if(!(isset($datos['optTipo'])) || $datos['optTipo']=='0'){echo 'checked';} ?>
                                        data-theme="a" data-iconpos="right" onClick="ActivaSelecBanco(this);">
                                 <label for="optTipo0">Dejar Pendiente</label>
-                                <input type="radio" name="optTipo" id="optTipo1" class="custom" value="1"
+                                <input type="radio" name="optTipo" id="optTipo1" class="custom" value="1" <?php if($datos['optTipo']=='1'){echo 'checked';} ?>
                                        data-theme="a" data-iconpos="right" onClick="ActivaSelecBanco(this);">
                                 <label for="optTipo1">Realizar Pago</label>
                             </fieldset>
@@ -1140,7 +1145,8 @@ function borrarAsiento(id){
         </form>
     </div>    
     
-</body>    
+</body> 
+</html>
 <?php    
 }//fin del html_paginaMovil
 ?>

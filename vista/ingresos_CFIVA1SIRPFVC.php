@@ -114,9 +114,13 @@ else if(isset($_GET['editar']) && $_GET['editar']==='SI'){
     //si $datos[Borrado]='0' este asiento esta borrado por lo que redirecciono a 'default2.php'
     if(isset($datos['Borrado']) && $datos['Borrado']==='1'){
         //presento el formulario con los datos
-        html_pagina($datosUsuario,$datos,$editarAsiento,'edicion');
+        if($_SESSION['navegacion']==='movil'){
+            html_paginaMovil($datosUsuario,$datos,$editarAsiento,'edicion');
+        }else{
+            html_pagina($datosUsuario,$datos,$editarAsiento,'edicion');
+        }    
     }else{
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/default2.php">';
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/default2.php">';
     }    
 }
 //se viende de dar a aceptar a editar un asiento
@@ -130,7 +134,7 @@ else if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Editar'){
 
     //si $OK<> informamos del error 
     if($OK<>1){
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id=No se a cambiado el asiento">';
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id=No se a cambiado el asiento">';
     }else{
         $OK2 = $clsCNContabilidad->AltaAsientoMovimientos_SinIRPF($_POST,$_SESSION["idEmp"], $_SESSION["strUsuario"]);   
 
@@ -143,10 +147,10 @@ else if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Editar'){
             //como ha fallado la insercion de los nuevos datos volvemos a dar de alta el asiento que habias dado de baja antes
             $clsCNContabilidad->DarAltaAsiento($_POST['Asiento']);
             ////indicamos el error
-            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id=No se a editado el asiento">';
+            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id=No se a editado el asiento">';
         }else{
             //voy a la pagina de 'exito.php'
-            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/exito.php?Id=Asiento editado correctamente">';
+            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/exito.php?Id=Asiento editado correctamente">';
         }
     }    
 }
@@ -167,7 +171,11 @@ else{//comienzo del else principal
     }
     
     
-    html_pagina($datosUsuario,$datos,'SI','nuevo');
+    if($_SESSION['navegacion']==='movil'){
+        html_paginaMovil($datosUsuario,$datos,'SI','nuevo');
+    }else{
+        html_pagina($datosUsuario,$datos,'SI','nuevo');
+    }    
 }
 
 function html_pagina($datosUsuario,$datos,$editarAsiento,$NoE){
@@ -1304,4 +1312,10 @@ require_once 'cabeceraForm.php';
 </html>
 <?php
 }//fin del else principal
+
+function html_paginaMovil($datosUsuario,$datos,$editarAsiento,$NoE){
+?>
+sin hacer 14/6/2016
+<?php
+} 
 ?>

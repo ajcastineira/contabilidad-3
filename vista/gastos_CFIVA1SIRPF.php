@@ -920,8 +920,10 @@ librerias_jQuery_Mobile();
 <BODY onLoad="fechaMes_MovilAsiento(document.getElementById('datFecha'));
               formateoColoresCampo('<?php echo $_GET['esAbono'];?>');
               <?php
+                if($datos['optTipo'] === 1){
+                    echo "ActivaSelecBanco(document.getElementById('pantalla'));";
+                }
                 if($editarAsiento==='SI'){
-                    echo "ActivaSelecBanco(document.getElementById('optTipo1'));";
                     if(!isset($_GET['editar']) && !isset($_GET['datFecha'])){
                         echo 'focusFecha();';
                     }
@@ -1371,7 +1373,8 @@ function asientoCerrado(){
         </form>
     </div>    
 </div>
-</body>    
+</body>   
+</html>
 <?php    
 }//fin del html_paginaMovil
 ?>

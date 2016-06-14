@@ -761,6 +761,25 @@ function volverM(){
                     </tr>
                     <tr>
                         <td colspan="2">
+                            <label>Fecha</label>
+                            <?php
+                            date_default_timezone_set('Europe/Madrid');
+                            $fechaForm=date('d/m/Y');
+                            datepicker_español('datFecha');
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="datFecha" name="datFecha" maxlength="38" placeholder="<?php if(isset($datos)){echo $datos['datFecha'];}else {echo $fechaForm;}?>" 
+                                   onKeyUp="this.value=formateafechaEntrada(this.value);" value="<?php if(isset($datos)){echo $datos['datFecha'];}else {echo $fechaForm;}?>"
+                                   onfocus="<?php if(!isset($datos)){echo 'limpiaCampoFecha(this)';}?>"
+                                   onblur="comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes(this);"
+                                   onchange="fechaMes(this);comprobarFechaEsCerrada(this);" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
                             <label>Empresa</label>
                         </td>
                     </tr>
@@ -789,25 +808,8 @@ function volverM(){
                         </td>            
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <label>Fecha</label>
-                            <?php
-                            date_default_timezone_set('Europe/Madrid');
-                            $fechaForm=date('d/m/Y');
-                            datepicker_español('datFecha');
-                            ?>
-                        </td>
+                        <td style="height: 60px;"></td>
                     </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="text" id="datFecha" name="datFecha" maxlength="38" placeholder="<?php if(isset($datos)){echo $datos['datFecha'];}else {echo $fechaForm;}?>" 
-                                   onKeyUp="this.value=formateafechaEntrada(this.value);" value="<?php if(isset($datos)){echo $datos['datFecha'];}else {echo $fechaForm;}?>"
-                                   onfocus="<?php if(!isset($datos)){echo 'limpiaCampoFecha(this)';}?>"
-                                   onblur="comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes(this);"
-                                   onchange="fechaMes(this);comprobarFechaEsCerrada(this);" />
-                        </td>
-                    </tr>
-<!--                    <tr>-->
                     <tr>
                         <td colspan="4">
                         <script>
@@ -830,10 +832,10 @@ function volverM(){
                         </script>
                         <div class="ui-field-contain">
                             <fieldset data-role="controlgroup" data-mini="true">
-                                <input type="radio" name="tipo" value="Proveedor" id="Proveedor" class="custom" checked="checked"
+                                <input type="radio" name="tipo" value="Proveedor" id="Proveedor" checked="checked"
                                        data-theme="a" data-iconpos="right" onClick="acProveedor();">
                                 <label for="Proveedor">Proveedor</label>
-                                <input type="radio" name="tipo" id="Acreedor" class="custom" value="Acreedor"
+                                <input type="radio" name="tipo" id="Acreedor" value="Acreedor"
                                        data-theme="a" data-iconpos="right" onClick="acAcreedor();">
                                 <label for="Acreedor">Acreedor</label>
                             </fieldset>

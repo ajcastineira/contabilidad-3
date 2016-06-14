@@ -849,19 +849,16 @@ function volverM(){
                     </tr>
                     <tr>
                         <td colspan="4">
-                            <div class="ui-widget">
-                                
-                                <?php
-                                //funcion filtro
-                                autocomplete_cuentas_SubGrupo2y6('strCuenta');
-                                ?>
-                                <input type="text" id="strCuenta" name="strCuenta" tabindex="3" value="<?php echo htmlentities($datos['strCuenta'],ENT_QUOTES,'UTF-8');?>"
-                                      onKeyUp="comprobarCuenta(this,document.getElementById('okStrCuenta'));"  
-                                      onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOutInputText(this);"
-                                      onfocus="onFocusInputText(this);desactivaCampoComprobacionCuenta(document.getElementById('okStrCuenta'));"
-                                      onblur="onBlurInputText(this);comprobarCuentaBlur(this,document.getElementById('okStrCuenta'));" />
-                                <input type="hidden" id="okStrCuenta" name="okStrCuenta" value="<?php if($NoE==='nuevo'){echo 'NO';}else if($NoE==='edicion'){echo 'SI';} ?>" />
-                            </div>
+                            <?php
+                            //funcion filtro
+                            autocomplete_cuentas_SubGrupo2y6('strCuenta');
+                            ?>
+                            <input type="text" id="strCuenta" name="strCuenta" tabindex="3" value="<?php echo htmlentities($datos['strCuenta'],ENT_QUOTES,'UTF-8');?>"
+                                  onKeyUp="comprobarCuenta(this,document.getElementById('okStrCuenta'));"  
+                                  onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOutInputText(this);"
+                                  onfocus="onFocusInputText(this);desactivaCampoComprobacionCuenta(document.getElementById('okStrCuenta'));"
+                                  onblur="onBlurInputText(this);comprobarCuentaBlur(this,document.getElementById('okStrCuenta'));" />
+                            <input type="hidden" id="okStrCuenta" name="okStrCuenta" value="<?php if($NoE==='nuevo'){echo 'NO';}else if($NoE==='edicion'){echo 'SI';} ?>" />
                         </td>
                     </tr>
                     <tr>

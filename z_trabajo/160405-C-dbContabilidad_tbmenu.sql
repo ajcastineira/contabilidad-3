@@ -1,0 +1,152 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Versión del servidor:         5.5.36 - MySQL Community Server (GPL)
+-- SO del servidor:              Win32
+-- HeidiSQL Versión:             9.3.0.5063
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Volcando estructura para tabla c-dbcontabilidad.tbmenu
+DROP TABLE IF EXISTS `tbmenu`;
+CREATE TABLE IF NOT EXISTS `tbmenu` (
+  `idx` varchar(8) NOT NULL,
+  `lng_nivel` int(4) NOT NULL,
+  `lng_posicion` int(4) NOT NULL,
+  `lng_anterior` varchar(8) NOT NULL,
+  `str_texto` varchar(150) NOT NULL,
+  `lng_standard` int(4) NOT NULL,
+  `lng_profesional` int(4) NOT NULL,
+  `lng_premiun` int(4) NOT NULL,
+  `str_destino` varchar(100) NOT NULL,
+  `textoSuperior` varchar(100) DEFAULT NULL,
+  `textoPrincipal` varchar(100) DEFAULT NULL,
+  `descripcion` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`idx`),
+  KEY `idx` (`idx`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Volcando datos para la tabla c-dbcontabilidad.tbmenu: ~110 rows (aproximadamente)
+DELETE FROM `tbmenu`;
+/*!40000 ALTER TABLE `tbmenu` DISABLE KEYS */;
+INSERT INTO `tbmenu` (`idx`, `lng_nivel`, `lng_posicion`, `lng_anterior`, `str_texto`, `lng_standard`, `lng_profesional`, `lng_premiun`, `str_destino`, `textoSuperior`, `textoPrincipal`, `descripcion`) VALUES
+	('01', 1, 1, '0', 'Configuración', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0101', 2, 1, '01', 'Mis Usuarios', 1, 1, 1, '0', NULL, NULL, NULL),
+	('010101', 3, 1, '0101', 'Alta', 1, 1, 1, 'altaempleado.php', 'Opción Seleccionada:', 'Alta Empleado', 'Puedes dar de alta un nuevo empleado'),
+	('010102', 3, 2, '0101', 'Baja', 1, 1, 1, 'usuborra.php', NULL, NULL, NULL),
+	('010103', 3, 3, '0101', 'Consulta/Modificación', 1, 1, 1, 'usumodiflist.php', 'Opción Seleccionada:', 'Editar Empleado', 'Puedes editar los datos del empleado'),
+	('010104', 3, 4, '0101', 'Consulta', 1, 1, 1, 'usulist.php', NULL, NULL, NULL),
+	('010105', 3, 5, '0101', 'Alta Empresa', 1, 1, 1, 'altaempresa.php', NULL, NULL, NULL),
+	('0102', 2, 2, '01', 'Mis Clientes', 1, 1, 1, '0', NULL, NULL, NULL),
+	('010201', 3, 1, '0102', 'Alta', 1, 1, 1, 'altacliprov.php', 'Opción Seleccionada:', 'Nuevo Cliente', 'Recuerda que puedes convertir un CONTACTO a CLIENTE. Ir a <a href="../vista/contactolist.php">Mis contactos</a>'),
+	('010202', 3, 2, '0102', 'Consulta/Modificación', 1, 1, 1, 'cliprovlist.php', 'Opción Seleccionada:', 'Editar Cliente', 'Puedes editar los datos del cliente'),
+	('010203', 3, 3, '0102', 'Modificación', 1, 1, 1, 'clilist.php', NULL, NULL, NULL),
+	('010204', 3, 4, '0102', 'Consulta', 1, 1, 1, 'clilist.php', NULL, NULL, NULL),
+	('0103', 2, 3, '01', 'Mis Proveedores', 1, 1, 1, '0', NULL, NULL, NULL),
+	('010301', 3, 1, '0103', 'Alta', 1, 1, 1, 'altacliprov.php', 'Opción Seleccionada:', 'Nuevo Proveedor', 'Recuerda que puedes convertir un PROVEEDOR a CLIENTE. Ir a <a href="../vista/contactolist.php">Mis contactos</a>'),
+	('010302', 3, 2, '0103', 'Consulta/Modificación', 1, 1, 1, 'cliprovlist.php', 'Opción Seleccionada:', 'Editar Proveedor', 'Puedes editar los datos del Proveedor'),
+	('010303', 3, 3, '0103', 'Modificación', 1, 1, 1, 'provborra.php', NULL, NULL, NULL),
+	('010304', 3, 4, '0103', 'Consulta', 1, 1, 1, 'provlist.php', NULL, NULL, NULL),
+	('0104', 2, 4, '01', 'Mis Cuentas', 1, 1, 1, '0', NULL, NULL, NULL),
+	('010401', 3, 1, '0104', 'Alta', 1, 1, 1, 'altacuentas.php', 'Opción Seleccionada:', 'Nueva Cuenta', 'Puedes dar de alta una nueva cuenta'),
+	('010402', 3, 2, '0104', 'Consulta/Modificación', 1, 1, 1, 'cuentaslist.php', 'Opción Seleccionada:', 'Editar Cuenta', 'Puedes edita una cuenta'),
+	('010403', 3, 3, '0104', 'Modificación', 1, 1, 1, 'cuentaslist.php', NULL, NULL, NULL),
+	('010404', 3, 4, '0104', 'Consulta', 1, 1, 1, 'cuentaslist.php', NULL, NULL, NULL),
+	('0105', 2, 5, '01', 'Mis Contactos', 1, 1, 1, '0', NULL, NULL, NULL),
+	('010501', 3, 1, '0105', 'Alta', 1, 1, 1, 'altacontacto.php', 'Opción Seleccionada:', 'Nuevo Contacto', 'Puedes enviar presupuestos a tus clientes potenciales'),
+	('010502', 3, 2, '0105', 'Consulta/Modificación', 1, 1, 1, 'contactolist.php', 'Opción Seleccionada:', 'Editar Contacto', 'Puedes modificar los datos de los clientes potenciales'),
+	('0106', 2, 1, '01', 'Mi Empresa', 1, 1, 1, 'configuracion_empresa.php', 'Área Privada:', 'Configurar Mi Empresa', 'Introduzca los datos de configurarciones de su empresa'),
+	('0107', 2, 1, '01', 'Mis Artículos', 1, 1, 1, 'misArticulos.php', 'Opción Seleccionada:', 'Mis Artículos', 'Se puede dar de ata o modificar un Artículo'),
+	('010701', 3, 2, '0107', 'Alta', 1, 1, 1, 'altaArticulo.php', 'Opción Seleccionada:', 'Alta de Artículo', 'Se puede dar el alta de un artículo'),
+	('010702', 3, 2, '0107', 'Consulta/Modificación', 1, 1, 1, 'articulo_list.php', 'Opción Seleccionada:', 'Editar Artículo', 'Puedes modificar los datos de un artículo'),
+	('02', 1, 2, '0', 'Contabilidad', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0201', 2, 1, '02', 'Contabilizar Facturas', 1, 1, 1, 'contabilizar_facturas.php', NULL, NULL, NULL),
+	('0202', 2, 2, '02', 'Mis Ingresos', 1, 1, 1, 'ingresos_entrada.php', 'Opción Seleccionada:', 'Contabilizar Ingresos', 'Se van a añadir asientos de ingresos a la contabilidad'),
+	('020201', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Ingresos', 'Sin Factura', 'Puede dar de alta un asiento sin IVA'),
+	('020202', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Ingresos', 'Con Factura  + 1 IVA', 'Puede dar de alta un asiento con IVA'),
+	('020203', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Ingresos', 'Con Factura + Varios IVA\'s', 'Puede dar de alta un asiento con varios IVA\'s'),
+	('020204', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Ingresos', 'Con Factura  + 1 IVA + IRPF', 'Puede dar de alta un asiento con 1 IVA + IRPF'),
+	('020205', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Ingresos', 'Con Factura + Varios IVA\'s + IRPF', 'Puede dar de alta un asiento con varios IVA\'s + IRPF'),
+	('0203', 2, 3, '02', 'Compras y Gastos', 1, 1, 1, 'gastos_entrada.php', 'Opción Seleccionada:', 'Contabilizar Compras y Gastos', 'Se van a añadir asientos de gastos a la contabilidad'),
+	('020301', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Compras y Gastos', 'Sin Factura', 'Puede dar de alta un asiento sin IVA'),
+	('020302', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Compras y Gastos', 'Con Factura  + 1 IVA', 'Puede dar de alta un asiento con IVA'),
+	('020303', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Compras y Gastos', 'Con Factura + Varios IVA\'s', 'Puede dar de alta un asiento con varios IVA\'s'),
+	('020304', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Compras y Gastos', 'Con Factura  + 1 IVA + IRPF', 'Puede dar de alta un asiento con 1 IVA + IRPF'),
+	('020305', 0, 0, '', '', 1, 1, 1, '', 'Contabilizar Compras y Gastos', 'Con Factura + Varios IVA\'s + IRPF', 'Puede dar de alta un asiento con varios IVA\'s + IRPF'),
+	('0204', 2, 4, '02', 'Mis Movimientos', 1, 1, 1, 'ingresos_gastos.php', 'Opción Seleccionada:', 'Nuevo Asiento', 'Puede dar de alta un asiento'),
+	('0204e', 0, 0, '', '', 1, 1, 1, '', 'Opción Seleccionada:', 'Editar Asiento', 'Puede editar los datos del asiento'),
+	('0204n', 0, 0, '', '', 1, 1, 1, '', 'Opción Seleccionada:', 'Nuevo Asiento', 'Puede dar de alta un asiento nuevo'),
+	('0205', 2, 5, '02', 'Modificar Asiento', 1, 1, 1, 'listado_asientos.php', NULL, NULL, NULL),
+	('0206', 2, 3, '02', 'Cobrar mis Facturas', 1, 1, 1, 'cobrar_facturas.php', NULL, NULL, NULL),
+	('03', 1, 3, '0', 'Consultas', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0301', 2, 1, '03', 'I.V.A.', 1, 1, 1, '0', NULL, NULL, NULL),
+	('030101', 3, 1, '0301', 'Cálculo de Liquidaciones', 1, 1, 1, 'presentar_iva.php', 'Opción Seleccionada:', 'Autoliquidación del IVA', 'Puedes preparar el impuesto del IVA'),
+	('030102', 3, 2, '0301', 'Liquidaciones Presentadas', 1, 1, 1, 'consultar_iva.php', 'Opción Seleccionada:', 'Autoliquidación.<br/> Impuesto sobre el Valor Añadido', 'Puedes revisar el impuesto del IVA'),
+	('0302', 2, 2, '03', 'IRPF', 1, 1, 1, '0', NULL, NULL, NULL),
+	('030201', 3, 1, '0302', 'Cálculo de Liquidaciones', 1, 1, 1, 'presentar_irpf.php', 'Opción Seleccionada:', 'Autoliquidación<br/>Iimpuesto Retención Personas Físicas', 'Puedes preparar el impuesto IRPF'),
+	('030202', 3, 2, '0302', 'Liquidaciones Presentadas', 1, 1, 1, 'consultar_irpf.php', 'Opción Seleccionada:', 'Autoliquidación<br/>Iimpuesto Retención Personas Físicas', 'Puedes revisar el impuesto IRPF'),
+	('0303a', 2, 3, '03', 'Pagos a Cuenta', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0303a01', 3, 1, '0303a', 'Calculados', 1, 1, 1, 'presentar_autonomo130.php', 'Opción Seleccionada:', 'Autoliquidación. Pagos a Cuenta', 'Puedes presentar el impuesto de pago a cuenta 130'),
+	('0303a02', 3, 2, '0303a', 'Presentados', 1, 1, 1, 'consultar_autonomo130.php', 'Opción Seleccionada:', 'Autoliquidación. Pagos a Cuenta', 'Puedes revisar el impuesto de pago a cuenta 130'),
+	('0303e', 2, 3, '03', 'Sociedades', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0304', 2, 4, '03', 'Balance', 1, 1, 1, 'balance.php', NULL, NULL, NULL),
+	('0305', 2, 5, '03', 'Cuentas', 1, 1, 1, 'listado.php', NULL, NULL, NULL),
+	('0306', 2, 6, '03', 'Sumas y Saldos', 1, 1, 1, 'movagrulist.php', NULL, NULL, NULL),
+	('0307', 2, 7, '03', 'Resultados', 1, 1, 1, 'resultados.php', NULL, NULL, NULL),
+	('04', 1, 4, '0', 'Comunicaciones', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0402', 2, 2, '04', 'Consultas al Asesor', 1, 1, 1, 'consulta_asesor_cliente.php', 'Opción Seleccionada:', 'Consultas al Asesor', 'Puede preguntar al asesor sobre cualquier duda'),
+	('0402b', 2, 2, '04', 'Consultas del Asesor', 1, 1, 1, 'consulta_del_asesor.php', 'Opción Seleccionada:', 'Consultas del Asesor', 'El asesor puede realizar las comunicaciones a los usuarios'),
+	('0403', 2, 3, '04', 'Transmitir Apuntes', 1, 1, 1, 'transmitir_apuntes.php', NULL, NULL, NULL),
+	('05', 1, 5, '0', 'Mis Presupuestos', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0501', 2, 1, '05', 'Alta', 1, 1, 1, 'altapresupuesto.php', NULL, NULL, NULL),
+	('0502', 2, 2, '05', 'Modificación/Duplicar/Baja', 1, 1, 1, 'presupuestolist.php', NULL, NULL, NULL),
+	('0503', 2, 3, '05', 'Facturar Presupuesto', 1, 1, 1, 'facturar_presupuesto.php', NULL, NULL, NULL),
+	('0504', 2, 4, '05', 'Generar Pedido', 1, 1, 1, 'presupuestoConvertirList.php', NULL, NULL, NULL),
+	('06', 1, 6, '0', 'Mis Facturas', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0601', 2, 1, '06', 'Alta', 1, 1, 1, 'altafactura.php', NULL, NULL, NULL),
+	('0602', 2, 2, '06', 'Modificación/Duplicar/Baja', 1, 1, 1, 'facturalist.php', NULL, NULL, NULL),
+	('0603', 2, 3, '06', 'Facturar Presupuesto', 1, 1, 1, 'facturar_presupuesto.php', NULL, NULL, NULL),
+	('0603b', 2, 4, '06', 'Facturar Pedidos', 1, 1, 1, 'facturar_pedido.php', NULL, NULL, NULL),
+	('0604', 2, 5, '06', 'Contabilizar Facturas', 1, 1, 1, 'contabilizar_facturas.php', NULL, NULL, NULL),
+	('0607', 2, 7, '06', 'Factura Rectificativa', 1, 1, 1, 'facturalist_rectificativa.php', NULL, NULL, NULL),
+	('07', 1, 1, '0', 'Fiscal', 1, 1, 1, '0', NULL, NULL, NULL),
+	('08', 1, 1, '0', 'Laboral', 1, 1, 1, '0', NULL, NULL, NULL),
+	('0801', 2, 1, '08', 'Empleados', 1, 1, 1, '0', NULL, NULL, NULL),
+	('080101', 3, 1, '0801', 'Alta', 1, 1, 1, 'empleados.php', 'Opción Seleccionada:', 'Nuevo Empleado', 'Puede dar de alta un empleado nuevo'),
+	('080102', 3, 2, '0801', 'Modificación/Baja', 1, 1, 1, 'empleados_list.php', 'Opción Seleccionada:', 'Editar Empleado', 'Puede editar los datos del empleado'),
+	('0802', 2, 2, '08', 'Incidencias Nómina', 1, 1, 1, '0', NULL, NULL, NULL),
+	('080201', 3, 1, '0802', 'Alta', 1, 1, 1, 'incNomina.php', NULL, NULL, NULL),
+	('080202', 3, 2, '0802', 'Consulta', 1, 1, 1, 'incNomina_listIncidencias.php', NULL, NULL, NULL),
+	('0802a', 2, 2, '08', 'Incidencias Nómina', 1, 1, 1, 'incNominaEmpleadoIncidencia.php', 'Opción Seleccionada:', 'Alta de Incidencia', 'Puede dar de alta una nueva incidencia de un empleado'),
+	('0803', 2, 3, '08', 'Nóminas', 1, 1, 1, 'nominas.php', NULL, NULL, NULL),
+	('0804', 2, 4, '08', 'Plantilla Actual', 1, 1, 1, 'plantActual.php', NULL, NULL, NULL),
+	('09', 1, 1, '0', 'Salir', 1, 1, 1, 'salir.php', NULL, NULL, NULL),
+	('10', 1, 1, '0', 'Mis Pedidos', 1, 1, 1, '0', NULL, NULL, NULL),
+	('1001', 2, 1, '1', 'Alta', 1, 1, 1, 'altapedido.php', NULL, NULL, NULL),
+	('1002', 2, 2, '1', 'Modificación/Duplicar/Baja', 1, 1, 1, 'pedidolist.php', NULL, NULL, NULL),
+	('1003', 2, 3, '1', 'Generar Facturas', 1, 1, 1, 'facturar_pedido.php', NULL, NULL, NULL),
+	('a01', 1, 1, '0', 'www.qualidad.es', 1, 1, 1, '0', NULL, NULL, NULL),
+	('a0101a', 2, 1, '01', 'Alta Empresa', 1, 1, 1, 'altaempresa.php', 'Opción Seleccionada:', 'Se puede dar de alta una empresa', NULL),
+	('a0101b', 2, 1, '01', 'Alta Empresa', 1, 1, 1, 'joomla_list_empresa.php', 'Opción Seleccionada:', 'Alta Empresa desde www.qualidad.es', 'Se puede dar de alta una empresa importando los datos de la web'),
+	('a02', 1, 2, '0', 'Documentacion', 1, 1, 1, '0', NULL, NULL, NULL),
+	('a0201', 2, 1, '02', 'Alta Documento', 1, 1, 1, 'alta_documento.php', 'Opción Seleccionada:', 'Alta de Documento', 'Se puede dar de alta un documento y subirlo al servidor'),
+	('a0202', 2, 2, '02', 'Listado Documento', 1, 1, 1, 'listado_documento.php', 'Opción Seleccionada:', NULL, NULL),
+	('a03', 1, 3, '0', 'Incidencias', 1, 1, 1, '0', NULL, NULL, NULL),
+	('a0301', 2, 1, '03', 'Alta Incidencia', 1, 1, 1, 'incidencias.php', 'Opción Seleccionada:', 'Alta de Incidencia', 'Se puede dar de alta la incidencia'),
+	('a0302', 2, 2, '03', 'Listado Incidencias', 1, 1, 1, 'consulta_list_preguntas.php', 'Opción Seleccionada:', NULL, NULL),
+	('a04', 1, 4, '0', 'www.qualidad-asesores.es', 1, 1, 1, '', NULL, NULL, NULL),
+	('a0401', 2, 1, '04', 'Alta Empresa', 1, 1, 1, 'innovae_listado.php', 'Opción Seleccionada:', 'Alta Empresa desde www.qualidad-asesores.es', 'Se puede dar de alta una empresa importando los datos de la web'),
+	('a05', 1, 5, '0', 'Ventas', 1, 1, 1, '', NULL, NULL, NULL),
+	('a0501', 2, 1, '05', 'Bancos', 1, 1, 1, 'ventas_bancos.php', 'Opción Seleccionada:', 'Entrada de Ventas', NULL),
+	('a0502', 2, 2, '05', 'Tarjetas', 1, 1, 1, 'ventas_tarjetas.php', NULL, NULL, NULL),
+	('a0503', 2, 3, '05', 'Listado General', 1, 1, 1, 'ventas_listado.php', NULL, NULL, NULL),
+	('incidenc', 0, 0, '0', 'Incidencias', 1, 1, 1, 'incidencias.php', 'Opción Seleccionada:', 'Envío de Incidencias', 'Se puede dar de alta la incidencia');
+/*!40000 ALTER TABLE `tbmenu` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

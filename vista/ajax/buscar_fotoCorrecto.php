@@ -1,0 +1,1 @@
+<?phpsession_start();//cojemos el parametro del fichero$file=$_POST['name'];$size=$_POST['size'];$type=$_POST['type'];//extraigo la extension$ext=explode('.',$file);$ext=$ext[1];$MDB_text='NO';if($type === 'image/jpeg'){    $MDB_text="SI";}//devuelvo la respuesta echo $MDB_text;?>

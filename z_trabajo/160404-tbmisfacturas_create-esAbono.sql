@@ -1,0 +1,2 @@
+ALTER TABLE `tbmisfacturas`
+	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;

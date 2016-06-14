@@ -1,0 +1,1 @@
+<?phpsession_start();//cojemos los parametros de la URL$irpf = $_GET["irpf"];$cuotaIrpf = $_GET["cuotaIrpf"];$_SESSION['presupuestoActivo']['irpf']=$irpf;//devuelvo la respuesta al send que lo envió en la pagina 'login.php'echo '';?>

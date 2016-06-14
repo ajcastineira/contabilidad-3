@@ -1,0 +1,1681 @@
+DoUsageStatistics<|||>3<|||>1
+PlinkExecutable<|||>1<|||>
+SessionManager_ListWidth<|||>3<|||>373
+SessionManager_WindowWidth<|||>3<|||>834
+SessionManager_WindowHeight<|||>3<|||>577
+ColWidths_connform.ListSessions<|||>1<|||>240,50,50,50,50,10,112
+ColsVisible_connform.ListSessions<|||>1<|||>0
+ColPositions_connform.ListSessions<|||>1<|||>0,1,2,3,4,5,6
+ColSort_connform.ListSessions<|||>1<|||>0,0
+LastSessions<|||>1<|||>C-dbQualidad
+LastActiveSession<|||>1<|||>C-dbQualidad
+ToolBar2Left<|||>3<|||>11
+ToolBar2Top<|||>3<|||>2
+ToolBarDataLeft<|||>3<|||>343
+ToolBarDataTop<|||>3<|||>2
+ToolBarQueryLeft<|||>3<|||>494
+ToolBarQueryTop<|||>3<|||>2
+StopOnErrorsInBatchMode<|||>3<|||>1
+DisplayBLOBsAsText<|||>3<|||>0
+Delimiter<|||>1<|||>;
+querymemoheight<|||>3<|||>188
+queryhelperswidth<|||>3<|||>156
+dbtreewidth<|||>3<|||>361
+GroupTreeObjects<|||>3<|||>0
+DatabaseFilter<|||>1<|||>
+DataPreviewHeight<|||>3<|||>100
+DataPreviewEnabled<|||>3<|||>0
+sqloutheight<|||>3<|||>113
+FilterPanel<|||>3<|||>0
+WrapLongLines<|||>3<|||>0
+SingleQueries<|||>3<|||>1
+LogHorizontalScrollbar<|||>3<|||>0
+MainWinMaximized<|||>3<|||>1
+MainWinOnMonitor<|||>3<|||>0
+ColWidths_MainForm.ListDatabases<|||>1<|||>181,80,50,129,50,50,50,50,50,50,120
+ColsVisible_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColPositions_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColSort_MainForm.ListDatabases<|||>1<|||>0,0
+ColWidths_MainForm.ListVariables<|||>1<|||>160,475,10
+ColsVisible_MainForm.ListVariables<|||>1<|||>0,1
+ColPositions_MainForm.ListVariables<|||>1<|||>0,1,2
+ColSort_MainForm.ListVariables<|||>1<|||>0,0
+ColWidths_MainForm.ListStatus<|||>1<|||>160,275,100,100
+ColsVisible_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColPositions_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColSort_MainForm.ListStatus<|||>1<|||>0,0
+ColWidths_MainForm.ListProcesses<|||>1<|||>70,80,80,80,80,50,50,145
+ColsVisible_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColPositions_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColSort_MainForm.ListProcesses<|||>1<|||>0,1
+ColWidths_MainForm.ListCommandStats<|||>1<|||>120,100,100,100,215
+ColsVisible_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColPositions_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColSort_MainForm.ListCommandStats<|||>1<|||>1,1
+ColWidths_MainForm.ListTables<|||>1<|||>266,70,70,120,120,70,100,50,70,70,70,70,70,90,120,70,70,70,50
+ColsVisible_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,18
+ColPositions_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
+ColSort_MainForm.ListTables<|||>1<|||>0,0
+LastUsageStatisticCall<|||>1<|||>2016-04-04 09:09:26
+TableEditorTabsHeight<|||>3<|||>179
+ColWidths_frmTableEditor.listColumns<|||>1<|||>44,173,90,90,60,89,50,119,608,140,100,100
+ColsVisible_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
+ColPositions_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
+ColSort_frmTableEditor.listColumns<|||>1<|||>-1,0
+ColWidths_frmTableEditor.treeIndexes<|||>1<|||>338,100,80
+ColsVisible_frmTableEditor.treeIndexes<|||>1<|||>0,1,2
+ColPositions_frmTableEditor.treeIndexes<|||>1<|||>0,1,2
+ColSort_frmTableEditor.treeIndexes<|||>1<|||>-1,0
+ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>96,80,100,80,80,80
+ColsVisible_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColPositions_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColSort_frmTableEditor.listForeignKeys<|||>1<|||>-1,0
+SQLHelp_WindowLeft<|||>3<|||>25
+SQLHelp_WindowTop<|||>3<|||>25
+SQLHelp_WindowWidth<|||>3<|||>598
+SQLHelp_WindowHeight<|||>3<|||>393
+SQLHelp_PnlLeftWidth<|||>3<|||>153
+SQLHelp_PnlRightTopHeight<|||>3<|||>153
+FileImport_WindowWidth<|||>3<|||>682
+FileImport_WindowHeight<|||>3<|||>610
+ColWidths_frmInsertFiles.ListColumns<|||>1<|||>100,80,430
+ColsVisible_frmInsertFiles.ListColumns<|||>1<|||>0,1,2
+ColPositions_frmInsertFiles.ListColumns<|||>1<|||>0,1,2
+ColSort_frmInsertFiles.ListColumns<|||>1<|||>-1,0
+ColWidths_frmInsertFiles.ListFiles<|||>1<|||>477,70,80
+ColsVisible_frmInsertFiles.ListFiles<|||>1<|||>0,1,2
+ColPositions_frmInsertFiles.ListFiles<|||>1<|||>0,1,2
+ColSort_frmInsertFiles.ListFiles<|||>1<|||>0,1
+CopyTable_Columns<|||>3<|||>1
+CopyTable_Keys<|||>3<|||>1
+CopyTable_Data<|||>3<|||>1
+CopyTable_WindowWidth<|||>3<|||>380
+CopyTable_WindowHeight<|||>3<|||>342
+ExportSQL_CreateDatabases<|||>3<|||>0
+ExportSQL_DropDatabases<|||>3<|||>0
+ExportSQL_CreateTables<|||>3<|||>1
+ExportSQL_DropTables<|||>3<|||>1
+ExportSQL_DataHow<|||>3<|||>1
+ExportSQL_Output<|||>3<|||>0
+ExportSQL_Filenames<|||>1<|||>C:\xampp\htdocs\contabilidad\z_trabajo\160405-C-dbContabilidad_tbpermisosgargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160405-C-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160404-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160401-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp_5.4.27\htdocs\qualidad1\z_trabajo\160401-Q-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\Encuestas\z_trabajo\BBDD\160331-BBDD.sql<{{{><}}}>C:\xampp_5.4.27\htdocs\qualidad1\z_trabajo\160331-Q-dbTecnitasa_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\Encuestas\z_trabajo\BBDD\160329-BBDD.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160329-Q-dbJDSU_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160329-Q-dbEmpresas_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160328-Q-dbJDSU_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160328-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160328-C-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160317-Q-dbRepessa_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160317-Q-dbLogisat_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160316-Q-dbLogisat_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160314-Q-dbRepessa_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160310-C-dbVenturetaVentasEneroFebreroSinContabilizar.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160310-C-dbCortesVentasEneroFebreroSinContabilizar.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160309-C-dbCortesVentasEneroFebreroCambioVisaN.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160308-C-dbCortesVentasEneroFebreroSinContabilizar.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160308-C-dbVenturetaVentasEneroFebreroSinContabilizar.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160304-C-dbVenturetaVentasEnero.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160303-C-dbVenturetaVentasEnero-Contabilizado.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160304-C-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160303-C-dbQQ.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160301-C-dbQQ_ARSYS.sql<{{{><}}}>C:\Paco\joomla_importar\qualidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160225-C-dbQQ.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160223-C-dbQQ_tbventas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160222-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\innovae\160219-innovae.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160218-Q-dbHalcon_sin_actualizar perfiles_usuarios_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160218-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160217-Q-dbEmpresa.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160216-Q-dbLogisat_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160216-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160216-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160210-Q-dbEmpresa_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160210-Q-dbEmpresa_tbempresas.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160210-C-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160210-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160210-Q-dbEmpresa_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160210-Q-dbDivecreus_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160209-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160204-C-dbQQ_tbventas_banco.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160127-C-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160127-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\160127-Q-dbJDSU_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160122-C-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160121-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160121-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160120-C-dbQQ.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160120-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160119-C-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\160119-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\innovae\innovae.sql<{{{><}}}>C:\Paco\innovae.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151228-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151221-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151203-Q-dbRepessa_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151202-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151201-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151126-Q-base_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151124-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\Paco\c-conexion18_joomla.sql<{{{><}}}>C:\Paco\c-conexion18.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151106-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\151105-joomla.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151105-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\Paco\www.qualidad.com_joomla\users.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151030-Q-dbHalcon_tbclientes_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151030-Q-dbHalcon_tbclientes.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151030-Q-dbIngenico_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151030-Q-dbHalcon_tbrespuestas.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151030-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151029-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\151027-C-dbContabilidad_ARSYS_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\filtro\151027-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\correo\151026-dbRepessa_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\correo\151023-tbclientes.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\correo\151023-tbgrupos.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\correo\151023-tbmenu.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151021-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151021-Q-dbQualidad.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151019-tbgrupos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\151014-C-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\151014-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\151014-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\1501014-q-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\151007-C-dbDemo_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\151001-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150930-tbparametros_generales.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150924_C-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150928-C-dbDemo_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150928-dbContabilidad_tbasignacion_bbdd.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150910-C-base.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150910-q-dbQualidad.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\CursoOnLine\150909-tbformacion_estructura.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\CursoOnLine\150909-tbexamen_estructura.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\CursoOnLine\150908-q-dbHalcon.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\CursoOnLine\150908-tbformacion_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150903-q_dbIngenico.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150831-q_dbIngenico.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Auditoria\150828-dbEmpresas_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Indicadores\150817-dbSat.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150817-dbEmpresas_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Formacion\150813-dbEmpresas_tbmenu_actualizar_datos.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150805_1349-dbQualidad_curro.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150804_1106-Q-dbIngenico_tbresutados_esp.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150804_1100-Q-dbIngenico_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150804-Q-dbIngenico_encuestasdescartadas.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150804-Q-dbIngenicoARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Halcon\150731-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\DataCard\150729-Q-datacard_BUENO.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150722-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Tasvaluo\150721-dbTasvaluo_BUENO.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Tasvaluo\150721-dbTasvaluo_original.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150720-C-dbQQ_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150720-C-dbQualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150720-C-Qualidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1307_C-qualidad_2Trimestre_contabilizado_arreglado.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1305_C-qualidad_2Trimestre_sin_contabilizar_arreglado.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1247_C-qualidad_2Trimestre_sin_contabilizar_arreglado.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1247_C-qualidad_2Trimestre_sin_contabilizar.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1210_C-qualidad_2Trimestre_sin_contabil.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1156_C-qualidad_2Trimestre_sin_contabilizar.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_11137_C-qualidad_BUENO_LOGIC.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1040_C-qualidad_renumerado_asientos_antiguos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1025_C-qualidad_cambios_movimientos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150717_1016_C-qualidad_contabilizados.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150716_1251_C-qualidad.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\DataCard\150716_1100-Q-datacard_BUENO.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150716_1018_C-qualidad_contabilizadas_arreglada7077y7094.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150716_0933_C-qualidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150715_1404_C-qualidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\150715_1322_C-qualidad.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\JDSU\150715_1250-C_JDSU_BUENA.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\JDSU\150715_1229-C_JDSU.sql<{{{><}}}>C:\Paco_Local\contabilidad\C-Qualidad\150715_1116_C-qualidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\C-Qualidad\150715_0938_C-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\C-Qualidad\150715_0846_C-qualidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\C-Qualidad\150714_1330_C-qualidad.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Logisat\150714-dbLogisat_BUENO.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Tecnitasa\150713_1341-dbTecnitasa_BUENA.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Tecnitasa\150713-dbTecnitasa_BUENA.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Logisat\150710-dbLogisat_original.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Tecnitasa\150710-dbeTecnitasa_original.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Tecnitasa\150710-dbTecnitasa_original.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150708_1033-Q-dbIngenico_tbresultados_esp.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150708_1033-Q-dbIngenico_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Sat\150707_1214-Q-dbSat_BUENO.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Sat\150707_1209-Q-dbSat_BUENO.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Sat\150707_1143-Q-dbSat_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Sat\150707_1135-Q-dbSat_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Sat\150707_0955-Q-dbSat_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Sat\150707_0946-Q-dbSat.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Repessa\150706_1346-Q-dbRepessa_BUENA.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Repessa\150706_1333-Q-dbRepessa_BUENA.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Repessa\150706_1120-Q-dbRepessa_con_encuestas_antiguas_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo2\Ingenico\150706_1117-Q-dbIngenico_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo2\Ingenico\150706-Q-dbIngenico_tbrecl_nc_pm_fichero.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150706-Q-dbIngenico_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150703_1343-Q-dbIngenico_BUENO.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150703_1336-Q-dbIngenico_encuestas_TOTAL_BUENO.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150703_1303-Q-dbIngenico_encuestas_antiguas_BUENO.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150703_1231-Q-dbIngenico_encuestas_antiguas.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150703_1035-Q-dbIngenico.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\Ingenico\150702-Q-dbIngenico_tbrespuestas.sql<{{{><}}}>C:\Paco\SAT\150702_1330-Q-dbSat.sql<{{{><}}}>C:\Paco\SAT\150702_1210-Q-dbSat.sql<{{{><}}}>C:\Paco\SAT\150702_1010-Q-dbSat.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150701_1352-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150701_0907-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150630-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150629-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150629-Q-dbHalcon_antigua_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150625-Q-dbDemo.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150623-Q-dbQualidad_curro.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150622-tbclientes.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150622-tbcontrollinglog.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150618-Q-dbHalcon_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150618-Q-dbHalcon_Buena.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150617-Q-dbHalcon_Buena.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150617-Q-dbHalcon_original.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150617-Q-dbHalcon.sql<{{{><}}}>C:\xampp\htdocs\qualidad1\z_trabajo\150611-Q-dbEmpresa.sql<{{{><}}}>C:\Paco_Local\qualidad\z_bbdd\150609-Q-dbEmpresa.sql<{{{><}}}>C:\Paco_Local\qualidad\z_bbdd\150609-Q-dbHalcon.sql<{{{><}}}>C:\Paco_Local\qualidad\z_bbdd\150608-Q-dbBCD_ARSYS.sql<{{{><}}}>C:\Paco_Local\qualidad\z_bbdd\150608-Q-dbEmpresa_ARSYS.sql<{{{><}}}>C:\Paco_Local\qualidad\z_bbdd\150608-Q-dbQualidad_ARSYS.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150608-dbQualidad_c_ACTUALIZADO_SUBIR.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150608-dbQualidad_c_ACTUALIZADO.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150605-dbQualidad_c_ACTUALIZADO.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150605-dbContabilidad_ACTUALIZADO.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150603-dbQualidad_c_actualidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150603-dbContabilidad_actualizado.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150603-dbContabilidad_origen.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150603-dbQualidad_c.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150602-dbQQ_tbventas_bancos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150601-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150529-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150529-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150528-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150527-dbQQ_vacias_tablas_Fac_Pre_Ped.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150527-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150526-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150526-dbQQ_ARSYS.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150525-dbQQ_ARSYS.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150525-dbContabilidad_ARSYS.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150522-Protocipoto.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150522-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150522-dbContabilidad_tbmenu.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150521-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150521-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150520-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150520-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150519-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150519-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150518-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150518-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150514-dbQQ.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150514-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150513-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150513-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150512-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150512-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150508-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150508-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150504-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150504-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150430-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150430-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150429-dbContabilidad_tbmenu.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150429-dbqq-tbgrupoarticulos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150423-dbsolar.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150423-dbsolar.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150423-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150407-tbparametros_generales.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150401-dbContabilidad_tbmenu.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150401-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150329-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150329-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150326-tbgrupoarticulos_datos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150325-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150325-dbempresanueva.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150325-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150318-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150318-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150318-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150317-dbContabilidad.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150317-dbqq.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150313-dbContabilidad_tbarticulos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150313-dbContabilidad-tbpermisoscargos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150312-dbContabilidad-tbmenu_ARSYS.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150311-dbqq-tbarticulos.sql<{{{><}}}>C:\Paco_Local\contabilidad\z_trabajo\BBDD\150306-dbContabilidad_tbmenu.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150224-dbSolar.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150224-dbqq.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150224-dbContabilidad.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150224-dbContabilidad.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150216-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150211-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150211-dbContabilidad_tbmenu.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150211-dbContabilidad_tbmenu.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150202-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion11.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion10.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion9.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion8.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion7.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion6.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion5.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion4.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion2.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion3.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexionEmpresaNueva.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\conexion3.sql<{{{><}}}>C:\Paco\BBDD_Arsys_MySQL\BACKUP\heidi\dbContabilidad.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\cambiar\150127-dbconexion11.sql<{{{><}}}>C:\Paco\contabilidad\z_trabajo\BBDD\150126-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150123-dbContabilidad_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150123-dbqq_ARSYS.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150123-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150120-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150120-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150114-dbqq_5tablas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150114-dbContabilidad_2tablas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150113-dbqq.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\150113-dbContabilidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141219-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141219-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141219-dbqq_tbempleados_4tablas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141218-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141218-dbqq_tbempleados_2tablas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141218-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141218-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141218-dbqq.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141215-dbContabilidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141218-dbContabilidad_tbempleados_2tablas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141215-dbContabilidad_tbempleados_3_tablas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141215-dbContabilidad_tbempleados_3_tablas.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141215-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141209-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141209-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141204-dbContabilidad_arsys.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141128-dbContabilidad_arsys.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141127-dbQQ_arsys.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\141117-q-bcd.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\141103-dbempresas.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\141103-dbbcd.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\141031-dbqualidad_tbcontrollinglog.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141024-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141009-dbQQ_tbparametros_generales_arsys.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141002-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\141001-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140917-dbCont_asig.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\t1.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\t1.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\t1.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140909-dbContabilidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140908-dbContabilidad_tbpermisoscargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140905-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140904-dbContabilidad_tbpermisos_cargos.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140903-dbContabilidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140902-dbContabilidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140827-dbContabilidad.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140825-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140825-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140822-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140821-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140821-dbContabilidad_tbmenu.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140820-dbContabilidad_tbmenu.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\www.q-c-c-m-a-c.es\BBDD.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\qualidad.info\dbViboExperiencial.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\qualidad.info\Q-dbEmpresa.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\qualidad.info\Q-dbQualidad.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\qualidad.info\dbSisha.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\qualidad.info\dbQQ.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\qualidad.info\dbSolar.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\qualidad.info\dbContabilidad.sql<{{{><}}}>Z:\CopiaArsys\2014-08\BBDD_MySQL\Q-conta\BBDD.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140818-dbContabilidad.sql<{{{><}}}>C:\Paco\qualidad\2014-07-Julio\140724\qualidad\z_trabajo\BBDD\140724-dbsolar.sql<{{{><}}}>C:\Paco\qualidad\2014-07-Julio\140724\qualidad\z_trabajo\BBDD\140724-dbqualidad.sql<{{{><}}}>C:\Paco\qualidad\2014-07-Julio\140724\qualidad\z_trabajo\BBDD\140724-dbqq.sql<{{{><}}}>C:\Paco\qualidad\2014-07-Julio\140724\qualidad\z_trabajo\BBDD\140724-dbempresas.sql<{{{><}}}>C:\Paco\qualidad\2014-07-Julio\140724\qualidad\z_trabajo\BBDD\140724-dbempresanueva.sql<{{{><}}}>C:\Paco\qualidad\2014-07-Julio\140724\qualidad\z_trabajo\BBDD\140724-dbcontabilidad.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140718-dbqualidad_curro.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140716-dbqualidad_curro.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140714-dbqualidad_curro.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140714-dbqualidad_curro.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140711-dbQualidad_curro.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140711-dbqualidad_tbnoconfserv.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140702-dbQualidad_tbparametros_generales.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140702-dbQualidad.sql<{{{><}}}>C:\xampp\htdocs\qualidad\z_trabajo\BBDD\140702-dbEmpresa.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140701-dbSolar.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140701-dbQQ.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140701-dbEmpresaNueva.sql<{{{><}}}>C:\xampp\htdocs\contabilidad\z_trabajo\BBDD\140701-dbContabilidad.sql<{{{><}}}>C:\Users\usuario\Documents\acp1.sql<{{{><}}}>C:\Users\usuario\Documents\acp1.sql<{{{><}}}>C:\Users\usuario\Documents\acp.sql<{{{><}}}>acp.sql<{{{><}}}>acp.sql<{{{><}}}>acp.sql<{{{><}}}>acp<{{{><}}}>acp<{{{><}}}>menu<{{{><}}}>C:\Users\usuario\Documents\aaaaa.sql<{{{><}}}>C:\Users\usuario\Documents\menu.sql<{{{><}}}>C:\Users\usuario\Documents\tabla nueva.sql<{{{><}}}>C:\Users\usuario\Documents\tabla nueva.sql<{{{><}}}>
+TableTools_WindowWidth<|||>3<|||>925
+TableTools_WindowHeight<|||>3<|||>515
+TableTools_TreeWidth<|||>3<|||>358
+MemoEditorWidth<|||>3<|||>609
+MemoEditorHeight<|||>3<|||>338
+MemoEditorWrap<|||>3<|||>0
+DateTimeEditor_CursorPos_Type15<|||>3<|||>11
+GridExportOutputCopy<|||>3<|||>1
+GridExportOutputFile<|||>3<|||>0
+GridExportFilename<|||>1<|||>
+GridExportRecentFiles<|||>1<|||>
+GridExportEncoding<|||>3<|||>0
+GridExportFormat<|||>3<|||>0
+GridExportSelection<|||>3<|||>-1
+GridExportColumnNames<|||>3<|||>1
+GridExportSeparator<|||>1<|||>;
+GridExportEncloser<|||>1<|||>
+GridExportTerminator<|||>1<|||>\r\n
+MainWinLeft<|||>3<|||>-13
+MainWinTop<|||>3<|||>295
+MainWinWidth<|||>3<|||>840
+MainWinHeight<|||>3<|||>524
+UpdatecheckLastrun<|||>1<|||>2016-04-04 09:10:39
+Updatecheck<|||>3<|||>1
+CoolBand0Index<|||>3<|||>0
+CoolBand0Break<|||>3<|||>1
+CoolBand0Width<|||>3<|||>1018
+CoolBand1Index<|||>3<|||>1
+CoolBand1Break<|||>3<|||>1
+CoolBand1Width<|||>3<|||>1018
+ColWidths_UserManagerForm.listUsers<|||>1<|||>96,80
+ColsVisible_UserManagerForm.listUsers<|||>1<|||>0,1
+ColPositions_UserManagerForm.listUsers<|||>1<|||>0,1
+ColSort_UserManagerForm.listUsers<|||>1<|||>0,0
+DateTimeEditor_CursorPos_Type4<|||>3<|||>8
+2<|||>1<|||>2015-02-16 12:27:53|dbqq|32|select *<{{{><}}}>from tbmovimientos M<{{{><}}}>where M.Borrado=1
+3<|||>1<|||>2015-02-16 13:10:05|qqr776|218|select *<{{{><}}}>from tbmovimientos M<{{{><}}}>where M.Borrado=1
+SQL Attr Comment Foreground<|||>3<|||>8421504
+SQL Attr Comment Background<|||>3<|||>536870911
+SQL Attr Comment Style<|||>3<|||>2
+SQL Attr ConditionalComment Foreground<|||>3<|||>8421504
+SQL Attr ConditionalComment Background<|||>3<|||>536870911
+SQL Attr ConditionalComment Style<|||>3<|||>2
+SQL Attr DataType Foreground<|||>3<|||>128
+SQL Attr DataType Background<|||>3<|||>536870911
+SQL Attr DataType Style<|||>3<|||>1
+SQL Attr DefaultPackages Foreground<|||>3<|||>536870911
+SQL Attr DefaultPackages Background<|||>3<|||>536870911
+SQL Attr DefaultPackages Style<|||>3<|||>1
+SQL Attr DelimitedIdentifier Foreground<|||>3<|||>32896
+SQL Attr DelimitedIdentifier Background<|||>3<|||>536870911
+SQL Attr DelimitedIdentifier Style<|||>3<|||>0
+SQL Attr Exception Foreground<|||>3<|||>536870911
+SQL Attr Exception Background<|||>3<|||>536870911
+SQL Attr Exception Style<|||>3<|||>2
+SQL Attr Function Foreground<|||>3<|||>8388608
+SQL Attr Function Background<|||>3<|||>536870911
+SQL Attr Function Style<|||>3<|||>1
+SQL Attr Identifier Foreground<|||>3<|||>32896
+SQL Attr Identifier Background<|||>3<|||>536870911
+SQL Attr Identifier Style<|||>3<|||>0
+SQL Attr Number Foreground<|||>3<|||>8388736
+SQL Attr Number Background<|||>3<|||>536870911
+SQL Attr Number Style<|||>3<|||>0
+SQL Attr PLSQL-ReservedWord Foreground<|||>3<|||>536870911
+SQL Attr PLSQL-ReservedWord Background<|||>3<|||>536870911
+SQL Attr PLSQL-ReservedWord Style<|||>3<|||>1
+SQL Attr ReservedWord Foreground<|||>3<|||>16711680
+SQL Attr ReservedWord Background<|||>3<|||>536870911
+SQL Attr ReservedWord Style<|||>3<|||>1
+SQL Attr Space Foreground<|||>3<|||>536870911
+SQL Attr Space Background<|||>3<|||>536870911
+SQL Attr Space Style<|||>3<|||>0
+SQL Attr SQLPlus-Command Foreground<|||>3<|||>536870911
+SQL Attr SQLPlus-Command Background<|||>3<|||>536870911
+SQL Attr SQLPlus-Command Style<|||>3<|||>1
+SQL Attr String Foreground<|||>3<|||>32768
+SQL Attr String Background<|||>3<|||>536870911
+SQL Attr String Style<|||>3<|||>0
+SQL Attr Symbol Foreground<|||>3<|||>16711680
+SQL Attr Symbol Background<|||>3<|||>536870911
+SQL Attr Symbol Style<|||>3<|||>0
+SQL Attr TableName Foreground<|||>3<|||>16711935
+SQL Attr TableName Background<|||>3<|||>536870911
+SQL Attr TableName Style<|||>3<|||>0
+SQL Attr Variable Foreground<|||>3<|||>8388736
+SQL Attr Variable Background<|||>3<|||>536870911
+SQL Attr Variable Style<|||>3<|||>0
+DatagridRowsPerStep<|||>3<|||>100000
+FieldEditor_Set<|||>3<|||>1
+GridExportNull<|||>1<|||>
+235<|||>1<|||>2015-07-07 11:57:53|q-sat|47|select * from tbresultados_esp
+LineBreakStyle<|||>3<|||>1
+ColWidths_frmRoutineEditor.listParameters<|||>1<|||>10,360,90,70
+ColsVisible_frmRoutineEditor.listParameters<|||>1<|||>0,1,2,3
+ColPositions_frmRoutineEditor.listParameters<|||>1<|||>0,1,2,3
+ColSort_frmRoutineEditor.listParameters<|||>1<|||>-1,0
+FileDialogEncoding_MainForm<|||>3<|||>0
+SQLFile0<|||>1<|||>C:\xampp\htdocs\contabilidad\z_trabajo\160405-C-dbContabilidad_tbpermisosgargos.sql
+SQLFile1<|||>1<|||>C:\xampp\htdocs\contabilidad\z_trabajo\160405-C-dbContabilidad_tbmenu.sql
+SQLFile2<|||>1<|||>C:\xampp\htdocs\contabilidad\z_trabajo\160401-C-dbQualidad_ARSYS.sql
+SQLFile3<|||>1<|||>C:\xampp\htdocs\qualidad1\z_trabajo\160401-Q-dbQualidad_ARSYS.sql
+SQLFile4<|||>1<|||>C:\Paco\qualidad_pee2.sql
+Servers\C-conexion11\SessionCreated<|||>1<|||>2015-07-21 09:20:56
+Servers\C-conexion11\Host<|||>1<|||>qtw245.qualidad.info
+Servers\C-conexion11\WindowsAuth<|||>3<|||>0
+Servers\C-conexion11\User<|||>1<|||>qtw245
+Servers\C-conexion11\Password<|||>1<|||>687A6B3C393D715252737
+Servers\C-conexion11\LoginPrompt<|||>3<|||>0
+Servers\C-conexion11\Port<|||>1<|||>3306
+Servers\C-conexion11\NetType<|||>3<|||>0
+Servers\C-conexion11\Compressed<|||>3<|||>0
+Servers\C-conexion11\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion11\QueryTimeout<|||>3<|||>0
+Servers\C-conexion11\FullTableStatus<|||>3<|||>1
+Servers\C-conexion11\Databases<|||>1<|||>
+Servers\C-conexion11\Comment<|||>1<|||>
+Servers\C-conexion11\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion11\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion11\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion11\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion11\SSHtunnelPassword<|||>1<|||>3
+Servers\C-conexion11\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion11\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion11\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion11\SSL_Active<|||>3<|||>0
+Servers\C-conexion11\SSL_Key<|||>1<|||>
+Servers\C-conexion11\SSL_Cert<|||>1<|||>
+Servers\C-conexion11\SSL_CA<|||>1<|||>
+Servers\C-conexion11\RefusedCount<|||>3<|||>8
+Servers\C-conexion11\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion11\ConnectCount<|||>3<|||>12
+Servers\C-conexion11\ServerVersion<|||>3<|||>50173
+Servers\C-conexion11\LastConnect<|||>1<|||>2016-04-05 09:05:16
+Servers\C-conexion11\lastUsedDB<|||>1<|||>
+Servers\C-conexion11\QueryHistory\2<|||>1<|||>2016-04-05 09:06:43|qtw245|374|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-conexion12\SessionCreated<|||>1<|||>2015-09-10 12:19:26
+Servers\C-conexion12\Host<|||>1<|||>qua696.qualidad.info
+Servers\C-conexion12\WindowsAuth<|||>3<|||>0
+Servers\C-conexion12\User<|||>1<|||>qua696
+Servers\C-conexion12\Password<|||>1<|||>6375663734386C4D4D6E2
+Servers\C-conexion12\LoginPrompt<|||>3<|||>0
+Servers\C-conexion12\Port<|||>1<|||>3306
+Servers\C-conexion12\NetType<|||>3<|||>0
+Servers\C-conexion12\Compressed<|||>3<|||>0
+Servers\C-conexion12\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion12\QueryTimeout<|||>3<|||>0
+Servers\C-conexion12\FullTableStatus<|||>3<|||>1
+Servers\C-conexion12\Databases<|||>1<|||>
+Servers\C-conexion12\Comment<|||>1<|||>
+Servers\C-conexion12\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion12\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion12\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion12\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion12\SSHtunnelPassword<|||>1<|||>3
+Servers\C-conexion12\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion12\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion12\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion12\SSL_Active<|||>3<|||>0
+Servers\C-conexion12\SSL_Key<|||>1<|||>
+Servers\C-conexion12\SSL_Cert<|||>1<|||>
+Servers\C-conexion12\SSL_CA<|||>1<|||>
+Servers\C-conexion12\SSL_Cipher<|||>1<|||>
+Servers\C-conexion12\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion12\ConnectCount<|||>3<|||>7
+Servers\C-conexion12\ServerVersion<|||>3<|||>50173
+Servers\C-conexion12\LastConnect<|||>1<|||>2016-04-05 09:07:00
+Servers\C-conexion12\lastUsedDB<|||>1<|||>
+Servers\C-conexion12\FavoriteObjects<|||>1<|||>
+Servers\C-conexion12\QueryHistory\1<|||>1<|||>2016-03-07 11:49:34|qua696|312|CREATE TABLE `tbventas` (<{{{><}}}>	`IdVenta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`BaseI` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`IVA` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Ventas` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NOT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Factura` INT(11) NULL DEFAULT NULL,<{{{><}}}>	`Borrado` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdVenta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_bancos` (<{{{><}}}>	`IdBanco` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`Cantidad_distribuir` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Distribuir` TINYINT(4) NULL DEFAULT NULL COMMENT '1=SI, 0=NO',<{{{><}}}>	`Cantidad` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Cuenta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdBanco`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_tarjetas` (<{{{><}}}>	`IdTarjeta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`TipoTarjeta` VARCHAR(20) NULL DEFAULT NULL,<{{{><}}}>	`Bruto` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Comision` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Liquido` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`CuentaTarjeta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdTarjeta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}>
+Servers\C-conexion12\QueryHistory\2<|||>1<|||>2016-04-05 09:07:05|qua696|561|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-conexion13\SessionCreated<|||>1<|||>2015-09-10 12:23:10
+Servers\C-conexion13\Host<|||>1<|||>qua700.qualidad.info
+Servers\C-conexion13\WindowsAuth<|||>3<|||>0
+Servers\C-conexion13\User<|||>1<|||>qua700
+Servers\C-conexion13\Password<|||>1<|||>3D3A6A4A71705D3D393A9
+Servers\C-conexion13\LoginPrompt<|||>3<|||>0
+Servers\C-conexion13\Port<|||>1<|||>3306
+Servers\C-conexion13\NetType<|||>3<|||>0
+Servers\C-conexion13\Compressed<|||>3<|||>0
+Servers\C-conexion13\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion13\QueryTimeout<|||>3<|||>0
+Servers\C-conexion13\FullTableStatus<|||>3<|||>1
+Servers\C-conexion13\Databases<|||>1<|||>
+Servers\C-conexion13\Comment<|||>1<|||>
+Servers\C-conexion13\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion13\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion13\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion13\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion13\SSHtunnelPassword<|||>1<|||>4
+Servers\C-conexion13\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion13\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion13\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion13\SSL_Active<|||>3<|||>0
+Servers\C-conexion13\SSL_Key<|||>1<|||>
+Servers\C-conexion13\SSL_Cert<|||>1<|||>
+Servers\C-conexion13\SSL_CA<|||>1<|||>
+Servers\C-conexion13\SSL_Cipher<|||>1<|||>
+Servers\C-conexion13\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion13\ConnectCount<|||>3<|||>7
+Servers\C-conexion13\ServerVersion<|||>3<|||>50173
+Servers\C-conexion13\LastConnect<|||>1<|||>2016-04-05 09:07:56
+Servers\C-conexion13\lastUsedDB<|||>1<|||>
+Servers\C-conexion13\QueryHistory\1<|||>1<|||>2016-03-07 11:49:47|qua700|203|CREATE TABLE `tbventas` (<{{{><}}}>	`IdVenta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`BaseI` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`IVA` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Ventas` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NOT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Factura` INT(11) NULL DEFAULT NULL,<{{{><}}}>	`Borrado` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdVenta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_bancos` (<{{{><}}}>	`IdBanco` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`Cantidad_distribuir` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Distribuir` TINYINT(4) NULL DEFAULT NULL COMMENT '1=SI, 0=NO',<{{{><}}}>	`Cantidad` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Cuenta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdBanco`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_tarjetas` (<{{{><}}}>	`IdTarjeta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`TipoTarjeta` VARCHAR(20) NULL DEFAULT NULL,<{{{><}}}>	`Bruto` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Comision` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Liquido` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`CuentaTarjeta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdTarjeta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}>
+Servers\C-conexion13\QueryHistory\2<|||>1<|||>2016-04-05 09:08:07|qua700|249|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-conexion14\SessionCreated<|||>1<|||>2015-09-10 12:27:18
+Servers\C-conexion14\Host<|||>1<|||>qua701.qualidad.info
+Servers\C-conexion14\WindowsAuth<|||>3<|||>0
+Servers\C-conexion14\User<|||>1<|||>qua701
+Servers\C-conexion14\Password<|||>1<|||>4A7A6E803E3D7C5C6D3E9
+Servers\C-conexion14\LoginPrompt<|||>3<|||>0
+Servers\C-conexion14\Port<|||>1<|||>3306
+Servers\C-conexion14\NetType<|||>3<|||>0
+Servers\C-conexion14\Compressed<|||>3<|||>0
+Servers\C-conexion14\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion14\QueryTimeout<|||>3<|||>0
+Servers\C-conexion14\FullTableStatus<|||>3<|||>1
+Servers\C-conexion14\Databases<|||>1<|||>
+Servers\C-conexion14\Comment<|||>1<|||>
+Servers\C-conexion14\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion14\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion14\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion14\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion14\SSHtunnelPassword<|||>1<|||>6
+Servers\C-conexion14\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion14\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion14\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion14\SSL_Active<|||>3<|||>0
+Servers\C-conexion14\SSL_Key<|||>1<|||>
+Servers\C-conexion14\SSL_Cert<|||>1<|||>
+Servers\C-conexion14\SSL_CA<|||>1<|||>
+Servers\C-conexion14\SSL_Cipher<|||>1<|||>
+Servers\C-conexion14\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion14\ConnectCount<|||>3<|||>7
+Servers\C-conexion14\ServerVersion<|||>3<|||>50173
+Servers\C-conexion14\LastConnect<|||>1<|||>2016-04-05 09:08:19
+Servers\C-conexion14\lastUsedDB<|||>1<|||>
+Servers\C-conexion14\QueryHistory\1<|||>1<|||>2016-03-07 11:52:05|qua701|186|CREATE TABLE `tbventas` (<{{{><}}}>	`IdVenta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`BaseI` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`IVA` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Ventas` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NOT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Factura` INT(11) NULL DEFAULT NULL,<{{{><}}}>	`Borrado` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdVenta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_bancos` (<{{{><}}}>	`IdBanco` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`Cantidad_distribuir` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Distribuir` TINYINT(4) NULL DEFAULT NULL COMMENT '1=SI, 0=NO',<{{{><}}}>	`Cantidad` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Cuenta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdBanco`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_tarjetas` (<{{{><}}}>	`IdTarjeta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`TipoTarjeta` VARCHAR(20) NULL DEFAULT NULL,<{{{><}}}>	`Bruto` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Comision` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Liquido` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`CuentaTarjeta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdTarjeta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}>
+Servers\C-conexion14\QueryHistory\2<|||>1<|||>2016-04-05 09:08:25|qua701|125|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-conexion15\SessionCreated<|||>1<|||>2015-09-10 12:31:17
+Servers\C-conexion15\Host<|||>1<|||>qua702.qualidad.info
+Servers\C-conexion15\WindowsAuth<|||>3<|||>0
+Servers\C-conexion15\User<|||>1<|||>qua702
+Servers\C-conexion15\Password<|||>1<|||>4474687A3837765667383
+Servers\C-conexion15\LoginPrompt<|||>3<|||>0
+Servers\C-conexion15\Port<|||>1<|||>3306
+Servers\C-conexion15\NetType<|||>3<|||>0
+Servers\C-conexion15\Compressed<|||>3<|||>0
+Servers\C-conexion15\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion15\QueryTimeout<|||>3<|||>0
+Servers\C-conexion15\FullTableStatus<|||>3<|||>1
+Servers\C-conexion15\Databases<|||>1<|||>
+Servers\C-conexion15\Comment<|||>1<|||>
+Servers\C-conexion15\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion15\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion15\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion15\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion15\SSHtunnelPassword<|||>1<|||>2
+Servers\C-conexion15\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion15\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion15\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion15\SSL_Active<|||>3<|||>0
+Servers\C-conexion15\SSL_Key<|||>1<|||>
+Servers\C-conexion15\SSL_Cert<|||>1<|||>
+Servers\C-conexion15\SSL_CA<|||>1<|||>
+Servers\C-conexion15\SSL_Cipher<|||>1<|||>
+Servers\C-conexion15\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion15\ConnectCount<|||>3<|||>7
+Servers\C-conexion15\ServerVersion<|||>3<|||>50173
+Servers\C-conexion15\LastConnect<|||>1<|||>2016-04-05 09:08:40
+Servers\C-conexion15\lastUsedDB<|||>1<|||>
+Servers\C-conexion15\QueryHistory\1<|||>1<|||>2016-03-07 11:52:13|qua702|172|CREATE TABLE `tbventas` (<{{{><}}}>	`IdVenta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`BaseI` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`IVA` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Ventas` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NOT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Factura` INT(11) NULL DEFAULT NULL,<{{{><}}}>	`Borrado` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdVenta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_bancos` (<{{{><}}}>	`IdBanco` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`Cantidad_distribuir` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Distribuir` TINYINT(4) NULL DEFAULT NULL COMMENT '1=SI, 0=NO',<{{{><}}}>	`Cantidad` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Cuenta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdBanco`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_tarjetas` (<{{{><}}}>	`IdTarjeta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`TipoTarjeta` VARCHAR(20) NULL DEFAULT NULL,<{{{><}}}>	`Bruto` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Comision` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Liquido` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`CuentaTarjeta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdTarjeta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}>
+Servers\C-conexion15\QueryHistory\2<|||>1<|||>2016-04-05 09:08:45|qua702|125|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-conexion16\SessionCreated<|||>1<|||>2015-09-10 12:33:43
+Servers\C-conexion16\Host<|||>1<|||>qua703.qualidad.info
+Servers\C-conexion16\WindowsAuth<|||>3<|||>0
+Servers\C-conexion16\User<|||>1<|||>qua703
+Servers\C-conexion16\Password<|||>1<|||>7E5E456538393A3A7676784
+Servers\C-conexion16\LoginPrompt<|||>3<|||>0
+Servers\C-conexion16\Port<|||>1<|||>3306
+Servers\C-conexion16\NetType<|||>3<|||>0
+Servers\C-conexion16\Compressed<|||>3<|||>0
+Servers\C-conexion16\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion16\QueryTimeout<|||>3<|||>0
+Servers\C-conexion16\FullTableStatus<|||>3<|||>1
+Servers\C-conexion16\Databases<|||>1<|||>
+Servers\C-conexion16\Comment<|||>1<|||>
+Servers\C-conexion16\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion16\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion16\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion16\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion16\SSHtunnelPassword<|||>1<|||>6
+Servers\C-conexion16\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion16\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion16\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion16\SSL_Active<|||>3<|||>0
+Servers\C-conexion16\SSL_Key<|||>1<|||>
+Servers\C-conexion16\SSL_Cert<|||>1<|||>
+Servers\C-conexion16\SSL_CA<|||>1<|||>
+Servers\C-conexion16\SSL_Cipher<|||>1<|||>
+Servers\C-conexion16\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion16\ConnectCount<|||>3<|||>7
+Servers\C-conexion16\ServerVersion<|||>3<|||>50173
+Servers\C-conexion16\LastConnect<|||>1<|||>2016-04-05 09:08:55
+Servers\C-conexion16\lastUsedDB<|||>1<|||>
+Servers\C-conexion16\QueryHistory\1<|||>1<|||>2016-03-07 11:52:21|qua703|250|CREATE TABLE `tbventas` (<{{{><}}}>	`IdVenta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`BaseI` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`IVA` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Ventas` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NOT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Factura` INT(11) NULL DEFAULT NULL,<{{{><}}}>	`Borrado` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdVenta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_bancos` (<{{{><}}}>	`IdBanco` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`Cantidad_distribuir` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Distribuir` TINYINT(4) NULL DEFAULT NULL COMMENT '1=SI, 0=NO',<{{{><}}}>	`Cantidad` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Cuenta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdBanco`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_tarjetas` (<{{{><}}}>	`IdTarjeta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`TipoTarjeta` VARCHAR(20) NULL DEFAULT NULL,<{{{><}}}>	`Bruto` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Comision` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Liquido` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`CuentaTarjeta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdTarjeta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}>
+Servers\C-conexion16\QueryHistory\2<|||>1<|||>2016-04-05 09:08:59|qua703|124|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-conexion17\SessionCreated<|||>1<|||>2015-09-10 12:35:04
+Servers\C-conexion17\Host<|||>1<|||>qua705.qualidad.info
+Servers\C-conexion17\WindowsAuth<|||>3<|||>0
+Servers\C-conexion17\User<|||>1<|||>qua705
+Servers\C-conexion17\Password<|||>1<|||>3A3435457768695658394
+Servers\C-conexion17\LoginPrompt<|||>3<|||>0
+Servers\C-conexion17\Port<|||>1<|||>3306
+Servers\C-conexion17\NetType<|||>3<|||>0
+Servers\C-conexion17\Compressed<|||>3<|||>0
+Servers\C-conexion17\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion17\QueryTimeout<|||>3<|||>0
+Servers\C-conexion17\FullTableStatus<|||>3<|||>1
+Servers\C-conexion17\Databases<|||>1<|||>
+Servers\C-conexion17\Comment<|||>1<|||>
+Servers\C-conexion17\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion17\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion17\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion17\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion17\SSHtunnelPassword<|||>1<|||>7
+Servers\C-conexion17\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion17\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion17\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion17\SSL_Active<|||>3<|||>0
+Servers\C-conexion17\SSL_Key<|||>1<|||>
+Servers\C-conexion17\SSL_Cert<|||>1<|||>
+Servers\C-conexion17\SSL_CA<|||>1<|||>
+Servers\C-conexion17\SSL_Cipher<|||>1<|||>
+Servers\C-conexion17\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion17\ConnectCount<|||>3<|||>7
+Servers\C-conexion17\ServerVersion<|||>3<|||>50173
+Servers\C-conexion17\LastConnect<|||>1<|||>2016-04-05 09:09:10
+Servers\C-conexion17\lastUsedDB<|||>1<|||>
+Servers\C-conexion17\QueryHistory\1<|||>1<|||>2016-03-07 11:52:32|qua705|281|CREATE TABLE `tbventas` (<{{{><}}}>	`IdVenta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`BaseI` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`IVA` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Ventas` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NOT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Factura` INT(11) NULL DEFAULT NULL,<{{{><}}}>	`Borrado` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdVenta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_bancos` (<{{{><}}}>	`IdBanco` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`Cantidad_distribuir` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Distribuir` TINYINT(4) NULL DEFAULT NULL COMMENT '1=SI, 0=NO',<{{{><}}}>	`Cantidad` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Cuenta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdBanco`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_tarjetas` (<{{{><}}}>	`IdTarjeta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`TipoTarjeta` VARCHAR(20) NULL DEFAULT NULL,<{{{><}}}>	`Bruto` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Comision` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Liquido` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`CuentaTarjeta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdTarjeta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}>
+Servers\C-conexion17\QueryHistory\2<|||>1<|||>2016-04-05 09:09:15|qua705|109|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-conexion18\SessionCreated<|||>1<|||>2015-09-10 12:41:43
+Servers\C-conexion18\Host<|||>1<|||>qua707.qualidad.info
+Servers\C-conexion18\WindowsAuth<|||>3<|||>0
+Servers\C-conexion18\User<|||>1<|||>qua707
+Servers\C-conexion18\Password<|||>1<|||>7C55383537696A565B376D2
+Servers\C-conexion18\LoginPrompt<|||>3<|||>0
+Servers\C-conexion18\Port<|||>1<|||>3306
+Servers\C-conexion18\NetType<|||>3<|||>0
+Servers\C-conexion18\Compressed<|||>3<|||>0
+Servers\C-conexion18\LocalTimeZone<|||>3<|||>0
+Servers\C-conexion18\QueryTimeout<|||>3<|||>0
+Servers\C-conexion18\FullTableStatus<|||>3<|||>1
+Servers\C-conexion18\Databases<|||>1<|||>
+Servers\C-conexion18\Comment<|||>1<|||>
+Servers\C-conexion18\StartupScriptFilename<|||>1<|||>
+Servers\C-conexion18\SSHtunnelHost<|||>1<|||>
+Servers\C-conexion18\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-conexion18\SSHtunnelUser<|||>1<|||>
+Servers\C-conexion18\SSHtunnelPassword<|||>1<|||>3
+Servers\C-conexion18\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-conexion18\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-conexion18\SSHtunnelPort<|||>3<|||>3307
+Servers\C-conexion18\SSL_Active<|||>3<|||>0
+Servers\C-conexion18\SSL_Key<|||>1<|||>
+Servers\C-conexion18\SSL_Cert<|||>1<|||>
+Servers\C-conexion18\SSL_CA<|||>1<|||>
+Servers\C-conexion18\SSL_Cipher<|||>1<|||>
+Servers\C-conexion18\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-conexion18\ConnectCount<|||>3<|||>11
+Servers\C-conexion18\ServerVersion<|||>3<|||>50173
+Servers\C-conexion18\LastConnect<|||>1<|||>2016-04-05 09:09:26
+Servers\C-conexion18\lastUsedDB<|||>1<|||>
+Servers\C-conexion18\QueryHistory\1<|||>1<|||>2016-03-07 11:52:43|qua707|201|CREATE TABLE `tbventas` (<{{{><}}}>	`IdVenta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`BaseI` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`IVA` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Ventas` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NOT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Factura` INT(11) NULL DEFAULT NULL,<{{{><}}}>	`Borrado` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdVenta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_bancos` (<{{{><}}}>	`IdBanco` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`Cantidad_distribuir` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Distribuir` TINYINT(4) NULL DEFAULT NULL COMMENT '1=SI, 0=NO',<{{{><}}}>	`Cantidad` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Cuenta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdBanco`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}><{{{><}}}>CREATE TABLE `tbventas_tarjetas` (<{{{><}}}>	`IdTarjeta` INT(11) NOT NULL,<{{{><}}}>	`Fecha` DATE NOT NULL,<{{{><}}}>	`TipoTarjeta` VARCHAR(20) NULL DEFAULT NULL,<{{{><}}}>	`Bruto` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Comision` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`Liquido` DOUBLE NULL DEFAULT NULL,<{{{><}}}>	`CuentaTarjeta` INT(9) NULL DEFAULT NULL,<{{{><}}}>	`Asiento` VARCHAR(10) NULL DEFAULT NULL COMMENT 'P=Pendiente, X=No Hacer, OK=Contabilizado, numero de asiento',<{{{><}}}>	`Borrado` TINYINT(4) NULL DEFAULT NULL COMMENT '1= Valido, 0= Borrado',<{{{><}}}>	PRIMARY KEY (`IdTarjeta`)<{{{><}}}>)<{{{><}}}>COLLATE='utf8_general_ci'<{{{><}}}>ENGINE=InnoDB<{{{><}}}>;<{{{><}}}>
+Servers\C-conexion18\QueryHistory\2<|||>1<|||>2016-04-05 09:09:31|qua707|93|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbContabilidad\Host<|||>1<|||>qqf261.qualidad.info
+Servers\C-dbContabilidad\WindowsAuth<|||>3<|||>0
+Servers\C-dbContabilidad\User<|||>1<|||>qqf261
+Servers\C-dbContabilidad\Password<|||>1<|||>4839737936673871386936695
+Servers\C-dbContabilidad\LoginPrompt<|||>3<|||>0
+Servers\C-dbContabilidad\Port<|||>1<|||>3306
+Servers\C-dbContabilidad\NetType<|||>3<|||>0
+Servers\C-dbContabilidad\Compressed<|||>3<|||>0
+Servers\C-dbContabilidad\LocalTimeZone<|||>3<|||>0
+Servers\C-dbContabilidad\Databases<|||>1<|||>
+Servers\C-dbContabilidad\StartupScriptFilename<|||>1<|||>
+Servers\C-dbContabilidad\SSHtunnelHost<|||>1<|||>
+Servers\C-dbContabilidad\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbContabilidad\SSHtunnelUser<|||>1<|||>
+Servers\C-dbContabilidad\SSHtunnelPassword<|||>1<|||>4
+Servers\C-dbContabilidad\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbContabilidad\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbContabilidad\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbContabilidad\SSL_Active<|||>3<|||>0
+Servers\C-dbContabilidad\SSL_Key<|||>1<|||>
+Servers\C-dbContabilidad\SSL_Cert<|||>1<|||>
+Servers\C-dbContabilidad\SSL_CA<|||>1<|||>
+Servers\C-dbContabilidad\SessionCreated<|||>1<|||>2014-07-01 13:13:30
+Servers\C-dbContabilidad\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbContabilidad\ConnectCount<|||>3<|||>153
+Servers\C-dbContabilidad\ServerVersion<|||>3<|||>50173
+Servers\C-dbContabilidad\LastConnect<|||>1<|||>2016-04-05 10:49:19
+Servers\C-dbContabilidad\lastUsedDB<|||>1<|||>
+Servers\C-dbContabilidad\QueryHistory\2<|||>1<|||>2016-03-16 10:44:05|qqf261|390|ALTER TABLE `tbcliprov`<{{{><}}}>	ADD COLUMN `Correo2` VARCHAR(50) NULL DEFAULT NULL AFTER `Correo`;<{{{><}}}>
+Servers\C-dbCortes\Host<|||>1<|||>qsg985.qualidad.info
+Servers\C-dbCortes\WindowsAuth<|||>3<|||>0
+Servers\C-dbCortes\User<|||>1<|||>qsg985
+Servers\C-dbCortes\Password<|||>1<|||>69683D3E5A6D4D3C3D774A5
+Servers\C-dbCortes\LoginPrompt<|||>3<|||>0
+Servers\C-dbCortes\Port<|||>1<|||>3306
+Servers\C-dbCortes\NetType<|||>3<|||>0
+Servers\C-dbCortes\Compressed<|||>3<|||>0
+Servers\C-dbCortes\LocalTimeZone<|||>3<|||>0
+Servers\C-dbCortes\Databases<|||>1<|||>
+Servers\C-dbCortes\StartupScriptFilename<|||>1<|||>
+Servers\C-dbCortes\SSHtunnelHost<|||>1<|||>
+Servers\C-dbCortes\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbCortes\SSHtunnelUser<|||>1<|||>
+Servers\C-dbCortes\SSHtunnelPassword<|||>1<|||>4
+Servers\C-dbCortes\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbCortes\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbCortes\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbCortes\SSL_Active<|||>3<|||>0
+Servers\C-dbCortes\SSL_Key<|||>1<|||>
+Servers\C-dbCortes\SSL_Cert<|||>1<|||>
+Servers\C-dbCortes\SSL_CA<|||>1<|||>
+Servers\C-dbCortes\SessionCreated<|||>1<|||>2014-09-17 12:31:38
+Servers\C-dbCortes\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbCortes\ConnectCount<|||>3<|||>37
+Servers\C-dbCortes\ServerVersion<|||>3<|||>50173
+Servers\C-dbCortes\LastConnect<|||>1<|||>2016-04-05 09:09:57
+Servers\C-dbCortes\lastUsedDB<|||>1<|||>
+Servers\C-dbCortes\FavoriteObjects<|||>1<|||>
+Servers\C-dbCortes\qsg985|tbventas_tarjetas\Sort<|||>1<|||>0_Fecha|
+Servers\C-dbCortes\QueryHistory\5<|||>1<|||>2016-03-08 12:18:17|qsg985|31|update tbventas_tarjetas T<{{{><}}}>set T.CuentaTarjeta =572000060
+Servers\C-dbCortes\QueryHistory\6<|||>1<|||>2016-03-09 13:11:02|qsg985|32|select * from tbcuenta C where C.NumCuenta like '4300%'
+Servers\C-dbCortes\QueryHistory\7<|||>1<|||>2016-03-09 13:11:10|qsg985|16|select * from tbcuenta C where C.NumCuenta like '5750%'
+Servers\C-dbCortes\QueryHistory\8<|||>1<|||>2016-04-05 09:10:28|qsg985|125|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbDemo\SessionCreated<|||>1<|||>2015-09-28 09:57:22
+Servers\C-dbDemo\Host<|||>1<|||>quc550.qualidad.info
+Servers\C-dbDemo\WindowsAuth<|||>3<|||>0
+Servers\C-dbDemo\User<|||>1<|||>quc550
+Servers\C-dbDemo\Password<|||>1<|||>7C55383537696A565B376D2
+Servers\C-dbDemo\LoginPrompt<|||>3<|||>0
+Servers\C-dbDemo\Port<|||>1<|||>3306
+Servers\C-dbDemo\NetType<|||>3<|||>0
+Servers\C-dbDemo\Compressed<|||>3<|||>0
+Servers\C-dbDemo\LocalTimeZone<|||>3<|||>0
+Servers\C-dbDemo\QueryTimeout<|||>3<|||>0
+Servers\C-dbDemo\FullTableStatus<|||>3<|||>1
+Servers\C-dbDemo\Databases<|||>1<|||>
+Servers\C-dbDemo\Comment<|||>1<|||>
+Servers\C-dbDemo\StartupScriptFilename<|||>1<|||>
+Servers\C-dbDemo\SSHtunnelHost<|||>1<|||>
+Servers\C-dbDemo\SSHtunnelHostPort<|||>3<|||>0
+Servers\C-dbDemo\SSHtunnelUser<|||>1<|||>
+Servers\C-dbDemo\SSHtunnelPassword<|||>1<|||>4
+Servers\C-dbDemo\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbDemo\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbDemo\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbDemo\SSL_Active<|||>3<|||>0
+Servers\C-dbDemo\SSL_Key<|||>1<|||>
+Servers\C-dbDemo\SSL_Cert<|||>1<|||>
+Servers\C-dbDemo\SSL_CA<|||>1<|||>
+Servers\C-dbDemo\SSL_Cipher<|||>1<|||>
+Servers\C-dbDemo\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbDemo\ConnectCount<|||>3<|||>17
+Servers\C-dbDemo\ServerVersion<|||>3<|||>50173
+Servers\C-dbDemo\LastConnect<|||>1<|||>2016-04-05 09:10:41
+Servers\C-dbDemo\lastUsedDB<|||>1<|||>
+Servers\C-dbDemo\QueryHistory\2<|||>1<|||>2016-04-05 09:10:48|quc550|140|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbInfopublic\Host<|||>1<|||>qsg982.qualidad.info
+Servers\C-dbInfopublic\WindowsAuth<|||>3<|||>0
+Servers\C-dbInfopublic\User<|||>1<|||>qsg982
+Servers\C-dbInfopublic\Password<|||>1<|||>67684C6B393A6A536D3B3C4
+Servers\C-dbInfopublic\LoginPrompt<|||>3<|||>0
+Servers\C-dbInfopublic\Port<|||>1<|||>3306
+Servers\C-dbInfopublic\NetType<|||>3<|||>0
+Servers\C-dbInfopublic\Compressed<|||>3<|||>0
+Servers\C-dbInfopublic\LocalTimeZone<|||>3<|||>0
+Servers\C-dbInfopublic\Databases<|||>1<|||>
+Servers\C-dbInfopublic\StartupScriptFilename<|||>1<|||>
+Servers\C-dbInfopublic\SSHtunnelHost<|||>1<|||>
+Servers\C-dbInfopublic\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbInfopublic\SSHtunnelUser<|||>1<|||>
+Servers\C-dbInfopublic\SSHtunnelPassword<|||>1<|||>4
+Servers\C-dbInfopublic\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbInfopublic\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbInfopublic\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbInfopublic\SSL_Active<|||>3<|||>0
+Servers\C-dbInfopublic\SSL_Key<|||>1<|||>
+Servers\C-dbInfopublic\SSL_Cert<|||>1<|||>
+Servers\C-dbInfopublic\SSL_CA<|||>1<|||>
+Servers\C-dbInfopublic\SessionCreated<|||>1<|||>2014-09-16 10:27:47
+Servers\C-dbInfopublic\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbInfopublic\ConnectCount<|||>3<|||>36
+Servers\C-dbInfopublic\ServerVersion<|||>3<|||>50173
+Servers\C-dbInfopublic\LastConnect<|||>1<|||>2016-04-05 09:11:36
+Servers\C-dbInfopublic\lastUsedDB<|||>1<|||>
+Servers\C-dbInfopublic\QueryHistory\3<|||>1<|||>2016-04-05 09:11:40|qsg982|234|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbNorte\Host<|||>1<|||>qsl295.qualidad.info
+Servers\C-dbNorte\WindowsAuth<|||>3<|||>0
+Servers\C-dbNorte\User<|||>1<|||>qsl295
+Servers\C-dbNorte\Password<|||>1<|||>7A6F51517475353E746E4E3E5
+Servers\C-dbNorte\LoginPrompt<|||>3<|||>0
+Servers\C-dbNorte\Port<|||>1<|||>3306
+Servers\C-dbNorte\NetType<|||>3<|||>0
+Servers\C-dbNorte\Compressed<|||>3<|||>0
+Servers\C-dbNorte\LocalTimeZone<|||>3<|||>0
+Servers\C-dbNorte\Databases<|||>1<|||>
+Servers\C-dbNorte\StartupScriptFilename<|||>1<|||>
+Servers\C-dbNorte\SSHtunnelHost<|||>1<|||>
+Servers\C-dbNorte\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbNorte\SSHtunnelUser<|||>1<|||>
+Servers\C-dbNorte\SSHtunnelPassword<|||>1<|||>8
+Servers\C-dbNorte\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbNorte\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbNorte\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbNorte\SSL_Active<|||>3<|||>0
+Servers\C-dbNorte\SSL_Key<|||>1<|||>
+Servers\C-dbNorte\SSL_Cert<|||>1<|||>
+Servers\C-dbNorte\SSL_CA<|||>1<|||>
+Servers\C-dbNorte\SessionCreated<|||>1<|||>2014-09-17 13:51:47
+Servers\C-dbNorte\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbNorte\ConnectCount<|||>3<|||>27
+Servers\C-dbNorte\ServerVersion<|||>3<|||>50173
+Servers\C-dbNorte\LastConnect<|||>1<|||>2016-04-05 09:11:50
+Servers\C-dbNorte\lastUsedDB<|||>1<|||>
+Servers\C-dbNorte\FavoriteObjects<|||>1<|||>qsl295||tbarticulos<{{{><}}}>
+Servers\C-dbNorte\QueryHistory\2<|||>1<|||>2016-04-05 09:12:01|qsl295|624|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbqq\Host<|||>1<|||>qqr776.qualidad.info
+Servers\C-dbqq\WindowsAuth<|||>3<|||>0
+Servers\C-dbqq\User<|||>1<|||>qqr776
+Servers\C-dbqq\Password<|||>1<|||>467F35686D3D375
+Servers\C-dbqq\LoginPrompt<|||>3<|||>0
+Servers\C-dbqq\Port<|||>1<|||>3306
+Servers\C-dbqq\NetType<|||>3<|||>0
+Servers\C-dbqq\Compressed<|||>3<|||>0
+Servers\C-dbqq\LocalTimeZone<|||>3<|||>0
+Servers\C-dbqq\Databases<|||>1<|||>
+Servers\C-dbqq\StartupScriptFilename<|||>1<|||>
+Servers\C-dbqq\SSHtunnelHost<|||>1<|||>
+Servers\C-dbqq\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbqq\SSHtunnelUser<|||>1<|||>
+Servers\C-dbqq\SSHtunnelPassword<|||>1<|||>8
+Servers\C-dbqq\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbqq\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbqq\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbqq\SSL_Active<|||>3<|||>0
+Servers\C-dbqq\SSL_Key<|||>1<|||>
+Servers\C-dbqq\SSL_Cert<|||>1<|||>
+Servers\C-dbqq\SSL_CA<|||>1<|||>
+Servers\C-dbqq\SessionCreated<|||>1<|||>2014-07-01 13:17:09
+Servers\C-dbqq\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbqq\ConnectCount<|||>3<|||>138
+Servers\C-dbqq\ServerVersion<|||>3<|||>50173
+Servers\C-dbqq\LastConnect<|||>1<|||>2016-04-06 10:43:47
+Servers\C-dbqq\lastUsedDB<|||>1<|||>
+Servers\C-dbqq\FavoriteObjects<|||>1<|||>
+Servers\C-dbqq\qqr776|tbventas_bancos\Sort<|||>1<|||>0_Fecha|
+Servers\C-dbqq\qqr776|tbventas_tarjetas\Sort<|||>1<|||>0_Fecha|
+Servers\C-dbqq\QueryHistory\3<|||>1<|||>2016-03-09 13:04:49|qqr776|16|select * from tbcuenta C where C.NumCuenta = '430000001'
+Servers\C-dbqq\QueryHistory\4<|||>1<|||>2016-04-05 09:12:29|qqr776|187|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbQualidad\Host<|||>1<|||>qsg984.qualidad.info
+Servers\C-dbQualidad\WindowsAuth<|||>3<|||>0
+Servers\C-dbQualidad\User<|||>1<|||>qsg984
+Servers\C-dbQualidad\Password<|||>1<|||>6274377A694B4B383768361
+Servers\C-dbQualidad\LoginPrompt<|||>3<|||>0
+Servers\C-dbQualidad\Port<|||>1<|||>3306
+Servers\C-dbQualidad\NetType<|||>3<|||>0
+Servers\C-dbQualidad\Compressed<|||>3<|||>0
+Servers\C-dbQualidad\LocalTimeZone<|||>3<|||>0
+Servers\C-dbQualidad\Databases<|||>1<|||>
+Servers\C-dbQualidad\StartupScriptFilename<|||>1<|||>
+Servers\C-dbQualidad\SSHtunnelHost<|||>1<|||>
+Servers\C-dbQualidad\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbQualidad\SSHtunnelUser<|||>1<|||>
+Servers\C-dbQualidad\SSHtunnelPassword<|||>1<|||>8
+Servers\C-dbQualidad\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbQualidad\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbQualidad\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbQualidad\SSL_Active<|||>3<|||>0
+Servers\C-dbQualidad\SSL_Key<|||>1<|||>
+Servers\C-dbQualidad\SSL_Cert<|||>1<|||>
+Servers\C-dbQualidad\SSL_CA<|||>1<|||>
+Servers\C-dbQualidad\SessionCreated<|||>1<|||>2014-09-17 12:30:03
+Servers\C-dbQualidad\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbQualidad\ConnectCount<|||>3<|||>95
+Servers\C-dbQualidad\ServerVersion<|||>3<|||>50173
+Servers\C-dbQualidad\LastConnect<|||>1<|||>2016-04-06 10:59:12
+Servers\C-dbQualidad\lastUsedDB<|||>1<|||>qsg984
+Servers\C-dbQualidad\FavoriteObjects<|||>1<|||>qsg984||tbarticulos<{{{><}}}>
+Servers\C-dbQualidad\QueryHistory\2<|||>1<|||>2016-03-09 13:05:47|qsg984|16|select * from tbcuenta C where C.NumCuenta = '430000001'
+Servers\C-dbQualidad\QueryHistory\28<|||>1<|||>2016-03-09 13:06:05|qsg984|15|select * from tbcuenta C where C.NumCuenta like '4300%'
+Servers\C-dbQualidad\QueryHistory\29<|||>1<|||>2016-03-09 13:07:11|qsg984|15|select * from tbcuenta C where C.NumCuenta like '6262%'
+Servers\C-dbQualidad\QueryHistory\30<|||>1<|||>2016-04-01 10:18:11|qsg984|16|<{{{><}}}>                 SELECT NumFactura<{{{><}}}>                 FROM tbmisfacturas<{{{><}}}>                 WHERE Borrado=1<{{{><}}}>                 ORDER BY NumFactura DESC<{{{><}}}>                 LIMIT 0,1<{{{><}}}>                 
+Servers\C-dbQualidad\QueryHistory\1<|||>1<|||>2016-04-04 11:37:55|qsg984|406|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbSidreria\Host<|||>1<|||>qsl292.qualidad.info
+Servers\C-dbSidreria\WindowsAuth<|||>3<|||>0
+Servers\C-dbSidreria\User<|||>1<|||>qsl292
+Servers\C-dbSidreria\Password<|||>1<|||>7F6E5F5F7A3C3D3B785A586B6
+Servers\C-dbSidreria\LoginPrompt<|||>3<|||>0
+Servers\C-dbSidreria\Port<|||>1<|||>3306
+Servers\C-dbSidreria\NetType<|||>3<|||>0
+Servers\C-dbSidreria\Compressed<|||>3<|||>0
+Servers\C-dbSidreria\LocalTimeZone<|||>3<|||>0
+Servers\C-dbSidreria\Databases<|||>1<|||>
+Servers\C-dbSidreria\StartupScriptFilename<|||>1<|||>
+Servers\C-dbSidreria\SSHtunnelHost<|||>1<|||>
+Servers\C-dbSidreria\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbSidreria\SSHtunnelUser<|||>1<|||>
+Servers\C-dbSidreria\SSHtunnelPassword<|||>1<|||>9
+Servers\C-dbSidreria\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbSidreria\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbSidreria\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbSidreria\SSL_Active<|||>3<|||>0
+Servers\C-dbSidreria\SSL_Key<|||>1<|||>
+Servers\C-dbSidreria\SSL_Cert<|||>1<|||>
+Servers\C-dbSidreria\SSL_CA<|||>1<|||>
+Servers\C-dbSidreria\SessionCreated<|||>1<|||>2014-09-17 13:50:38
+Servers\C-dbSidreria\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbSidreria\ConnectCount<|||>3<|||>26
+Servers\C-dbSidreria\ServerVersion<|||>3<|||>50173
+Servers\C-dbSidreria\LastConnect<|||>1<|||>2016-04-05 09:12:55
+Servers\C-dbSidreria\lastUsedDB<|||>1<|||>
+Servers\C-dbSidreria\FavoriteObjects<|||>1<|||>
+Servers\C-dbSidreria\QueryHistory\2<|||>1<|||>2016-04-05 09:13:00|qsl292|78|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbSisha\Host<|||>1<|||>qrx896.qualidad.info
+Servers\C-dbSisha\WindowsAuth<|||>3<|||>0
+Servers\C-dbSisha\User<|||>1<|||>qrx896
+Servers\C-dbSisha\Password<|||>1<|||>4F74786A393536365
+Servers\C-dbSisha\LoginPrompt<|||>3<|||>0
+Servers\C-dbSisha\Port<|||>1<|||>3306
+Servers\C-dbSisha\NetType<|||>3<|||>0
+Servers\C-dbSisha\Compressed<|||>3<|||>0
+Servers\C-dbSisha\LocalTimeZone<|||>3<|||>0
+Servers\C-dbSisha\Databases<|||>1<|||>
+Servers\C-dbSisha\StartupScriptFilename<|||>1<|||>
+Servers\C-dbSisha\SSHtunnelHost<|||>1<|||>
+Servers\C-dbSisha\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbSisha\SSHtunnelUser<|||>1<|||>
+Servers\C-dbSisha\SSHtunnelPassword<|||>1<|||>3
+Servers\C-dbSisha\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbSisha\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbSisha\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbSisha\SSL_Active<|||>3<|||>0
+Servers\C-dbSisha\SSL_Key<|||>1<|||>
+Servers\C-dbSisha\SSL_Cert<|||>1<|||>
+Servers\C-dbSisha\SSL_CA<|||>1<|||>
+Servers\C-dbSisha\SessionCreated<|||>1<|||>2014-07-01 13:17:58
+Servers\C-dbSisha\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbSisha\ConnectCount<|||>3<|||>43
+Servers\C-dbSisha\ServerVersion<|||>3<|||>50173
+Servers\C-dbSisha\LastConnect<|||>1<|||>2016-04-05 09:13:09
+Servers\C-dbSisha\lastUsedDB<|||>1<|||>
+Servers\C-dbSisha\FavoriteObjects<|||>1<|||>
+Servers\C-dbSisha\QueryHistory\2<|||>1<|||>2016-03-09 13:08:27|qrx896|15|select * from tbcuenta C where C.NumCuenta like '6262%'
+Servers\C-dbSisha\QueryHistory\4<|||>1<|||>2016-03-09 13:08:32|qrx896|31|select * from tbcuenta C where C.NumCuenta like '4300%'
+Servers\C-dbSisha\QueryHistory\5<|||>1<|||>2016-04-05 09:13:13|qrx896|359|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbSolar\Host<|||>1<|||>qqi384.qualidad.info
+Servers\C-dbSolar\WindowsAuth<|||>3<|||>0
+Servers\C-dbSolar\User<|||>1<|||>qqi384
+Servers\C-dbSolar\Password<|||>1<|||>696758397136775
+Servers\C-dbSolar\LoginPrompt<|||>3<|||>0
+Servers\C-dbSolar\Port<|||>1<|||>3306
+Servers\C-dbSolar\NetType<|||>3<|||>0
+Servers\C-dbSolar\Compressed<|||>3<|||>0
+Servers\C-dbSolar\LocalTimeZone<|||>3<|||>0
+Servers\C-dbSolar\Databases<|||>1<|||>
+Servers\C-dbSolar\StartupScriptFilename<|||>1<|||>
+Servers\C-dbSolar\SSHtunnelHost<|||>1<|||>
+Servers\C-dbSolar\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbSolar\SSHtunnelUser<|||>1<|||>
+Servers\C-dbSolar\SSHtunnelPassword<|||>1<|||>5
+Servers\C-dbSolar\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbSolar\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbSolar\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbSolar\SSL_Active<|||>3<|||>0
+Servers\C-dbSolar\SSL_Key<|||>1<|||>
+Servers\C-dbSolar\SSL_Cert<|||>1<|||>
+Servers\C-dbSolar\SSL_CA<|||>1<|||>
+Servers\C-dbSolar\SessionCreated<|||>1<|||>2014-07-01 13:14:40
+Servers\C-dbSolar\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbSolar\ConnectCount<|||>3<|||>39
+Servers\C-dbSolar\ServerVersion<|||>3<|||>50173
+Servers\C-dbSolar\LastConnect<|||>1<|||>2016-04-05 09:13:24
+Servers\C-dbSolar\lastUsedDB<|||>1<|||>
+Servers\C-dbSolar\FavoriteObjects<|||>1<|||>qqi384||tbarticulos<{{{><}}}>
+Servers\C-dbSolar\QueryHistory\3<|||>1<|||>2016-03-09 13:09:05|qqi384|31|select * from tbcuenta C where C.NumCuenta like '4300%'
+Servers\C-dbSolar\QueryHistory\4<|||>1<|||>2016-03-09 13:09:52|qqi384|16|select * from tbcuenta C where C.NumCuenta like '6262%'
+Servers\C-dbSolar\QueryHistory\5<|||>1<|||>2016-04-05 09:13:28|qqi384|499|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbVaz\Host<|||>1<|||>qsl297.qualidad.info
+Servers\C-dbVaz\WindowsAuth<|||>3<|||>0
+Servers\C-dbVaz\User<|||>1<|||>qsl297
+Servers\C-dbVaz\Password<|||>1<|||>50706D73793A3B397876497B4
+Servers\C-dbVaz\LoginPrompt<|||>3<|||>0
+Servers\C-dbVaz\Port<|||>1<|||>3306
+Servers\C-dbVaz\NetType<|||>3<|||>0
+Servers\C-dbVaz\Compressed<|||>3<|||>0
+Servers\C-dbVaz\LocalTimeZone<|||>3<|||>0
+Servers\C-dbVaz\Databases<|||>1<|||>
+Servers\C-dbVaz\StartupScriptFilename<|||>1<|||>
+Servers\C-dbVaz\SSHtunnelHost<|||>1<|||>
+Servers\C-dbVaz\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbVaz\SSHtunnelUser<|||>1<|||>
+Servers\C-dbVaz\SSHtunnelPassword<|||>1<|||>7
+Servers\C-dbVaz\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbVaz\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbVaz\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbVaz\SSL_Active<|||>3<|||>0
+Servers\C-dbVaz\SSL_Key<|||>1<|||>
+Servers\C-dbVaz\SSL_Cert<|||>1<|||>
+Servers\C-dbVaz\SSL_CA<|||>1<|||>
+Servers\C-dbVaz\SessionCreated<|||>1<|||>2014-09-17 13:52:37
+Servers\C-dbVaz\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbVaz\ConnectCount<|||>3<|||>33
+Servers\C-dbVaz\ServerVersion<|||>3<|||>50173
+Servers\C-dbVaz\LastConnect<|||>1<|||>2016-04-05 09:13:40
+Servers\C-dbVaz\lastUsedDB<|||>1<|||>
+Servers\C-dbVaz\FavoriteObjects<|||>1<|||>
+Servers\C-dbVaz\QueryHistory\2<|||>1<|||>2016-04-05 09:17:16|qsl297|187|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\C-dbVentureta\Host<|||>1<|||>qsl289.qualidad.info
+Servers\C-dbVentureta\WindowsAuth<|||>3<|||>0
+Servers\C-dbVentureta\User<|||>1<|||>qsl289
+Servers\C-dbVentureta\Password<|||>1<|||>6C7B6D3D3E497B6C6D7A418
+Servers\C-dbVentureta\LoginPrompt<|||>3<|||>0
+Servers\C-dbVentureta\Port<|||>1<|||>3306
+Servers\C-dbVentureta\NetType<|||>3<|||>0
+Servers\C-dbVentureta\Compressed<|||>3<|||>0
+Servers\C-dbVentureta\LocalTimeZone<|||>3<|||>0
+Servers\C-dbVentureta\Databases<|||>1<|||>
+Servers\C-dbVentureta\StartupScriptFilename<|||>1<|||>
+Servers\C-dbVentureta\SSHtunnelHost<|||>1<|||>
+Servers\C-dbVentureta\SSHtunnelHostPort<|||>3<|||>22
+Servers\C-dbVentureta\SSHtunnelUser<|||>1<|||>
+Servers\C-dbVentureta\SSHtunnelPassword<|||>1<|||>2
+Servers\C-dbVentureta\SSHtunnelTimeout<|||>3<|||>4
+Servers\C-dbVentureta\SSHtunnelPrivateKey<|||>1<|||>
+Servers\C-dbVentureta\SSHtunnelPort<|||>3<|||>3307
+Servers\C-dbVentureta\SSL_Active<|||>3<|||>0
+Servers\C-dbVentureta\SSL_Key<|||>1<|||>
+Servers\C-dbVentureta\SSL_Cert<|||>1<|||>
+Servers\C-dbVentureta\SSL_CA<|||>1<|||>
+Servers\C-dbVentureta\SessionCreated<|||>1<|||>2014-09-17 13:14:34
+Servers\C-dbVentureta\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\C-dbVentureta\ConnectCount<|||>3<|||>39
+Servers\C-dbVentureta\ServerVersion<|||>3<|||>50173
+Servers\C-dbVentureta\LastConnect<|||>1<|||>2016-04-05 09:17:28
+Servers\C-dbVentureta\lastUsedDB<|||>1<|||>
+Servers\C-dbVentureta\FavoriteObjects<|||>1<|||>qsl289||tbarticulos<{{{><}}}>
+Servers\C-dbVentureta\qsl289|tbventas_tarjetas\Sort<|||>1<|||>0_Fecha|
+Servers\C-dbVentureta\QueryHistory\6<|||>1<|||>2016-03-09 13:10:31|qsl289|16|select * from tbcuenta C where C.NumCuenta like '6262%'
+Servers\C-dbVentureta\QueryHistory\7<|||>1<|||>2016-03-09 13:10:38|qsl289|16|select * from tbcuenta C where C.NumCuenta like '4300%'
+Servers\C-dbVentureta\QueryHistory\8<|||>1<|||>2016-04-05 09:17:34|qsl289|172|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\Encuestas\SessionCreated<|||>1<|||>2016-03-30 11:29:53
+Servers\Encuestas\Host<|||>1<|||>qvl410.qualidad.info
+Servers\Encuestas\WindowsAuth<|||>3<|||>0
+Servers\Encuestas\User<|||>1<|||>qvl410
+Servers\Encuestas\Password<|||>1<|||>6A6A6C3C3D6A6C785A786B3E6
+Servers\Encuestas\LoginPrompt<|||>3<|||>0
+Servers\Encuestas\Port<|||>1<|||>3306
+Servers\Encuestas\NetType<|||>3<|||>0
+Servers\Encuestas\Compressed<|||>3<|||>0
+Servers\Encuestas\LocalTimeZone<|||>3<|||>0
+Servers\Encuestas\QueryTimeout<|||>3<|||>0
+Servers\Encuestas\KeepAlive<|||>3<|||>0
+Servers\Encuestas\FullTableStatus<|||>3<|||>1
+Servers\Encuestas\Databases<|||>1<|||>
+Servers\Encuestas\Comment<|||>1<|||>
+Servers\Encuestas\StartupScriptFilename<|||>1<|||>
+Servers\Encuestas\SSHtunnelHost<|||>1<|||>
+Servers\Encuestas\SSHtunnelHostPort<|||>3<|||>0
+Servers\Encuestas\SSHtunnelUser<|||>1<|||>
+Servers\Encuestas\SSHtunnelPassword<|||>1<|||>3
+Servers\Encuestas\SSHtunnelTimeout<|||>3<|||>4
+Servers\Encuestas\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Encuestas\SSHtunnelPort<|||>3<|||>3307
+Servers\Encuestas\SSL_Active<|||>3<|||>0
+Servers\Encuestas\SSL_Key<|||>1<|||>
+Servers\Encuestas\SSL_Cert<|||>1<|||>
+Servers\Encuestas\SSL_CA<|||>1<|||>
+Servers\Encuestas\SSL_Cipher<|||>1<|||>
+Servers\Encuestas\ServerVersionFull<|||>1<|||>5.6.24 - MySQL Community Server (GPL)
+Servers\Encuestas\ConnectCount<|||>3<|||>2
+Servers\Encuestas\ServerVersion<|||>3<|||>50624
+Servers\Encuestas\LastConnect<|||>1<|||>2016-03-31 13:06:08
+Servers\Encuestas\lastUsedDB<|||>1<|||>
+Servers\Joomla www.qualidad.com\SessionCreated<|||>1<|||>2015-11-02 10:39:57
+Servers\Joomla www.qualidad.com\Host<|||>1<|||>qug728.qualidad.info
+Servers\Joomla www.qualidad.com\WindowsAuth<|||>3<|||>0
+Servers\Joomla www.qualidad.com\User<|||>1<|||>qug728
+Servers\Joomla www.qualidad.com\Password<|||>1<|||>46787C6A393A3B7E794D4C3B5
+Servers\Joomla www.qualidad.com\LoginPrompt<|||>3<|||>0
+Servers\Joomla www.qualidad.com\Port<|||>1<|||>3306
+Servers\Joomla www.qualidad.com\NetType<|||>3<|||>0
+Servers\Joomla www.qualidad.com\Compressed<|||>3<|||>0
+Servers\Joomla www.qualidad.com\LocalTimeZone<|||>3<|||>0
+Servers\Joomla www.qualidad.com\QueryTimeout<|||>3<|||>0
+Servers\Joomla www.qualidad.com\FullTableStatus<|||>3<|||>1
+Servers\Joomla www.qualidad.com\Databases<|||>1<|||>
+Servers\Joomla www.qualidad.com\Comment<|||>1<|||>
+Servers\Joomla www.qualidad.com\StartupScriptFilename<|||>1<|||>
+Servers\Joomla www.qualidad.com\SSHtunnelHost<|||>1<|||>
+Servers\Joomla www.qualidad.com\SSHtunnelHostPort<|||>3<|||>0
+Servers\Joomla www.qualidad.com\SSHtunnelUser<|||>1<|||>
+Servers\Joomla www.qualidad.com\SSHtunnelPassword<|||>1<|||>6
+Servers\Joomla www.qualidad.com\SSHtunnelTimeout<|||>3<|||>4
+Servers\Joomla www.qualidad.com\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Joomla www.qualidad.com\SSHtunnelPort<|||>3<|||>3307
+Servers\Joomla www.qualidad.com\SSL_Active<|||>3<|||>0
+Servers\Joomla www.qualidad.com\SSL_Key<|||>1<|||>
+Servers\Joomla www.qualidad.com\SSL_Cert<|||>1<|||>
+Servers\Joomla www.qualidad.com\SSL_CA<|||>1<|||>
+Servers\Joomla www.qualidad.com\SSL_Cipher<|||>1<|||>
+Servers\Joomla www.qualidad.com\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Joomla www.qualidad.com\ConnectCount<|||>3<|||>11
+Servers\Joomla www.qualidad.com\ServerVersion<|||>3<|||>50173
+Servers\Joomla www.qualidad.com\LastConnect<|||>1<|||>2016-03-01 09:40:05
+Servers\Joomla www.qualidad.com\lastUsedDB<|||>1<|||>
+Servers\Joomla www.qualidad.com\QueryHistory\1<|||>1<|||>2015-11-04 10:43:43|qug728|16|update Joomla37173_users U<{{{><}}}>set U.password = MD5('Jose3260')<{{{><}}}>where U.id=62
+Servers\Joomla_www.qualidad.es\Host<|||>1<|||>qrh251.qualidad.info
+Servers\Joomla_www.qualidad.es\WindowsAuth<|||>3<|||>0
+Servers\Joomla_www.qualidad.es\User<|||>1<|||>qrh251
+Servers\Joomla_www.qualidad.es\Password<|||>1<|||>4F74786A38373B355
+Servers\Joomla_www.qualidad.es\LoginPrompt<|||>3<|||>0
+Servers\Joomla_www.qualidad.es\Port<|||>1<|||>3306
+Servers\Joomla_www.qualidad.es\NetType<|||>3<|||>0
+Servers\Joomla_www.qualidad.es\Compressed<|||>3<|||>0
+Servers\Joomla_www.qualidad.es\LocalTimeZone<|||>3<|||>0
+Servers\Joomla_www.qualidad.es\Databases<|||>1<|||>
+Servers\Joomla_www.qualidad.es\StartupScriptFilename<|||>1<|||>
+Servers\Joomla_www.qualidad.es\SSHtunnelHost<|||>1<|||>
+Servers\Joomla_www.qualidad.es\SSHtunnelHostPort<|||>3<|||>22
+Servers\Joomla_www.qualidad.es\SSHtunnelUser<|||>1<|||>
+Servers\Joomla_www.qualidad.es\SSHtunnelPassword<|||>1<|||>3
+Servers\Joomla_www.qualidad.es\SSHtunnelTimeout<|||>3<|||>4
+Servers\Joomla_www.qualidad.es\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Joomla_www.qualidad.es\SSHtunnelPort<|||>3<|||>3307
+Servers\Joomla_www.qualidad.es\SSL_Active<|||>3<|||>0
+Servers\Joomla_www.qualidad.es\SSL_Key<|||>1<|||>
+Servers\Joomla_www.qualidad.es\SSL_Cert<|||>1<|||>
+Servers\Joomla_www.qualidad.es\SSL_CA<|||>1<|||>
+Servers\Joomla_www.qualidad.es\SessionCreated<|||>1<|||>2014-09-05 10:28:55
+Servers\Joomla_www.qualidad.es\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Joomla_www.qualidad.es\ConnectCount<|||>3<|||>8
+Servers\Joomla_www.qualidad.es\ServerVersion<|||>3<|||>50173
+Servers\Joomla_www.qualidad.es\LastConnect<|||>1<|||>2015-06-02 13:41:30
+Servers\Joomla_www.qualidad.es\lastUsedDB<|||>1<|||>qrh251
+Servers\Joomla_www.qualidad.es\QueryHistory\5<|||>1<|||>2014-12-19 09:10:51|qrh251|16|SELECT R.id,R.submitted<{{{><}}}>                    FROM msal1_facileforms_records R<{{{><}}}>                    WHERE R.form=3
+Servers\Local\Host<|||>1<|||>127.0.0.1
+Servers\Local\WindowsAuth<|||>3<|||>0
+Servers\Local\User<|||>1<|||>root
+Servers\Local\Password<|||>1<|||>7
+Servers\Local\LoginPrompt<|||>3<|||>0
+Servers\Local\Port<|||>1<|||>3306
+Servers\Local\NetType<|||>3<|||>0
+Servers\Local\Compressed<|||>3<|||>0
+Servers\Local\LocalTimeZone<|||>3<|||>0
+Servers\Local\Databases<|||>1<|||>
+Servers\Local\StartupScriptFilename<|||>1<|||>
+Servers\Local\SSHtunnelHost<|||>1<|||>
+Servers\Local\SSHtunnelHostPort<|||>3<|||>22
+Servers\Local\SSHtunnelUser<|||>1<|||>
+Servers\Local\SSHtunnelPassword<|||>1<|||>1
+Servers\Local\SSHtunnelTimeout<|||>3<|||>4
+Servers\Local\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Local\SSHtunnelPort<|||>3<|||>3307
+Servers\Local\SSL_Active<|||>3<|||>0
+Servers\Local\SSL_Key<|||>1<|||>
+Servers\Local\SSL_Cert<|||>1<|||>
+Servers\Local\SSL_CA<|||>1<|||>
+Servers\Local\SessionCreated<|||>1<|||>2014-04-22 09:35:12
+Servers\Local\ServerVersionFull<|||>1<|||>5.5.36 - MySQL Community Server (GPL)
+Servers\Local\ConnectCount<|||>3<|||>801
+Servers\Local\ServerVersion<|||>3<|||>50536
+Servers\Local\LastConnect<|||>1<|||>2016-04-06 09:21:10
+Servers\Local\lastUsedDB<|||>1<|||>
+Servers\Local\RefusedCount<|||>3<|||>10
+Servers\Local\FavoriteObjects<|||>1<|||>q-datacard||tbauditorias<{{{><}}}>
+Servers\Local\c-dbcortes|tbventas_bancos\Sort<|||>1<|||>0_Fecha|
+Servers\Local\c-dbqq|tbventas\Sort<|||>1<|||>0_Fecha|
+Servers\Local\c-dbqq|tbventas_bancos\Sort<|||>1<|||>0_Fecha|
+Servers\Local\c-dbqq|tbventas_tarjetas\Sort<|||>1<|||>0_Fecha|
+Servers\Local\c-dbventureta|tbventas_bancos\Sort<|||>1<|||>0_Fecha|
+Servers\Local\c-dbventureta|tbventas_tarjetas\Sort<|||>1<|||>0_Fecha|
+Servers\Local\dbqualidad|tbpropuestamejora\Sort<|||>1<|||>1_lngViable|
+Servers\Local\q-dbhalcon|tbverificaciones\Sort<|||>1<|||>0_lngIdACP|
+Servers\Local\q-jdsu|tbevaluaciones\Sort<|||>1<|||>0_lngIdProveedor|0_datFecha|
+Servers\Local\q-repessa|tbperfilempleado\Sort<|||>1<|||>0_lngIdEmpleado|0_lngIdPerfil|
+Servers\Local\q-tecnitasa|tbformacion\Sort<|||>1<|||>0_lngId|
+Servers\Local\QueryHistory\CopyTable_Columns<|||>3<|||>1
+Servers\Local\QueryHistory\CopyTable_Keys<|||>3<|||>1
+Servers\Local\QueryHistory\CopyTable_Data<|||>3<|||>1
+Servers\Local\QueryHistory\CopyTable_WindowWidth<|||>3<|||>380
+Servers\Local\QueryHistory\CopyTable_WindowHeight<|||>3<|||>342
+Servers\Local\QueryHistory\3<|||>1<|||>2016-03-07 09:51:53|q-dbqualidad|0|SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>                    FROM tbusuarios U,tbperfiles P, tbperfilempleado PE<{{{><}}}>                    WHERE U.lngIdEmpleado=PE.lngIdEmpleado<{{{><}}}>                    AND PE.lngIdPerfil=P.lngId
+Servers\Local\QueryHistory\22<|||>1<|||>2016-03-07 10:27:02|q-dbqualidad|0|SELECT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>                     FROM tbperfiles P, tbusuarios U<{{{><}}}>                     WHERE P.lngIdEmpleado = U.lngIdEmpleado<{{{><}}}>                     AND P.lngStatus = 1
+Servers\Local\QueryHistory\50<|||>1<|||>2016-03-07 10:28:27|q-dbqualidad|0|SELECT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>                     FROM tbperfiles P, tbusuarios U<{{{><}}}>                     WHERE P.lngIdEmpleado = U.lngIdEmpleado<{{{><}}}>                     AND P.lngStatus = 1<{{{><}}}>                     AND U.strUsuario = 'morlacal'
+Servers\Local\QueryHistory\51<|||>1<|||>2016-03-07 10:30:41|q-dbqualidad|0|<{{{><}}}>                      SELECT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>                      FROM tbperfiles P, tbusuarios U<{{{><}}}>                      WHERE P.lngIdEmpleado = U.lngIdEmpleado<{{{><}}}>                      AND P.lngStatus = 1<{{{><}}}>                     AND P.lngEstado = '1'
+Servers\Local\QueryHistory\52<|||>1<|||>2016-03-07 10:42:44|q-dbqualidad|0|<{{{><}}}>                     SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha,P.lngEstado<{{{><}}}>                     FROM tbusuarios U,tbperfiles P, tbperfilempleado PE<{{{><}}}>                     WHERE U.lngIdEmpleado=PE.lngIdEmpleado<{{{><}}}>                     AND P.lngStatus=1<{{{><}}}>                     AND PE.lngIdPerfil=P.lngId<{{{><}}}>                    
+Servers\Local\QueryHistory\54<|||>1<|||>2016-03-08 13:33:11|c-dbqq|0|SELECT B.IdBanco,DATE_FORMAT(B.Fecha,'%d/%m/%Y') AS Fecha, B.Cantidad_distribuir, B.Distribuir, <{{{><}}}>B.Cantidad, B.Cuenta, B.Asiento AS AsientoBanco<{{{><}}}>FROM tbventas_bancos B<{{{><}}}>WHERE B.Borrado=1<{{{><}}}>AND UNIX_TIMESTAMP(B.Fecha) = '1454281200'<{{{><}}}>
+Servers\Local\QueryHistory\55<|||>1<|||>2016-03-08 13:34:19|c-dbqq|0|SELECT B.IdBanco,DATE_FORMAT(B.Fecha,'%d/%m/%Y') AS Fecha, B.Cantidad_distribuir, B.Distribuir, <{{{><}}}>B.Cantidad, B.Cuenta, B.Asiento AS AsientoBanco<{{{><}}}>FROM tbventas_bancos B<{{{><}}}>WHERE B.Borrado=1<{{{><}}}>AND UNIX_TIMESTAMP(B.Fecha) = '1451602800'<{{{><}}}>
+Servers\Local\QueryHistory\53<|||>1<|||>2016-03-08 13:34:45|c-dbqq|0|SELECT B.IdBanco,DATE_FORMAT(B.Fecha,'%d/%m/%Y') AS Fecha, B.Cantidad_distribuir, B.Distribuir, <{{{><}}}>B.Cantidad, B.Cuenta, B.Asiento AS AsientoBanco<{{{><}}}>FROM tbventas_bancos B<{{{><}}}>WHERE B.Borrado=1<{{{><}}}>AND B.Fecha = '2016-03-01'<{{{><}}}>
+Servers\Local\QueryHistory\56<|||>1<|||>2016-03-14 09:46:01|q-dbqualidad|0|SELECT R.lngId, R.datFechaReunion, R.datAnno, R.lngIdResponsable, R.urlDoc<{{{><}}}>FROM tbrevisiones R<{{{><}}}>
+Servers\Local\QueryHistory\2<|||>1<|||>2016-03-14 09:47:47|q-dbqualidad|0|SELECT R.lngId, R.datFechaReunion, R.datAnno, <{{{><}}}>(SELECT CONCAT(E.strNombre,' ',E.strApellidos) FROM tbempleados E WHERE E.lngIdEmpleado=R.lngIdResponsable) AS Responsable, R.urlDoc<{{{><}}}>FROM tbrevisiones R<{{{><}}}>
+Servers\Local\QueryHistory\4<|||>1<|||>2016-03-14 09:48:40|q-dbqualidad|0|SELECT R.lngId, DATE_FORMAT(R.datFechaReunion,'%d/%m/%Y') AS datFechaReunion, R.datAnno, <{{{><}}}>(SELECT CONCAT(E.strNombre,' ',E.strApellidos) FROM tbempleados E WHERE E.lngIdEmpleado=R.lngIdResponsable) AS Responsable, R.urlDoc<{{{><}}}>FROM tbrevisiones R<{{{><}}}>
+Servers\Local\QueryHistory\5<|||>1<|||>2016-03-14 09:53:52|q-dbqualidad|0|<{{{><}}}>                     SELECT R.lngId, DATE_FORMAT(R.datFechaReunion,'%d/%m/%Y') AS datFechaReunion, R.datAnno, <{{{><}}}>                     (SELECT CONCAT(E.strNombre,' ',E.strApellidos) FROM tbempleados E WHERE E.lngIdEmpleado=R.lngIdResponsable) AS Responsable, R.Doc<{{{><}}}>                     FROM tbrevisiones R<{{{><}}}>                    
+Servers\Local\QueryHistory\6<|||>1<|||>2016-03-14 11:23:55|q-dbqualidad|0|                SELECT P.lngId, P.strPropuestaMejora,DATE_FORMAT(P.datFechaAlta,'%d/%m/%Y') AS datFechaAlta, P.strServicio, P.strCliente, P.strContrato,P.lngAccion,P.strDocAplicable,P.lngViable,<{{{><}}}>        	P.lngAccion,P.lngIdEmpleado, P.strReqIncumplido, P.strDocAplicable, P.lngIdDepartamento, P.lngIdResponsableAfect, P.strCodigoOficina,P.strAccionPropuesta,P.strDescAccion,<{{{><}}}>                DATE_FORMAT(P.datFechaAceptadoResponsable,'%d/%m/%Y') AS datFechaAceptadoResponsable,DATE_FORMAT(P.datFechaConformeCalidad,'%d/%m/%Y') AS datFechaConformeCalidad,A.strAccionCorrPrev<{{{><}}}>                FROM tbpropmej P LEFT JOIN tbaccioncorrprev A ON (A.lngIdOrigen=P.lngId AND A.lngIdTipoOrigen=4) WHERE P.lngId=13<{{{><}}}>
+Servers\Local\QueryHistory\7<|||>1<|||>2016-03-16 13:03:17|q-logisat|16|<{{{><}}}>                    INSERT INTO tbequipos (lngId,strDescripcion,strCodigo,strMarca,strModelo,strNumSerie,<{{{><}}}>                                            lngIdProveedor,strProveedorAnt,datFechaServicio,txtCaracteristicas,lngIdDepartamento,lngIdResponsable,<{{{><}}}>                                            strSede,lngManual,txtUso,lngMan,lngIdProveedorMan,strPeriodicidadMan,datFechaIntervencionMan,txtOperaciones,<{{{><}}}>                                            lngCal,txtCriterio,strPeriodicidadCal,datFechaIntervencionCal,txtParametros,lngIdEmpleado,datFecha,lngEstado)<{{{><}}}>                    VALUES (37,'aaaaaa','aaaaa','aaaaa','aaaaa','aaaaaa',<{{{><}}}>                    6,'','2016-03-09 00:00:00','trh ty h dh dfghdgh dhdh ',<{{{><}}}>                    2,37,'dsfasfasdf','0','dsfg sdfg sdfg sdfg sdg df',1,636<{{{><}}}>                    ,'','-00-00 00:00:00','',<{{{><}}}>                    1,'','','-00-00 00:00:00',<{{{><}}}>                    '',2,now(),0)<{{{><}}}>                    
+Servers\Local\QueryHistory\13<|||>1<|||>2016-03-17 12:25:43|q-repessa|0|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Local\QueryHistory\14<|||>1<|||>2016-03-17 12:31:25|q-repessa|0|                    SELECT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Local\QueryHistory\8<|||>1<|||>2016-03-17 12:32:13|q-repessa|0|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    <{{{><}}}>
+Servers\Local\QueryHistory\15<|||>1<|||>2016-03-29 09:46:26|q-jdsu|47|SELECT P.lngId, P.lngCodigo, P.strProveedor, P.strPoblacion, P.lngEstado, <{{{><}}}>                    DATE_FORMAT(P.datFechaEvaluacion,'%d/%m/%Y') AS datFechaEvaluacion,<{{{><}}}>                    DATE_FORMAT(P.datFechaUltEval,'%d/%m/%Y') AS datFechaUltEval, P.lngIncidencias<{{{><}}}>                    FROM tbproveedores P, tbempleados E<{{{><}}}>                    WHERE P.lngIdEvaluador = E.lngIdEmpleado
+Servers\Local\QueryHistory\9<|||>1<|||>2016-03-29 09:49:24|q-jdsu|0|SELECT V.lngId, DATE_FORMAT(V.datFecha,'%d/%m/%Y') AS datFecha, V.lngTipo, <{{{><}}}>                    V.Comentario, CONCAT(E.strNombre,' ',E.strApellidos) AS Empleado<{{{><}}}>                    FROM tbevaluaciones V,tbempleados E<{{{><}}}>                    WHERE V.lngIdProveedor = 64<{{{><}}}>                    AND E.lngIdEmpleado=V.lngIdEmpleado
+Servers\Local\QueryHistory\10<|||>1<|||>2016-03-29 09:56:29|q-jdsu|15|SELECT P.lngId, P.lngCodigo, P.strProveedor, P.strPoblacion, P.lngEstado, <{{{><}}}>DATE_FORMAT(P.datFechaEvaluacion,'%d/%m/%Y') AS datFechaEvaluacion,<{{{><}}}>(SELECT DATE_FORMAT(MAX(V.datFecha),'%d/%m/%Y') FROM tbevaluaciones V WHERE E.lngIdEmpleado=V.lngIdEmpleado)  AS datFechaUltEval,<{{{><}}}>P.lngIncidencias<{{{><}}}>FROM tbproveedores P, tbempleados E<{{{><}}}>WHERE P.lngIdEvaluador = E.lngIdEmpleado<{{{><}}}>
+Servers\Local\QueryHistory\11<|||>1<|||>2016-03-29 10:00:04|q-jdsu|0|select * <{{{><}}}>from tbevaluaciones V<{{{><}}}>
+Servers\Local\QueryHistory\12<|||>1<|||>2016-03-29 10:01:34|q-jdsu|0|select * <{{{><}}}>from tbevaluaciones V<{{{><}}}>-- where MAX(V.datFecha)<{{{><}}}>order by V.lngIdProveedor
+Servers\Local\QueryHistory\17<|||>1<|||>2016-03-29 10:04:01|q-jdsu|0|select * <{{{><}}}>from tbevaluaciones V<{{{><}}}>-- where MAX(V.datFecha)<{{{><}}}>order by V.datFecha DESC limit 0,1
+Servers\Local\QueryHistory\18<|||>1<|||>2016-03-29 10:04:21|q-jdsu|16|select * <{{{><}}}>from tbevaluaciones V<{{{><}}}>-- where MAX(V.datFecha)<{{{><}}}>order by V.lngIdEmpleado, V.datFecha DESC limit 0,1
+Servers\Local\QueryHistory\19<|||>1<|||>2016-03-29 10:13:24|q-jdsu|0|SELECT DATE_FORMAT(V.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>FROM tbevaluaciones V<{{{><}}}>WHERE V.lngIdProveedor = 64<{{{><}}}>
+Servers\Local\QueryHistory\20<|||>1<|||>2016-03-29 10:13:40|q-jdsu|0|SELECT DATE_FORMAT(V.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>FROM tbevaluaciones V<{{{><}}}>WHERE V.lngIdProveedor = 64<{{{><}}}>ORDER BY V.datFecha DESC
+Servers\Local\QueryHistory\21<|||>1<|||>2016-03-29 10:13:46|q-jdsu|0|SELECT DATE_FORMAT(V.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>FROM tbevaluaciones V<{{{><}}}>WHERE V.lngIdProveedor = 64<{{{><}}}>ORDER BY V.datFecha DESC LIMIT 0,1
+Servers\Local\QueryHistory\24<|||>1<|||>2016-03-29 10:17:34|q-jdsu|0|SELECT P.lngId, P.lngCodigo, P.strProveedor, P.strPoblacion, P.lngEstado, <{{{><}}}>DATE_FORMAT(P.datFechaEvaluacion,'%d/%m/%Y') AS datFechaEvaluacion,<{{{><}}}>(SELECT DATE_FORMAT(V.datFecha,'%d/%m/%Y') FROM tbevaluaciones V WHERE E.lngIdEmpleado=V.lngIdEmpleado ORDER BY V.datFecha DESC LIMIT 0,1)  AS datFechaUltEval,<{{{><}}}>P.lngIncidencias<{{{><}}}>FROM tbproveedores P, tbempleados E<{{{><}}}>WHERE P.lngIdEvaluador = E.lngIdEmpleado<{{{><}}}>
+Servers\Local\QueryHistory\16<|||>1<|||>2016-03-29 10:26:38|q-jdsu|0|SELECT DATE_FORMAT(V.datFecha,'%d/%m/%Y') AS datFecha<{{{><}}}>FROM tbevaluaciones V<{{{><}}}>WHERE V.lngIdProveedor = 1<{{{><}}}>ORDER BY V.datFecha DESC LIMIT 0,1
+Servers\Local\QueryHistory\23<|||>1<|||>2016-03-31 09:32:25|q-tecnitasa|140|update tbrespuestas R<{{{><}}}>set R.txtNombre=(<{{{><}}}>    select CONCAT(C.strNombre,' ',C.strApellidos) AS Cliente<{{{><}}}>    from tbclientes C, tbencuestascontestadas E<{{{><}}}>    where C.lngIdCliente=E.lngIdCliente<{{{><}}}>    and E.lngNumRespuesta=R.lngIdRespuesta<{{{><}}}>)<{{{><}}}>where R.lngIdRespuesta in (<{{{><}}}>select lngNumRespuesta <{{{><}}}>from tbencuestascontestadas <{{{><}}}>where R.lngIdRespuesta=lngNumRespuesta<{{{><}}}>)<{{{><}}}>
+Servers\Local\QueryHistory\25<|||>1<|||>2016-04-04 13:10:02|c-dbqq|281|ALTER TABLE `tbmisfacturas`<{{{><}}}>	ADD COLUMN `esAbono` VARCHAR(50) NULL DEFAULT NULL AFTER `CC_Trans`;<{{{><}}}>
+Servers\Q-BCD\Host<|||>1<|||>qsq555.qualidad.info
+Servers\Q-BCD\WindowsAuth<|||>3<|||>0
+Servers\Q-BCD\User<|||>1<|||>qsq555
+Servers\Q-BCD\Password<|||>1<|||>704F6E5A5A7C3D3E613D8
+Servers\Q-BCD\LoginPrompt<|||>3<|||>0
+Servers\Q-BCD\Port<|||>1<|||>3306
+Servers\Q-BCD\NetType<|||>3<|||>0
+Servers\Q-BCD\Compressed<|||>3<|||>0
+Servers\Q-BCD\LocalTimeZone<|||>3<|||>0
+Servers\Q-BCD\Databases<|||>1<|||>
+Servers\Q-BCD\StartupScriptFilename<|||>1<|||>
+Servers\Q-BCD\SSHtunnelHost<|||>1<|||>
+Servers\Q-BCD\SSHtunnelHostPort<|||>3<|||>22
+Servers\Q-BCD\SSHtunnelUser<|||>1<|||>
+Servers\Q-BCD\SSHtunnelPassword<|||>1<|||>6
+Servers\Q-BCD\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-BCD\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-BCD\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-BCD\SSL_Active<|||>3<|||>0
+Servers\Q-BCD\SSL_Key<|||>1<|||>
+Servers\Q-BCD\SSL_Cert<|||>1<|||>
+Servers\Q-BCD\SSL_CA<|||>1<|||>
+Servers\Q-BCD\SessionCreated<|||>1<|||>2014-10-29 09:42:37
+Servers\Q-BCD\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-BCD\ConnectCount<|||>3<|||>49
+Servers\Q-BCD\ServerVersion<|||>3<|||>50173
+Servers\Q-BCD\LastConnect<|||>1<|||>2016-03-17 13:42:22
+Servers\Q-BCD\lastUsedDB<|||>1<|||>
+Servers\Q-BCD\QueryHistory\3<|||>1<|||>2016-03-07 11:35:08|qsq555|328|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-BCD\QueryHistory\1<|||>1<|||>2016-03-14 10:07:03|qsq555|265|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-BCD\QueryHistory\2<|||>1<|||>2016-03-17 12:50:20|qsq555|31|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>                    AND P.lngEstado=1<{{{><}}}>
+Servers\Q-BCD\QueryHistory\4<|||>1<|||>2016-03-17 13:42:28|qsq555|265|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-BCD2\Host<|||>1<|||>qss978.qualidad.info
+Servers\Q-BCD2\WindowsAuth<|||>3<|||>0
+Servers\Q-BCD2\User<|||>1<|||>qss978
+Servers\Q-BCD2\Password<|||>1<|||>4C717567353438322
+Servers\Q-BCD2\LoginPrompt<|||>3<|||>0
+Servers\Q-BCD2\Port<|||>1<|||>3306
+Servers\Q-BCD2\NetType<|||>3<|||>0
+Servers\Q-BCD2\Compressed<|||>3<|||>0
+Servers\Q-BCD2\LocalTimeZone<|||>3<|||>0
+Servers\Q-BCD2\Databases<|||>1<|||>
+Servers\Q-BCD2\StartupScriptFilename<|||>1<|||>
+Servers\Q-BCD2\SSHtunnelHost<|||>1<|||>
+Servers\Q-BCD2\SSHtunnelHostPort<|||>3<|||>22
+Servers\Q-BCD2\SSHtunnelUser<|||>1<|||>
+Servers\Q-BCD2\SSHtunnelPassword<|||>1<|||>8
+Servers\Q-BCD2\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-BCD2\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-BCD2\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-BCD2\SSL_Active<|||>3<|||>0
+Servers\Q-BCD2\SSL_Key<|||>1<|||>
+Servers\Q-BCD2\SSL_Cert<|||>1<|||>
+Servers\Q-BCD2\SSL_CA<|||>1<|||>
+Servers\Q-BCD2\SessionCreated<|||>1<|||>2014-11-17 09:17:05
+Servers\Q-BCD2\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-BCD2\ConnectCount<|||>3<|||>22
+Servers\Q-BCD2\ServerVersion<|||>3<|||>50173
+Servers\Q-BCD2\LastConnect<|||>1<|||>2016-03-17 13:42:56
+Servers\Q-BCD2\lastUsedDB<|||>1<|||>
+Servers\Q-BCD2\QueryHistory\8<|||>1<|||>2016-03-07 11:36:10|qss978|172|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-BCD2\QueryHistory\1<|||>1<|||>2016-03-14 10:07:42|qss978|328|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-BCD2\QueryHistory\2<|||>1<|||>2016-03-17 13:43:01|qss978|234|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-conexion14\SessionCreated<|||>1<|||>2015-09-10 11:30:41
+Servers\Q-conexion14\Host<|||>1<|||>qua680.qualidad.info
+Servers\Q-conexion14\WindowsAuth<|||>3<|||>0
+Servers\Q-conexion14\User<|||>1<|||>qua680
+Servers\Q-conexion14\Password<|||>1<|||>3D3A6E6F5C6F393C3D8
+Servers\Q-conexion14\LoginPrompt<|||>3<|||>0
+Servers\Q-conexion14\Port<|||>1<|||>3306
+Servers\Q-conexion14\NetType<|||>3<|||>0
+Servers\Q-conexion14\Compressed<|||>3<|||>0
+Servers\Q-conexion14\LocalTimeZone<|||>3<|||>0
+Servers\Q-conexion14\QueryTimeout<|||>3<|||>0
+Servers\Q-conexion14\FullTableStatus<|||>3<|||>1
+Servers\Q-conexion14\Databases<|||>1<|||>
+Servers\Q-conexion14\Comment<|||>1<|||>
+Servers\Q-conexion14\StartupScriptFilename<|||>1<|||>
+Servers\Q-conexion14\SSHtunnelHost<|||>1<|||>
+Servers\Q-conexion14\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-conexion14\SSHtunnelUser<|||>1<|||>
+Servers\Q-conexion14\SSHtunnelPassword<|||>1<|||>9
+Servers\Q-conexion14\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-conexion14\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-conexion14\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-conexion14\SSL_Active<|||>3<|||>0
+Servers\Q-conexion14\SSL_Key<|||>1<|||>
+Servers\Q-conexion14\SSL_Cert<|||>1<|||>
+Servers\Q-conexion14\SSL_CA<|||>1<|||>
+Servers\Q-conexion14\SSL_Cipher<|||>1<|||>
+Servers\Q-conexion14\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-conexion14\ConnectCount<|||>3<|||>8
+Servers\Q-conexion14\ServerVersion<|||>3<|||>50173
+Servers\Q-conexion14\LastConnect<|||>1<|||>2016-03-17 13:43:17
+Servers\Q-conexion14\lastUsedDB<|||>1<|||>
+Servers\Q-conexion14\QueryHistory\3<|||>1<|||>2016-03-07 11:36:42|qua680|328|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-conexion14\QueryHistory\1<|||>1<|||>2016-03-14 10:09:03|qua680|297|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-conexion14\QueryHistory\2<|||>1<|||>2016-03-17 13:43:36|qua680|218|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-conexion15\SessionCreated<|||>1<|||>2015-09-10 12:04:22
+Servers\Q-conexion15\Host<|||>1<|||>qua690.qualidad.info
+Servers\Q-conexion15\WindowsAuth<|||>3<|||>0
+Servers\Q-conexion15\User<|||>1<|||>qua690
+Servers\Q-conexion15\Password<|||>1<|||>34386975363968677557573
+Servers\Q-conexion15\LoginPrompt<|||>3<|||>0
+Servers\Q-conexion15\Port<|||>1<|||>3306
+Servers\Q-conexion15\NetType<|||>3<|||>0
+Servers\Q-conexion15\Compressed<|||>3<|||>0
+Servers\Q-conexion15\LocalTimeZone<|||>3<|||>0
+Servers\Q-conexion15\QueryTimeout<|||>3<|||>0
+Servers\Q-conexion15\FullTableStatus<|||>3<|||>1
+Servers\Q-conexion15\Databases<|||>1<|||>
+Servers\Q-conexion15\Comment<|||>1<|||>
+Servers\Q-conexion15\StartupScriptFilename<|||>1<|||>
+Servers\Q-conexion15\SSHtunnelHost<|||>1<|||>
+Servers\Q-conexion15\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-conexion15\SSHtunnelUser<|||>1<|||>
+Servers\Q-conexion15\SSHtunnelPassword<|||>1<|||>7
+Servers\Q-conexion15\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-conexion15\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-conexion15\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-conexion15\SSL_Active<|||>3<|||>0
+Servers\Q-conexion15\SSL_Key<|||>1<|||>
+Servers\Q-conexion15\SSL_Cert<|||>1<|||>
+Servers\Q-conexion15\SSL_CA<|||>1<|||>
+Servers\Q-conexion15\SSL_Cipher<|||>1<|||>
+Servers\Q-conexion15\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-conexion15\ConnectCount<|||>3<|||>10
+Servers\Q-conexion15\ServerVersion<|||>3<|||>50173
+Servers\Q-conexion15\LastConnect<|||>1<|||>2016-03-17 13:43:55
+Servers\Q-conexion15\lastUsedDB<|||>1<|||>
+Servers\Q-conexion15\QueryHistory\3<|||>1<|||>2016-03-07 11:36:56|qua690|297|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-conexion15\QueryHistory\1<|||>1<|||>2016-03-14 10:09:35|qua690|156|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-conexion15\QueryHistory\2<|||>1<|||>2016-03-17 13:44:02|qua690|125|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-conexion16\SessionCreated<|||>1<|||>2015-09-10 12:06:56
+Servers\Q-conexion16\Host<|||>1<|||>qua691.qualidad.info
+Servers\Q-conexion16\WindowsAuth<|||>3<|||>0
+Servers\Q-conexion16\User<|||>1<|||>qua691
+Servers\Q-conexion16\Password<|||>1<|||>39396C6B785A5A3A3B59796
+Servers\Q-conexion16\LoginPrompt<|||>3<|||>0
+Servers\Q-conexion16\Port<|||>1<|||>3306
+Servers\Q-conexion16\NetType<|||>3<|||>0
+Servers\Q-conexion16\Compressed<|||>3<|||>0
+Servers\Q-conexion16\LocalTimeZone<|||>3<|||>0
+Servers\Q-conexion16\QueryTimeout<|||>3<|||>0
+Servers\Q-conexion16\FullTableStatus<|||>3<|||>1
+Servers\Q-conexion16\Databases<|||>1<|||>
+Servers\Q-conexion16\Comment<|||>1<|||>
+Servers\Q-conexion16\StartupScriptFilename<|||>1<|||>
+Servers\Q-conexion16\SSHtunnelHost<|||>1<|||>
+Servers\Q-conexion16\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-conexion16\SSHtunnelUser<|||>1<|||>
+Servers\Q-conexion16\SSHtunnelPassword<|||>1<|||>1
+Servers\Q-conexion16\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-conexion16\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-conexion16\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-conexion16\SSL_Active<|||>3<|||>0
+Servers\Q-conexion16\SSL_Key<|||>1<|||>
+Servers\Q-conexion16\SSL_Cert<|||>1<|||>
+Servers\Q-conexion16\SSL_CA<|||>1<|||>
+Servers\Q-conexion16\SSL_Cipher<|||>1<|||>
+Servers\Q-conexion16\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-conexion16\ConnectCount<|||>3<|||>10
+Servers\Q-conexion16\ServerVersion<|||>3<|||>50173
+Servers\Q-conexion16\LastConnect<|||>1<|||>2016-03-17 13:44:16
+Servers\Q-conexion16\lastUsedDB<|||>1<|||>
+Servers\Q-conexion16\QueryHistory\3<|||>1<|||>2016-03-07 11:38:08|qua691|281|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-conexion16\QueryHistory\1<|||>1<|||>2016-03-14 10:09:59|qua691|219|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-conexion16\QueryHistory\2<|||>1<|||>2016-03-17 13:44:29|qua691|187|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbDataCard\SessionCreated<|||>1<|||>2015-07-16 09:08:58
+Servers\Q-dbDataCard\Host<|||>1<|||>qtv875.qualidad.info
+Servers\Q-dbDataCard\WindowsAuth<|||>3<|||>0
+Servers\Q-dbDataCard\User<|||>1<|||>qtv875
+Servers\Q-dbDataCard\Password<|||>1<|||>6A35384F6E4D6D6B3A37383
+Servers\Q-dbDataCard\LoginPrompt<|||>3<|||>0
+Servers\Q-dbDataCard\Port<|||>1<|||>3306
+Servers\Q-dbDataCard\NetType<|||>3<|||>0
+Servers\Q-dbDataCard\Compressed<|||>3<|||>0
+Servers\Q-dbDataCard\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbDataCard\QueryTimeout<|||>3<|||>0
+Servers\Q-dbDataCard\FullTableStatus<|||>3<|||>1
+Servers\Q-dbDataCard\Databases<|||>1<|||>
+Servers\Q-dbDataCard\Comment<|||>1<|||>
+Servers\Q-dbDataCard\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbDataCard\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbDataCard\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbDataCard\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbDataCard\SSHtunnelPassword<|||>1<|||>7
+Servers\Q-dbDataCard\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbDataCard\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbDataCard\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbDataCard\SSL_Active<|||>3<|||>0
+Servers\Q-dbDataCard\SSL_Key<|||>1<|||>
+Servers\Q-dbDataCard\SSL_Cert<|||>1<|||>
+Servers\Q-dbDataCard\SSL_CA<|||>1<|||>
+Servers\Q-dbDataCard\RefusedCount<|||>3<|||>4
+Servers\Q-dbDataCard\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbDataCard\ConnectCount<|||>3<|||>24
+Servers\Q-dbDataCard\ServerVersion<|||>3<|||>50173
+Servers\Q-dbDataCard\LastConnect<|||>1<|||>2016-03-17 13:44:43
+Servers\Q-dbDataCard\lastUsedDB<|||>1<|||>
+Servers\Q-dbDataCard\FavoriteObjects<|||>1<|||>
+Servers\Q-dbDataCard\QueryHistory\7<|||>1<|||>2016-03-07 11:38:18|qtv875|328|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbDataCard\QueryHistory\1<|||>1<|||>2016-03-14 10:10:38|qtv875|312|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbDataCard\QueryHistory\2<|||>1<|||>2016-03-17 12:49:07|qtv875|16|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>                    AND P.lngEstado=1<{{{><}}}>
+Servers\Q-dbDataCard\QueryHistory\3<|||>1<|||>2016-03-17 13:45:37|qtv875|546|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbDivecreus\SessionCreated<|||>1<|||>2016-02-09 11:56:01
+Servers\Q-dbDivecreus\Host<|||>1<|||>qve147.qualidad.info
+Servers\Q-dbDivecreus\WindowsAuth<|||>3<|||>0
+Servers\Q-dbDivecreus\User<|||>1<|||>qve147
+Servers\Q-dbDivecreus\Password<|||>1<|||>705172706E3D3E6D4E4E3D6
+Servers\Q-dbDivecreus\LoginPrompt<|||>3<|||>0
+Servers\Q-dbDivecreus\Port<|||>1<|||>3306
+Servers\Q-dbDivecreus\NetType<|||>3<|||>0
+Servers\Q-dbDivecreus\Compressed<|||>3<|||>0
+Servers\Q-dbDivecreus\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbDivecreus\QueryTimeout<|||>3<|||>0
+Servers\Q-dbDivecreus\FullTableStatus<|||>3<|||>1
+Servers\Q-dbDivecreus\Databases<|||>1<|||>
+Servers\Q-dbDivecreus\Comment<|||>1<|||>
+Servers\Q-dbDivecreus\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbDivecreus\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbDivecreus\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbDivecreus\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbDivecreus\SSHtunnelPassword<|||>1<|||>3
+Servers\Q-dbDivecreus\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbDivecreus\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbDivecreus\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbDivecreus\SSL_Active<|||>3<|||>0
+Servers\Q-dbDivecreus\SSL_Key<|||>1<|||>
+Servers\Q-dbDivecreus\SSL_Cert<|||>1<|||>
+Servers\Q-dbDivecreus\SSL_CA<|||>1<|||>
+Servers\Q-dbDivecreus\SSL_Cipher<|||>1<|||>
+Servers\Q-dbDivecreus\ServerVersionFull<|||>1<|||>5.6.24 - MySQL Community Server (GPL)
+Servers\Q-dbDivecreus\ConnectCount<|||>3<|||>10
+Servers\Q-dbDivecreus\ServerVersion<|||>3<|||>50624
+Servers\Q-dbDivecreus\LastConnect<|||>1<|||>2016-03-17 13:45:57
+Servers\Q-dbDivecreus\lastUsedDB<|||>1<|||>
+Servers\Q-dbDivecreus\QueryHistory\2<|||>1<|||>2016-03-07 11:38:34|qve147|78|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbDivecreus\QueryHistory\3<|||>1<|||>2016-03-14 10:11:13|qve147|250|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbDivecreus\QueryHistory\1<|||>1<|||>2016-03-17 12:53:45|qve147|15|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>                    AND P.lngEstado=1<{{{><}}}>
+Servers\Q-dbDivecreus\QueryHistory\4<|||>1<|||>2016-03-17 12:53:53|qve147|328|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>                    -- AND P.lngEstado=1<{{{><}}}>
+Servers\Q-dbDivecreus\QueryHistory\5<|||>1<|||>2016-03-17 13:46:14|qve147|531|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbEmpresa\Host<|||>1<|||>qrv546.qualidad.info
+Servers\Q-dbEmpresa\WindowsAuth<|||>3<|||>0
+Servers\Q-dbEmpresa\User<|||>1<|||>qrv546
+Servers\Q-dbEmpresa\Password<|||>1<|||>757A3736457E3446664
+Servers\Q-dbEmpresa\LoginPrompt<|||>3<|||>0
+Servers\Q-dbEmpresa\Port<|||>1<|||>3306
+Servers\Q-dbEmpresa\NetType<|||>3<|||>0
+Servers\Q-dbEmpresa\Compressed<|||>3<|||>0
+Servers\Q-dbEmpresa\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbEmpresa\Databases<|||>1<|||>
+Servers\Q-dbEmpresa\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbEmpresa\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbEmpresa\SSHtunnelHostPort<|||>3<|||>22
+Servers\Q-dbEmpresa\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbEmpresa\SSHtunnelPassword<|||>1<|||>4
+Servers\Q-dbEmpresa\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbEmpresa\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbEmpresa\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbEmpresa\SSL_Active<|||>3<|||>0
+Servers\Q-dbEmpresa\SSL_Key<|||>1<|||>
+Servers\Q-dbEmpresa\SSL_Cert<|||>1<|||>
+Servers\Q-dbEmpresa\SSL_CA<|||>1<|||>
+Servers\Q-dbEmpresa\SessionCreated<|||>1<|||>2014-05-16 11:12:02
+Servers\Q-dbEmpresa\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbEmpresa\ConnectCount<|||>3<|||>78
+Servers\Q-dbEmpresa\ServerVersion<|||>3<|||>50173
+Servers\Q-dbEmpresa\LastConnect<|||>1<|||>2016-03-31 08:57:23
+Servers\Q-dbEmpresa\lastUsedDB<|||>1<|||>
+Servers\Q-dbEmpresa\QueryHistory\1<|||>1<|||>2014-10-27 13:15:00|qrv546|16|SELECT * FROM tbempresas WHERE strNombre="pruebas"
+Servers\Q-dbEmpresa\QueryHistory\2<|||>1<|||>2014-10-29 09:35:01|qrv546|31|update tbempresas E<{{{><}}}>set E.fechaVencimiento='2014-12-31 00:00:00'<{{{><}}}>
+Servers\Q-dbEmpresa\QueryHistory\3<|||>1<|||>2014-10-29 09:35:12|qrv546|16|update tbempresas E<{{{><}}}>set E.fechaVencimiento='2015-12-31 00:00:00'<{{{><}}}>
+Servers\Q-dbEmpresa\QueryHistory\4<|||>1<|||>2014-10-29 11:02:50|qrv546|16|SELECT * FROM tbempresaPHP WHERE lngId="1"
+Servers\Q-dbEmpresa\QueryHistory\5<|||>1<|||>2014-10-29 11:03:06|qrv546|15|SELECT * FROM tbempresaPHP WHERE lngId=1
+Servers\Q-dbHalcon\SessionCreated<|||>1<|||>2015-06-09 12:17:47
+Servers\Q-dbHalcon\Host<|||>1<|||>qtt888.qualidad.info
+Servers\Q-dbHalcon\WindowsAuth<|||>3<|||>0
+Servers\Q-dbHalcon\User<|||>1<|||>qtt888
+Servers\Q-dbHalcon\Password<|||>1<|||>68617A3B794B7A6C3A3B7B6E7
+Servers\Q-dbHalcon\LoginPrompt<|||>3<|||>0
+Servers\Q-dbHalcon\Port<|||>1<|||>3306
+Servers\Q-dbHalcon\NetType<|||>3<|||>0
+Servers\Q-dbHalcon\Compressed<|||>3<|||>0
+Servers\Q-dbHalcon\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbHalcon\QueryTimeout<|||>3<|||>0
+Servers\Q-dbHalcon\FullTableStatus<|||>3<|||>1
+Servers\Q-dbHalcon\Databases<|||>1<|||>
+Servers\Q-dbHalcon\Comment<|||>1<|||>
+Servers\Q-dbHalcon\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbHalcon\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbHalcon\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbHalcon\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbHalcon\SSHtunnelPassword<|||>1<|||>6
+Servers\Q-dbHalcon\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbHalcon\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbHalcon\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbHalcon\SSL_Active<|||>3<|||>0
+Servers\Q-dbHalcon\SSL_Key<|||>1<|||>
+Servers\Q-dbHalcon\SSL_Cert<|||>1<|||>
+Servers\Q-dbHalcon\SSL_CA<|||>1<|||>
+Servers\Q-dbHalcon\RefusedCount<|||>3<|||>8
+Servers\Q-dbHalcon\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbHalcon\ConnectCount<|||>3<|||>266
+Servers\Q-dbHalcon\ServerVersion<|||>3<|||>50173
+Servers\Q-dbHalcon\LastConnect<|||>1<|||>2016-04-04 09:35:28
+Servers\Q-dbHalcon\lastUsedDB<|||>1<|||>
+Servers\Q-dbHalcon\FavoriteObjects<|||>1<|||>
+Servers\Q-dbHalcon\QueryHistory\13<|||>1<|||>2016-02-18 12:32:54|qtt888|15|select * from tbperfilempleado E where E.lngIdPerfil=14
+Servers\Q-dbHalcon\QueryHistory\14<|||>1<|||>2016-02-18 12:33:03|qtt888|32|select * from tbperfilempleado E where E.lngIdPerfil=45
+Servers\Q-dbHalcon\QueryHistory\16<|||>1<|||>2016-02-18 12:33:12|qtt888|16|select * from tbperfilempleado E where E.lngIdPerfil=65
+Servers\Q-dbHalcon\QueryHistory\17<|||>1<|||>2016-02-18 12:36:04|qtt888|32|update tbperfilempleado E<{{{><}}}>set E.lngIdPerfil=75<{{{><}}}>where E.lngIdPerfil=14<{{{><}}}>
+Servers\Q-dbHalcon\QueryHistory\18<|||>1<|||>2016-02-18 12:36:08|qtt888|31|update tbperfilempleado E<{{{><}}}>set E.lngIdPerfil=75<{{{><}}}>where E.lngIdPerfil=45<{{{><}}}>
+Servers\Q-dbHalcon\QueryHistory\19<|||>1<|||>2016-02-18 12:36:12|qtt888|109|update tbperfilempleado E<{{{><}}}>set E.lngIdPerfil=75<{{{><}}}>where E.lngIdPerfil=65<{{{><}}}>
+Servers\Q-dbHalcon\QueryHistory\20<|||>1<|||>2016-02-18 12:36:17|qtt888|16|select * from tbperfilempleado E where E.lngIdPerfil=75
+Servers\Q-dbHalcon\QueryHistory\22<|||>1<|||>2016-02-18 12:36:49|qtt888|31|select * from tbperfilempleado E where E.lngIdPerfil=71
+Servers\Q-dbHalcon\QueryHistory\23<|||>1<|||>2016-02-18 12:37:07|qtt888|15|select * from tbperfilempleado E where E.lngIdPerfil=5
+Servers\Q-dbHalcon\QueryHistory\12<|||>1<|||>2016-02-18 12:37:21|qtt888|15|select * from tbperfilempleado E where E.lngIdPerfil=42
+Servers\Q-dbHalcon\QueryHistory\21<|||>1<|||>2016-02-18 12:37:31|qtt888|15|select * from tbperfilempleado E where E.lngIdPerfil=74
+Servers\Q-dbHalcon\QueryHistory\24<|||>1<|||>2016-02-18 12:39:14|qtt888|15|select * from tbusuarios U where U.strUsuario like 'vamn%'
+Servers\Q-dbHalcon\QueryHistory\25<|||>1<|||>2016-02-18 12:39:21|qtt888|16|select * from tbusuarios U where U.strUsuario like '%vamn%'
+Servers\Q-dbHalcon\QueryHistory\26<|||>1<|||>2016-02-18 12:39:33|qtt888|16|select * from tbusuarios U where U.strUsuario like '%mn%'
+Servers\Q-dbHalcon\QueryHistory\27<|||>1<|||>2016-02-18 12:40:21|qtt888|31|select * from tbempleados E where E.strNombre like '%vanesa%'
+Servers\Q-dbHalcon\QueryHistory\28<|||>1<|||>2016-02-18 12:40:26|qtt888|31|select * from tbempleados E where E.strNombre like '%anes%'
+Servers\Q-dbHalcon\QueryHistory\29<|||>1<|||>2016-03-07 11:39:03|qtt888|265|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbHalcon\QueryHistory\1<|||>1<|||>2016-03-14 10:11:43|qtt888|312|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbHalcon\QueryHistory\2<|||>1<|||>2016-03-17 12:47:29|qtt888|32|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>                    AND P.lngEstado=1<{{{><}}}>
+Servers\Q-dbHalcon\QueryHistory\3<|||>1<|||>2016-03-17 13:46:33|qtt888|327|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbIngenico\SessionCreated<|||>1<|||>2015-07-06 09:34:33
+Servers\Q-dbIngenico\Host<|||>1<|||>qtu546.qualidad.info
+Servers\Q-dbIngenico\WindowsAuth<|||>3<|||>0
+Servers\Q-dbIngenico\User<|||>1<|||>qtu546
+Servers\Q-dbIngenico\Password<|||>1<|||>61816137393768787E6C7
+Servers\Q-dbIngenico\LoginPrompt<|||>3<|||>0
+Servers\Q-dbIngenico\Port<|||>1<|||>3306
+Servers\Q-dbIngenico\NetType<|||>3<|||>0
+Servers\Q-dbIngenico\Compressed<|||>3<|||>0
+Servers\Q-dbIngenico\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbIngenico\QueryTimeout<|||>3<|||>0
+Servers\Q-dbIngenico\FullTableStatus<|||>3<|||>1
+Servers\Q-dbIngenico\Databases<|||>1<|||>
+Servers\Q-dbIngenico\Comment<|||>1<|||>
+Servers\Q-dbIngenico\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbIngenico\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbIngenico\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbIngenico\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbIngenico\SSHtunnelPassword<|||>1<|||>4
+Servers\Q-dbIngenico\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbIngenico\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbIngenico\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbIngenico\SSL_Active<|||>3<|||>0
+Servers\Q-dbIngenico\SSL_Key<|||>1<|||>
+Servers\Q-dbIngenico\SSL_Cert<|||>1<|||>
+Servers\Q-dbIngenico\SSL_CA<|||>1<|||>
+Servers\Q-dbIngenico\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbIngenico\ConnectCount<|||>3<|||>49
+Servers\Q-dbIngenico\ServerVersion<|||>3<|||>50173
+Servers\Q-dbIngenico\LastConnect<|||>1<|||>2016-04-04 09:36:53
+Servers\Q-dbIngenico\lastUsedDB<|||>1<|||>
+Servers\Q-dbIngenico\RefusedCount<|||>3<|||>4
+Servers\Q-dbIngenico\FavoriteObjects<|||>1<|||>
+Servers\Q-dbIngenico\QueryHistory\7<|||>1<|||>2016-03-07 11:40:31|qtu546|203|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbIngenico\QueryHistory\1<|||>1<|||>2016-03-14 10:12:14|qtu546|437|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbIngenico\QueryHistory\2<|||>1<|||>2016-03-17 12:40:50|qtu546|15|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Q-dbIngenico\QueryHistory\3<|||>1<|||>2016-03-17 13:47:11|qtu546|219|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbJDSU\SessionCreated<|||>1<|||>2015-07-15 12:00:19
+Servers\Q-dbJDSU\Host<|||>1<|||>qtv775.qualidad.info
+Servers\Q-dbJDSU\WindowsAuth<|||>3<|||>0
+Servers\Q-dbJDSU\User<|||>1<|||>qtv775
+Servers\Q-dbJDSU\Password<|||>1<|||>3B3871706E7B7F3D364C6
+Servers\Q-dbJDSU\LoginPrompt<|||>3<|||>0
+Servers\Q-dbJDSU\Port<|||>1<|||>3306
+Servers\Q-dbJDSU\NetType<|||>3<|||>0
+Servers\Q-dbJDSU\Compressed<|||>3<|||>0
+Servers\Q-dbJDSU\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbJDSU\QueryTimeout<|||>3<|||>0
+Servers\Q-dbJDSU\FullTableStatus<|||>3<|||>1
+Servers\Q-dbJDSU\Databases<|||>1<|||>
+Servers\Q-dbJDSU\Comment<|||>1<|||>
+Servers\Q-dbJDSU\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbJDSU\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbJDSU\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbJDSU\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbJDSU\SSHtunnelPassword<|||>1<|||>9
+Servers\Q-dbJDSU\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbJDSU\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbJDSU\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbJDSU\SSL_Active<|||>3<|||>0
+Servers\Q-dbJDSU\SSL_Key<|||>1<|||>
+Servers\Q-dbJDSU\SSL_Cert<|||>1<|||>
+Servers\Q-dbJDSU\SSL_CA<|||>1<|||>
+Servers\Q-dbJDSU\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbJDSU\ConnectCount<|||>3<|||>28
+Servers\Q-dbJDSU\ServerVersion<|||>3<|||>50173
+Servers\Q-dbJDSU\LastConnect<|||>1<|||>2016-04-04 09:37:20
+Servers\Q-dbJDSU\lastUsedDB<|||>1<|||>
+Servers\Q-dbJDSU\FavoriteObjects<|||>1<|||>
+Servers\Q-dbJDSU\QueryHistory\7<|||>1<|||>2016-03-07 11:40:40|qtv775|281|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbJDSU\QueryHistory\1<|||>1<|||>2016-03-14 10:12:46|qtv775|234|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbJDSU\QueryHistory\2<|||>1<|||>2016-03-17 12:44:35|qtv775|16|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Q-dbJDSU\QueryHistory\3<|||>1<|||>2016-03-17 12:45:03|qtv775|31|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>                    AND P.lngEstado=1<{{{><}}}>
+Servers\Q-dbJDSU\QueryHistory\4<|||>1<|||>2016-03-17 13:47:28|qtv775|203|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbLogisat\SessionCreated<|||>1<|||>2015-07-14 11:22:59
+Servers\Q-dbLogisat\Host<|||>1<|||>qtv670.qualidad.info
+Servers\Q-dbLogisat\WindowsAuth<|||>3<|||>0
+Servers\Q-dbLogisat\User<|||>1<|||>qtv670
+Servers\Q-dbLogisat\Password<|||>1<|||>69493F3C3D70725373778
+Servers\Q-dbLogisat\LoginPrompt<|||>3<|||>0
+Servers\Q-dbLogisat\Port<|||>1<|||>3306
+Servers\Q-dbLogisat\NetType<|||>3<|||>0
+Servers\Q-dbLogisat\Compressed<|||>3<|||>0
+Servers\Q-dbLogisat\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbLogisat\QueryTimeout<|||>3<|||>0
+Servers\Q-dbLogisat\FullTableStatus<|||>3<|||>1
+Servers\Q-dbLogisat\Databases<|||>1<|||>
+Servers\Q-dbLogisat\Comment<|||>1<|||>
+Servers\Q-dbLogisat\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbLogisat\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbLogisat\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbLogisat\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbLogisat\SSHtunnelPassword<|||>1<|||>9
+Servers\Q-dbLogisat\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbLogisat\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbLogisat\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbLogisat\SSL_Active<|||>3<|||>0
+Servers\Q-dbLogisat\SSL_Key<|||>1<|||>
+Servers\Q-dbLogisat\SSL_Cert<|||>1<|||>
+Servers\Q-dbLogisat\SSL_CA<|||>1<|||>
+Servers\Q-dbLogisat\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbLogisat\ConnectCount<|||>3<|||>80
+Servers\Q-dbLogisat\ServerVersion<|||>3<|||>50173
+Servers\Q-dbLogisat\LastConnect<|||>1<|||>2016-04-04 09:38:06
+Servers\Q-dbLogisat\lastUsedDB<|||>1<|||>
+Servers\Q-dbLogisat\FavoriteObjects<|||>1<|||>
+Servers\Q-dbLogisat\qtv670|tbperfilempleado\Sort<|||>1<|||>0_lngIdPerfil|
+Servers\Q-dbLogisat\QueryHistory\7<|||>1<|||>2016-03-07 11:40:48|qtv670|187|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbLogisat\QueryHistory\1<|||>1<|||>2016-03-14 10:13:10|qtv670|343|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbLogisat\QueryHistory\3<|||>1<|||>2016-03-17 12:14:40|qtv670|15|                    SELECT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>AND U.strUsuario = 'noelia'
+Servers\Q-dbLogisat\QueryHistory\4<|||>1<|||>2016-03-17 12:36:43|qtv670|16|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Q-dbLogisat\QueryHistory\5<|||>1<|||>2016-03-17 12:36:46|qtv670|16|                    SELECT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Q-dbLogisat\QueryHistory\2<|||>1<|||>2016-03-17 13:47:47|qtv670|187|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbQualidad\Host<|||>1<|||>qpo213.qualidad.info
+Servers\Q-dbQualidad\WindowsAuth<|||>3<|||>0
+Servers\Q-dbQualidad\User<|||>1<|||>qpo213
+Servers\Q-dbQualidad\Password<|||>1<|||>4F637077676E373237352
+Servers\Q-dbQualidad\LoginPrompt<|||>3<|||>0
+Servers\Q-dbQualidad\Port<|||>1<|||>3306
+Servers\Q-dbQualidad\NetType<|||>3<|||>0
+Servers\Q-dbQualidad\Compressed<|||>3<|||>0
+Servers\Q-dbQualidad\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbQualidad\Databases<|||>1<|||>
+Servers\Q-dbQualidad\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbQualidad\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbQualidad\SSHtunnelHostPort<|||>3<|||>22
+Servers\Q-dbQualidad\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbQualidad\SSHtunnelPassword<|||>1<|||>9
+Servers\Q-dbQualidad\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbQualidad\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbQualidad\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbQualidad\SSL_Active<|||>3<|||>0
+Servers\Q-dbQualidad\SSL_Key<|||>1<|||>
+Servers\Q-dbQualidad\SSL_Cert<|||>1<|||>
+Servers\Q-dbQualidad\SSL_CA<|||>1<|||>
+Servers\Q-dbQualidad\SessionCreated<|||>1<|||>2014-05-16 11:13:36
+Servers\Q-dbQualidad\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbQualidad\ConnectCount<|||>3<|||>110
+Servers\Q-dbQualidad\ServerVersion<|||>3<|||>50173
+Servers\Q-dbQualidad\LastConnect<|||>1<|||>2016-04-01 09:22:39
+Servers\Q-dbQualidad\lastUsedDB<|||>1<|||>
+Servers\Q-dbQualidad\QueryHistory\6<|||>1<|||>2016-03-07 11:40:57|qpo213|452|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbQualidad\QueryHistory\1<|||>1<|||>2016-03-14 10:13:39|qpo213|328|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbQualidad\QueryHistory\2<|||>1<|||>2016-03-15 11:54:49|qpo213|15|select *<{{{><}}}>from tbclientes C<{{{><}}}>where C.lngCategoria=10
+Servers\Q-dbQualidad\QueryHistory\3<|||>1<|||>2016-03-17 13:05:04|qpo213|531|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbRepessa\SessionCreated<|||>1<|||>2015-07-06 09:35:46
+Servers\Q-dbRepessa\Host<|||>1<|||>qtu580.qualidad.info
+Servers\Q-dbRepessa\WindowsAuth<|||>3<|||>0
+Servers\Q-dbRepessa\User<|||>1<|||>qtu580
+Servers\Q-dbRepessa\Password<|||>1<|||>64745A33356E6D4B4E373
+Servers\Q-dbRepessa\LoginPrompt<|||>3<|||>0
+Servers\Q-dbRepessa\Port<|||>1<|||>3306
+Servers\Q-dbRepessa\NetType<|||>3<|||>0
+Servers\Q-dbRepessa\Compressed<|||>3<|||>0
+Servers\Q-dbRepessa\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbRepessa\QueryTimeout<|||>3<|||>0
+Servers\Q-dbRepessa\FullTableStatus<|||>3<|||>1
+Servers\Q-dbRepessa\Databases<|||>1<|||>
+Servers\Q-dbRepessa\Comment<|||>1<|||>
+Servers\Q-dbRepessa\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbRepessa\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbRepessa\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbRepessa\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbRepessa\SSHtunnelPassword<|||>1<|||>5
+Servers\Q-dbRepessa\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbRepessa\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbRepessa\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbRepessa\SSL_Active<|||>3<|||>0
+Servers\Q-dbRepessa\SSL_Key<|||>1<|||>
+Servers\Q-dbRepessa\SSL_Cert<|||>1<|||>
+Servers\Q-dbRepessa\SSL_CA<|||>1<|||>
+Servers\Q-dbRepessa\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbRepessa\ConnectCount<|||>3<|||>46
+Servers\Q-dbRepessa\ServerVersion<|||>3<|||>50173
+Servers\Q-dbRepessa\LastConnect<|||>1<|||>2016-04-04 09:38:34
+Servers\Q-dbRepessa\lastUsedDB<|||>1<|||>
+Servers\Q-dbRepessa\RefusedCount<|||>3<|||>5
+Servers\Q-dbRepessa\FavoriteObjects<|||>1<|||>
+Servers\Q-dbRepessa\qtu580|tbempleados\Sort<|||>1<|||>0_strApellidos|
+Servers\Q-dbRepessa\QueryHistory\12<|||>1<|||>2016-03-07 11:41:12|qtu580|203|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbRepessa\QueryHistory\1<|||>1<|||>2016-03-14 10:14:17|qtu580|203|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbRepessa\QueryHistory\2<|||>1<|||>2016-03-17 09:47:13|qtu580|16|select * from tbempleados E where E.strNombre= 'juan carlos' and E.strApellidos='martinez'
+Servers\Q-dbRepessa\QueryHistory\3<|||>1<|||>2016-03-17 09:47:32|qtu580|31|select * from tbempleados E where E.strNombre= 'juan%' and E.strApellidos='%martinez%'
+Servers\Q-dbRepessa\QueryHistory\5<|||>1<|||>2016-03-17 12:38:22|qtu580|16|                    SELECT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Q-dbRepessa\QueryHistory\6<|||>1<|||>2016-03-17 12:38:47|qtu580|15|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Q-dbRepessa\QueryHistory\4<|||>1<|||>2016-03-17 13:49:36|qtu580|265|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbSat\SessionCreated<|||>1<|||>2015-06-29 11:05:08
+Servers\Q-dbSat\Host<|||>1<|||>qtr925.qualidad.info
+Servers\Q-dbSat\WindowsAuth<|||>3<|||>0
+Servers\Q-dbSat\User<|||>1<|||>qtr925
+Servers\Q-dbSat\Password<|||>1<|||>49827B393A3D3E69597F3A8
+Servers\Q-dbSat\LoginPrompt<|||>3<|||>0
+Servers\Q-dbSat\Port<|||>1<|||>3306
+Servers\Q-dbSat\NetType<|||>3<|||>0
+Servers\Q-dbSat\Compressed<|||>3<|||>0
+Servers\Q-dbSat\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbSat\QueryTimeout<|||>3<|||>0
+Servers\Q-dbSat\FullTableStatus<|||>3<|||>1
+Servers\Q-dbSat\Databases<|||>1<|||>
+Servers\Q-dbSat\Comment<|||>1<|||>
+Servers\Q-dbSat\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbSat\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbSat\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbSat\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbSat\SSHtunnelPassword<|||>1<|||>4
+Servers\Q-dbSat\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbSat\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbSat\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbSat\SSL_Active<|||>3<|||>0
+Servers\Q-dbSat\SSL_Key<|||>1<|||>
+Servers\Q-dbSat\SSL_Cert<|||>1<|||>
+Servers\Q-dbSat\SSL_CA<|||>1<|||>
+Servers\Q-dbSat\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbSat\ConnectCount<|||>3<|||>34
+Servers\Q-dbSat\ServerVersion<|||>3<|||>50173
+Servers\Q-dbSat\LastConnect<|||>1<|||>2016-04-04 09:39:14
+Servers\Q-dbSat\lastUsedDB<|||>1<|||>
+Servers\Q-dbSat\RefusedCount<|||>3<|||>5
+Servers\Q-dbSat\FavoriteObjects<|||>1<|||>
+Servers\Q-dbSat\QueryHistory\8<|||>1<|||>2016-03-07 11:42:22|qtr925|250|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbSat\QueryHistory\1<|||>1<|||>2016-03-14 10:14:47|qtr925|172|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbSat\QueryHistory\2<|||>1<|||>2016-03-17 12:43:14|qtr925|31|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>
+Servers\Q-dbSat\QueryHistory\3<|||>1<|||>2016-03-17 13:49:57|qtr925|234|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbTasvaluo\Host<|||>1<|||>qsl300.qualidad.info
+Servers\Q-dbTasvaluo\WindowsAuth<|||>3<|||>0
+Servers\Q-dbTasvaluo\User<|||>1<|||>qsl300
+Servers\Q-dbTasvaluo\Password<|||>1<|||>69687669593938566978394
+Servers\Q-dbTasvaluo\LoginPrompt<|||>3<|||>0
+Servers\Q-dbTasvaluo\Port<|||>1<|||>3306
+Servers\Q-dbTasvaluo\NetType<|||>3<|||>0
+Servers\Q-dbTasvaluo\Compressed<|||>3<|||>0
+Servers\Q-dbTasvaluo\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbTasvaluo\Databases<|||>1<|||>
+Servers\Q-dbTasvaluo\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbTasvaluo\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbTasvaluo\SSHtunnelHostPort<|||>3<|||>22
+Servers\Q-dbTasvaluo\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbTasvaluo\SSHtunnelPassword<|||>1<|||>9
+Servers\Q-dbTasvaluo\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbTasvaluo\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbTasvaluo\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbTasvaluo\SSL_Active<|||>3<|||>0
+Servers\Q-dbTasvaluo\SSL_Key<|||>1<|||>
+Servers\Q-dbTasvaluo\SSL_Cert<|||>1<|||>
+Servers\Q-dbTasvaluo\SSL_CA<|||>1<|||>
+Servers\Q-dbTasvaluo\SessionCreated<|||>1<|||>2014-09-17 13:53:46
+Servers\Q-dbTasvaluo\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbTasvaluo\ConnectCount<|||>3<|||>41
+Servers\Q-dbTasvaluo\ServerVersion<|||>3<|||>50173
+Servers\Q-dbTasvaluo\LastConnect<|||>1<|||>2016-03-17 13:50:14
+Servers\Q-dbTasvaluo\lastUsedDB<|||>1<|||>
+Servers\Q-dbTasvaluo\FavoriteObjects<|||>1<|||>qsl300||encuestasdescartadas<{{{><}}}>
+Servers\Q-dbTasvaluo\QueryHistory\7<|||>1<|||>2016-03-07 11:43:06|qsl300|219|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbTasvaluo\QueryHistory\1<|||>1<|||>2016-03-14 10:15:11|qsl300|203|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbTasvaluo\QueryHistory\2<|||>1<|||>2016-03-17 13:50:21|qsl300|187|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbTecnitasa\SessionCreated<|||>1<|||>2015-07-13 13:40:21
+Servers\Q-dbTecnitasa\Host<|||>1<|||>qtu581.qualidad.info
+Servers\Q-dbTecnitasa\WindowsAuth<|||>3<|||>0
+Servers\Q-dbTecnitasa\User<|||>1<|||>qtu581
+Servers\Q-dbTecnitasa\Password<|||>1<|||>563A3738506D4F4C3C3D55745
+Servers\Q-dbTecnitasa\LoginPrompt<|||>3<|||>0
+Servers\Q-dbTecnitasa\Port<|||>1<|||>3306
+Servers\Q-dbTecnitasa\NetType<|||>3<|||>0
+Servers\Q-dbTecnitasa\Compressed<|||>3<|||>0
+Servers\Q-dbTecnitasa\LocalTimeZone<|||>3<|||>0
+Servers\Q-dbTecnitasa\QueryTimeout<|||>3<|||>0
+Servers\Q-dbTecnitasa\FullTableStatus<|||>3<|||>1
+Servers\Q-dbTecnitasa\Databases<|||>1<|||>
+Servers\Q-dbTecnitasa\Comment<|||>1<|||>
+Servers\Q-dbTecnitasa\StartupScriptFilename<|||>1<|||>
+Servers\Q-dbTecnitasa\SSHtunnelHost<|||>1<|||>
+Servers\Q-dbTecnitasa\SSHtunnelHostPort<|||>3<|||>0
+Servers\Q-dbTecnitasa\SSHtunnelUser<|||>1<|||>
+Servers\Q-dbTecnitasa\SSHtunnelPassword<|||>1<|||>4
+Servers\Q-dbTecnitasa\SSHtunnelTimeout<|||>3<|||>4
+Servers\Q-dbTecnitasa\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Q-dbTecnitasa\SSHtunnelPort<|||>3<|||>3307
+Servers\Q-dbTecnitasa\SSL_Active<|||>3<|||>0
+Servers\Q-dbTecnitasa\SSL_Key<|||>1<|||>
+Servers\Q-dbTecnitasa\SSL_Cert<|||>1<|||>
+Servers\Q-dbTecnitasa\SSL_CA<|||>1<|||>
+Servers\Q-dbTecnitasa\ServerVersionFull<|||>1<|||>5.1.73 - Source distribution
+Servers\Q-dbTecnitasa\ConnectCount<|||>3<|||>29
+Servers\Q-dbTecnitasa\ServerVersion<|||>3<|||>50173
+Servers\Q-dbTecnitasa\LastConnect<|||>1<|||>2016-04-01 09:20:10
+Servers\Q-dbTecnitasa\lastUsedDB<|||>1<|||>
+Servers\Q-dbTecnitasa\QueryHistory\7<|||>1<|||>2016-03-07 11:43:15|qtu581|266|ALTER TABLE `tbperfiles`<{{{><}}}>	CHANGE COLUMN `lngEstado` `lngEstado` INT(11) NULL DEFAULT '0' COMMENT '0 si está sin aprobar, 1 si está aprobado, 2 si está rechazado' AFTER `datFecha`,<{{{><}}}>	CHANGE COLUMN `lngIdAprobado` `lngIdAprobado` INT(11) NULL DEFAULT '0' COMMENT 'Id del que aprobo el perfil' AFTER `lngEstado`;<{{{><}}}>
+Servers\Q-dbTecnitasa\QueryHistory\1<|||>1<|||>2016-03-14 10:15:32|qtu581|203|ALTER TABLE `tbrevisiones`<{{{><}}}>	ADD COLUMN `Doc` VARCHAR(200) NULL AFTER `strOpciones`;<{{{><}}}>
+Servers\Q-dbTecnitasa\QueryHistory\2<|||>1<|||>2016-03-17 12:52:18|qtu581|16|                    SELECT DISTINCT P.lngId, P.strPuesto, P.strSuperior, P.strPuestos , DATE_FORMAT(P.datFecha,'%d/%m/%Y') AS datFecha, P.lngEstado<{{{><}}}>                    FROM tbperfiles P, tbusuarios U, tbperfilempleado EP<{{{><}}}>                    WHERE P.lngId=EP.lngIdPerfil<{{{><}}}>                    AND EP.lngIdEmpleado=U.lngIdEmpleado<{{{><}}}>                    AND P.lngEstado IN (0,1,2)<{{{><}}}>                    AND P.lngEstado=1<{{{><}}}>
+Servers\Q-dbTecnitasa\QueryHistory\3<|||>1<|||>2016-03-17 13:50:47|qtu581|187|ALTER TABLE `tbformacionemplext`<{{{><}}}>	ADD COLUMN `pdf` VARCHAR(50) NULL DEFAULT NULL AFTER `FechaFin`;<{{{><}}}>
+Servers\Q-dbTecnitasa\QueryHistory\5<|||>1<|||>2016-03-31 09:18:11|qtu581|16|select *<{{{><}}}>from tbclientes C, tbencuestascontestadas EC<{{{><}}}>where C.lngIdCliente=EC.IdEncuesta
+Servers\Q-dbTecnitasa\QueryHistory\4<|||>1<|||>2016-03-31 09:18:21|qtu581|16|select *<{{{><}}}>from tbclientes C, tbencuestascontestadas EC<{{{><}}}>where C.lngIdCliente=EC.lngIdCliente
+Servers\Q-dbTecnitasa\QueryHistory\6<|||>1<|||>2016-03-31 09:18:59|qtu581|16|select C.strNombre<{{{><}}}>from tbclientes C, tbencuestascontestadas EC<{{{><}}}>where C.lngIdCliente=EC.lngIdCliente
+Servers\Q-dbTecnitasa\QueryHistory\8<|||>1<|||>2016-03-31 09:33:05|qtu581|15|update tbrespuestas R<{{{><}}}>set R.txtNombre=(<{{{><}}}>    select CONCAT(C.strNombre,' ',C.strApellidos) AS Cliente<{{{><}}}>    from tbclientes C, tbencuestascontestadas E<{{{><}}}>    where C.lngIdCliente=E.lngIdCliente<{{{><}}}>    and E.lngNumRespuesta=R.lngIdRespuesta<{{{><}}}>)<{{{><}}}>where R.lngIdRespuesta in (<{{{><}}}>select lngNumRespuesta <{{{><}}}>from tbencuestascontestadas <{{{><}}}>where R.lngIdRespuesta=lngNumRespuesta<{{{><}}}>)<{{{><}}}>
+Servers\Q-dbTecnitasa\QueryHistory\9<|||>1<|||>2016-04-01 09:20:32|qtu581|31|update tbrespuestas R<{{{><}}}>set R.txtNombre=(<{{{><}}}>    select CONCAT(C.strNombre,' ',C.strApellidos) AS Cliente<{{{><}}}>    from tbclientes C, tbencuestascontestadas E<{{{><}}}>    where C.lngIdCliente=E.lngIdCliente<{{{><}}}>    and E.lngNumRespuesta=R.lngIdRespuesta<{{{><}}}>)<{{{><}}}>where R.lngIdRespuesta in (<{{{><}}}>select lngNumRespuesta <{{{><}}}>from tbencuestascontestadas <{{{><}}}>where R.lngIdRespuesta=lngNumRespuesta<{{{><}}}>)<{{{><}}}><{{{><}}}>
+Servers\www.qualidad.com\SessionCreated<|||>1<|||>2016-01-11 11:26:58
+Servers\www.qualidad.com\Host<|||>1<|||>quu652.qualidad.info
+Servers\www.qualidad.com\WindowsAuth<|||>3<|||>0
+Servers\www.qualidad.com\User<|||>1<|||>quu652
+Servers\www.qualidad.com\Password<|||>1<|||>487A7E6C3B3C3D807B4F4E3D7
+Servers\www.qualidad.com\LoginPrompt<|||>3<|||>0
+Servers\www.qualidad.com\Port<|||>1<|||>3306
+Servers\www.qualidad.com\NetType<|||>3<|||>0
+Servers\www.qualidad.com\Compressed<|||>3<|||>0
+Servers\www.qualidad.com\LocalTimeZone<|||>3<|||>0
+Servers\www.qualidad.com\QueryTimeout<|||>3<|||>0
+Servers\www.qualidad.com\FullTableStatus<|||>3<|||>1
+Servers\www.qualidad.com\Databases<|||>1<|||>
+Servers\www.qualidad.com\Comment<|||>1<|||>
+Servers\www.qualidad.com\StartupScriptFilename<|||>1<|||>
+Servers\www.qualidad.com\SSHtunnelHost<|||>1<|||>
+Servers\www.qualidad.com\SSHtunnelHostPort<|||>3<|||>0
+Servers\www.qualidad.com\SSHtunnelUser<|||>1<|||>
+Servers\www.qualidad.com\SSHtunnelPassword<|||>1<|||>4
+Servers\www.qualidad.com\SSHtunnelTimeout<|||>3<|||>4
+Servers\www.qualidad.com\SSHtunnelPrivateKey<|||>1<|||>
+Servers\www.qualidad.com\SSHtunnelPort<|||>3<|||>3307
+Servers\www.qualidad.com\SSL_Active<|||>3<|||>0
+Servers\www.qualidad.com\SSL_Key<|||>1<|||>
+Servers\www.qualidad.com\SSL_Cert<|||>1<|||>
+Servers\www.qualidad.com\SSL_CA<|||>1<|||>
+Servers\www.qualidad.com\SSL_Cipher<|||>1<|||>
+Servers\www.qualidad.com\ServerVersionFull<|||>1<|||>5.6.24 - MySQL Community Server (GPL)
+Servers\www.qualidad.com\ConnectCount<|||>3<|||>4
+Servers\www.qualidad.com\ServerVersion<|||>3<|||>50624
+Servers\www.qualidad.com\LastConnect<|||>1<|||>2016-03-01 09:46:50
+Servers\www.qualidad.com\lastUsedDB<|||>1<|||>

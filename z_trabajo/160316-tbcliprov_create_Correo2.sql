@@ -1,0 +1,2 @@
+ALTER TABLE `tbcliprov`
+	ADD COLUMN `Correo2` VARCHAR(50) NULL DEFAULT NULL AFTER `Correo`;

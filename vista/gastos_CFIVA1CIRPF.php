@@ -66,7 +66,7 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
                                             $_POST["lngEjercicio"]."','". addslashes($_POST["strConcepto"])."','". $_POST['esAbono']."','". $_SESSION["strUsuario"]."');");
 											
     if($varRes==FALSE){
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id='.$varRes.'">';
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id='.$varRes.'">';
     }else{
         
 //        //paso por array los datos del formulario, por si se tuviesen que utilizar mas tarde (son los del POST)
@@ -121,9 +121,13 @@ else if(isset($_GET['editar']) && $_GET['editar']==='SI'){
     //si $datos[Borrado]='0' este asiento esta borrado por lo que redirecciono a 'default2.php'
     if(isset($datos['Borrado']) && $datos['Borrado']==='1'){
         //presento el formulario con los datos
-        html_pagina($datosUsuario,$datos,$editarAsiento,'edicion');
+        if($_SESSION['navegacion']==='movil'){
+            html_paginaMovil($datosUsuario,$datos,$editarAsiento,'edicion');
+        }else{
+            html_pagina($datosUsuario,$datos,$editarAsiento,'edicion');
+        }
     }else{
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/default2.php">';
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/default2.php">';
     }    
 }
 //se viende de dar a aceptar a editar un asiento
@@ -134,7 +138,7 @@ else if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Editar'){
 
     //si $OK<> informamos del error 
     if($OK<>1){
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id=No se a cambiado el asiento">';
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id=No se a cambiado el asiento">';
     }else{
 
         $OK2 = $clsCNContabilidad->AltaGastosMovimientosIRPF($_POST['Asiento'],$_SESSION["idEmp"],$_POST['strCuenta'],$_POST['strCuentaCli'],
@@ -152,10 +156,10 @@ else if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Editar'){
             //como ha fallado la insercion de los nuevos datos volvemos a dar de alta el asiento que habias dado de baja antes
             $clsCNContabilidad->DarAltaAsiento($_POST['Asiento']);
             ////indicamos el error
-            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id=No se a editado el asiento">';
+            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id=No se a editado el asiento">';
         }else{
             //voy a la pagina de 'exito.php'
-            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/exito.php?Id=Asiento editado correctamente">';
+            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/exito.php?Id=Asiento editado correctamente">';
         }
     }
 }
@@ -999,6 +1003,10 @@ librerias_jQuery_Mobile();
 <BODY onLoad="fechaMes_MovilAsiento(document.getElementById('datFecha'));
               formateoColoresCampo('<?php echo $_GET['esAbono'];?>');
               <?php
+                if($datos['optTipo'] === 1){
+                    echo "ActivaSelecBanco(document.getElementById('pantalla'));";
+                }
+                
                 if($editarAsiento==='SI'){
                     if(!isset($_GET['editar']) && !isset($_GET['datFecha'])){
                         echo 'focusFecha();';
@@ -1146,7 +1154,7 @@ function asientoCerrado(){
     include_once '../movil/cabeceraMovil.php';
     ?>
 
-    <div data-role="content" data-theme="b">
+    <div data-role="content" data-theme="a">
         <form action="../vista/gastos_CFIVA1CIRPF.php" name="form1" method="POST" data-ajax="false">
             <table border="0" style="width: 100%;">
                 <tbody>
@@ -1344,7 +1352,7 @@ function asientoCerrado(){
                                      <?php }else{?>
                                         disabled="true"
                                      <?php }?>
-                                        data-native-menu="false" data-theme='c'>
+                                        data-native-menu="false" data-theme='a'>
                                     <?php
                                     //preparo el listado del select
                                     $selected0='';
@@ -1397,7 +1405,7 @@ function asientoCerrado(){
                                      <?php }else{?>
                                         disabled="true"
                                      <?php }?>
-                                        data-native-menu="false" data-theme='c'>
+                                        data-native-menu="false" data-theme='a'>
                                     <?php
                                     //preparo el listado del select
                                     if(isset($datos['lngPorcientoIRPF'])){ //existe IRPF
@@ -1462,11 +1470,11 @@ function asientoCerrado(){
                         <td colspan="4">
                         <div class="ui-field-contain">
                             <fieldset data-role="controlgroup" data-mini="true">
-                                <input type="radio" name="optTipo" value="0" id="optTipo0" class="custom" checked="checked"
-                                       data-theme="c" data-iconpos="right" onClick="ActivaSelecBanco(this);">
+                                <input type="radio" name="optTipo" value="0" id="optTipo0" class="custom" <?php if(!(isset($datos['optTipo'])) || $datos['optTipo']=='0'){echo 'checked';} ?>
+                                       data-theme="a" data-iconpos="right" onClick="ActivaSelecBanco(this);">
                                 <label for="optTipo0">Dejar Pendiente</label>
-                                <input type="radio" name="optTipo" id="optTipo1" class="custom" value="1"
-                                       data-theme="c" data-iconpos="right" onClick="ActivaSelecBanco(this);">
+                                <input type="radio" name="optTipo" id="optTipo1" class="custom" value="1" <?php if($datos['optTipo']=='1'){echo 'checked';} ?>
+                                       data-theme="a" data-iconpos="right" onClick="ActivaSelecBanco(this);">
                                 <label for="optTipo1">Realizar Pago</label>
                             </fieldset>
                         </div>
@@ -1494,7 +1502,7 @@ function asientoCerrado(){
                     <tr>
                         <td colspan="2">
                         <div align="center">
-                            <input type="button" data-theme="b" data-icon="back" data-iconpos="right" value = "Volver" onClick="javascript:volver();" /> 
+                            <input type="button" data-theme="a" data-icon="back" data-iconpos="right" value = "Volver" onClick="javascript:volver();" /> 
                         </div>
                         </td>
                         <td colspan="2">
@@ -1503,9 +1511,9 @@ function asientoCerrado(){
                                     javascript:history.back();
                                 }
                             </script>
-                            <input type="button" id="cmdAlta" name="cmdAlta" data-theme="b" data-icon="forward" data-iconpos="right" value="Grabar" onClick="javascript:validar();" /> 
+                            <input type="button" id="cmdAlta" name="cmdAlta" data-theme="a" data-icon="forward" data-iconpos="right" value="Grabar" onClick="javascript:validar();" /> 
                             <?php if($editarAsiento==='SI') {?>
-                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="button" data-theme="b" value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('.$_GET['Asiento'].');" />';} ?>  
+                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="button" data-theme="a" value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('.$_GET['Asiento'].');" />';} ?>  
                             <input type="hidden"  name="cmdAlta" <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo 'value="Editar"';}else{echo 'value="Alta"';} ?>  />
                             <input type="hidden"  name="tipo" value="<?php if(isset($datos['tipo'])){echo $datos['tipo'];} ?>" />
                             <input type="hidden"  name="esAbono" value="<?php if(isset($_GET['esAbono'])){echo $_GET['esAbono'];}else{echo 'NO';} ?>" />
@@ -1517,8 +1525,8 @@ function asientoCerrado(){
             </table>
         </form>
     </div>    
-    
 </body>    
+</html>
 <?php    
 }//fin del html_paginaMovil
 ?>

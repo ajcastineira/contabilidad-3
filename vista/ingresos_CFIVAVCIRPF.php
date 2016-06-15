@@ -54,7 +54,7 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
     $NIFCIF=$clsCNUsu->ExisteNIF_CIF($_SESSION["idEmp"]);
     //print_r($_POST);die;
     if($NIFCIF==false){
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id=No existe NIF/CIF de esta empresa.<br/> No se han grabado los datos">';
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id=No existe NIF/CIF de esta empresa.<br/> No se han grabado los datos">';
     }else{
         //hay datos de la empresa
         //grabamos en las tablas tbmovimientos, tbacumulados y tbmovimientos_iva
@@ -79,7 +79,7 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
                                                 $_POST['lngCantidad4']."','".$_POST['lngIva4']."','".$_POST['lngPorciento4']."','". $_POST['esAbono']."');");
 											
     if($varRes==FALSE){
-            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id='.$varRes.'">';
+            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id='.$varRes.'">';
         }else{
 //        //paso por array los datos del formulario, por si se tuviesen que utilizar mas tarde (son los del POST)
 //        $strPeriodo=$clsCNContabilidad->periodo($_POST["lngPeriodo"]);

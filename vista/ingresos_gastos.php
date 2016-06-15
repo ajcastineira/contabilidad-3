@@ -195,20 +195,19 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Aceptar'){
             }
         }
     }
+    
+    
+    //aqui dirijo a la presentacion en PC o Movil (APP)
+    if($_SESSION['navegacion']==='movil'){
+        html_paginaMovil($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER);
+    }else{
+        html_pagina($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER);
+    }
+}
 
-?>
-<!DOCTYPE html>
-<HTML>
-<HEAD>
-<?php
-//estas funciones son generales
-librerias_jQuery();
-eventosInputText();
-?>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="../images/q.ico">
-<TITLE>Alta de Movimientos - Movimientos</TITLE>
 
+function scripts($numMovimientos){
+?>
 <script language="JavaScript">
 
 function validar2()
@@ -453,20 +452,29 @@ function rellenaConceptoHaber(i){
 }
 
 </script>
+<?php
+}
 
-<script language="JavaScript">
-var txt="-    Sistema de Gestión de la Calidad    ";
-var espera=120;
-var refresco=null;
+    
+function html_pagina($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER){
+    
+?>
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<?php
+//estas funciones son generales
+librerias_jQuery();
+eventosInputText();
+?>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../images/q.ico">
+<TITLE>Alta de Movimientos - Movimientos</TITLE>
 
-function rotulo_status() {
-        window.status=txt;
-        txt=txt.substring(1,txt.length)+txt.charAt(0);        
-        refresco=setTimeout("rotulo_status()",espera);
-        }
+<?php
+scripts($numMovimientos);
+?>
 
-// -->
-</script>
 <script languaje="JavaScript"  type="text/JavaScript">
 function Modificar(menu)
 {
@@ -474,11 +482,11 @@ function Modificar(menu)
 		document.form1.strTipReclamacion.value = menu.options[menu.selectedIndex].text
 }
 </script>
-<SCRIPT LANGUAGE="JavaScript" SRC="../js/valida.js">
-<!--
+<!--<SCRIPT LANGUAGE="JavaScript" SRC="../js/valida.js">
+
 	alert('Error en el fichero valida.js');
-// -->
-</SCRIPT>
+// 
+</SCRIPT>-->
 <link href="../css/Estilos_Qualidad.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../css/calidad2.css" type="text/css">
 <?php
@@ -496,9 +504,9 @@ function desactivaBoton() {
 	}
 }
 </SCRIPT> 
-<SCRIPT language="JavaScript" SRC="../js/car_valido.js">
+<!--<SCRIPT language="JavaScript" SRC="../js/car_valido.js">
 
-</SCRIPT>
+</SCRIPT>-->
 <SCRIPT LANGUAGE="JavaScript">
 
 <!-- Inicio
@@ -565,8 +573,7 @@ var a="";
 // End Hiding -->
 </script>
 <BODY bgColor=#ffffff leftMargin=0 topMargin=0 rightMargin=0 bottomMargin=0 marginwidth="0" marginheight="0"  background="<?php echo FONDO; ?>"
-      onLoad="rotulo_status();
-              fechaMes(document.getElementById('datFecha'));
+      onLoad="fechaMes(document.getElementById('datFecha'));
               <?php
                 if(!isset($_GET['Asiento'])){
                     echo 'focusFecha();';
@@ -992,6 +999,250 @@ require_once 'cabeceraForm.php';
 </body>
 </html>
 <?php
-//    }//fin del else del GET
-}//fin del else principal
+}//fin del html_pagina
+
+
+function html_paginaMovil($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER){
+require_once '../general/funcionesGenerales.php';
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>Alta de Ingresos - Movimientos  XXXXXXXXXXXX</TITLE>
+
+<?php
+//Funciones generales - carga las funciones auxiliares de eventos de los inputText
+librerias_jQuery_Mobile();
+?>
+<link rel="stylesheet" href="../css/estiloMovil.css" />
+        
+</head>
+<BODY 
+      onLoad="fechaMes(document.getElementById('datFecha'));
+              <?php
+                if(!isset($_GET['Asiento'])){
+                    echo 'focusFecha();';
+                }else{
+                    if(isset($_GET['borrar']) && $_GET['borrar']==='si'){
+                        echo 'borrarAsiento('. $_GET['Asiento'].');';
+                    }
+                }
+              ?>"
+      class="api jquery-mobile archive category category-widgets category-2 listing single-author"> 
+
+<div data-role="page" id="ingresos_gastos">
+<?php
+eventosInputText();
+?>
+<script language="JavaScript">
+</script>
+    
+
+    <?php
+    include_once '../movil/cabeceraMovil.php';
+    ?>
+
+    <div data-role="content" data-theme="a">
+        <form action="../vista/ingresos_gastos.php" name="form1" method="POST" data-ajax="false">
+            <table border="0" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 22%;"></td>
+                        <td style="width: 23%;"></td>
+                        <td style="width: 23%;"></td>
+                        <td style="width: 22%;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <article id="post-2" class="hentry">
+                            <div class="entry-summary">
+                                <table border="0" style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 50%;"></td>
+                                        <td style="width: 50%;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Empresa:</label>
+                                        </td>
+                                        <td>
+                                            <label><font color="2e9b46"><b><?php echo $_SESSION['sesion'];?></b></font></label>
+                                            <input type="hidden" name="strEmpresa" value="<?php echo $_SESSION['sesion'];?>" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Periodo:</label>
+                                        </td>
+                                        <td>
+                                            <label><font color="2e9b46"><b><span id="strPeriodo"></span></b></font></label>
+                                            <input type="hidden"  name="strPeriodo" value="<?php echo $datos['strPeriodo']; ?>" />
+                                            <input type="hidden" id="lngPeriodo" name="lngPeriodo" value="<?php echo $datos['lngPeriodo']; ?>"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Ejercicio:</label>
+                                        </td>
+                                        <td>
+                                            <label><font color="2e9b46"><b><span id="lngEjercicio"></span></b></font></label>
+                                            <input type="hidden" id="lngEjercicioH" name="lngEjercicio" value="" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            </article>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Fecha</label>
+                            <?php
+                            date_default_timezone_set('Europe/Madrid');
+                            $fechaForm=date('d/m/Y');
+                            
+                            if($editarAsiento==='SI') {
+                                datepicker_español('datFecha');
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                   **************** NO VALE     
+                <input class="textbox1" type="text" id="datFecha" name="datFecha" maxlength="38" value=""
+                   <?php if($editar=='NO'){?>
+                       disabled
+                   <?php }else{?>
+                   placeholder="" 
+                   onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOutInputText(this);"
+                   onKeyUp="this.value=formateafechaEntrada(this.value);" 
+                   onfocus="onFocusInputText(this);<?php if(!isset($datosFechaAsiento[1])){echo 'limpiaCampoFecha(this)';}?>"
+                   onblur="onBlurInputText(this);comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes(this);"
+                   onchange="fechaMes(this);comprobarFechaEsCerrada(this);" 
+                   <?php }?>
+                />
+                        
+                        
+                        
+                        <td colspan="2">
+                                <input type="text" id="datFecha" name="datFecha" maxlength="38"
+                                       value="<?php if(isset($datosFechaAsiento[1])){echo date("d/m/Y",strtotime($datosFechaAsiento[1]['fecha']));}else{echo $fechaForm;}?>"
+                                        <?php if($editar=='NO'){?>
+                                            disabled
+                                        <?php }else{?>
+                       
+                                       placeholder="<?php if(isset($datosFechaAsiento[1])){echo date("d/m/Y",strtotime($datosFechaAsiento[1]['fecha']));}else{echo $fechaForm;}?>" 
+                                       onfocus="onFocusInputTextM(this);<?php if(!isset($datos['datFecha'])){echo 'limpiaCampoFecha(this);';}?>"
+                                       onblur="comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes_MovilAsiento(this);"
+                                       onchange="fechaMes_MovilAsiento(this);comprobarFechaEsCerrada(this);"
+                                       <?php }?>
+                                       />
+                        </td>
+                    </tr>
+                    <tr> 
+                      <td colspan="4"> 
+                          <div align="left">
+                          <label class="nombreCampo">Compra o Gasto</label>
+                          <?php
+                          //funcion general
+                          autocomplete_cuentas_SubGrupo2y6('strCuenta');
+                          ?>
+                            <input type="text" id="strCuenta" name="strCuenta" tabindex="2" 
+                                  value="<?php echo htmlentities($datos['strCuenta'],ENT_QUOTES,'UTF-8');?>"
+                                 <?php if($editarAsiento==='SI') {?>
+                                  onKeyUp="comprobarCuenta(this,document.getElementById('okStrCuenta'));"  
+                                  onfocus="onFocusInputTextM(this);desactivaCampoComprobacionCuenta(document.getElementById('okStrCuenta'));"
+                                  onblur="onBlurInputText(this);comprobarCuentaBlur(this,document.getElementById('okStrCuenta'));"
+                                 <?php }else{?>
+                                 readonly
+                                 <?php }?>
+                                 />
+                            <input type="hidden" id="okStrCuenta" name="okStrCuenta" value="SI" />
+                          </div>
+                      </td>
+                    </tr>
+                    <tr> 
+                        <td colspan="4">
+                            <div align="left">
+                            <label class="nombreCampo">Concepto</label>
+                            <textarea name="strConcepto" rows=4 cols="20"
+                                          onfocus="onFocusInputTextM(this);"
+                                        <?php if($editarAsiento==='SI') {?>
+                                        <?php }else{?>
+                                        readonly
+                                        <?php }?>
+                                      ><?php echo htmlentities($datos['strConcepto'],ENT_QUOTES,'UTF-8'); ?></textarea> 
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                          <div align="left">
+                            <label>Base Imponible</label>
+                            <input type="text" name="lngCantidadContabilidad1" maxlength="10" id="lngCantidadContabilidad1"
+                                   value="<?php if(isset($datos['lngCantidadContabilidad1'])){echo $datos['lngCantidadContabilidad1'];}else{echo '0,00';} ?>" tabindex="5"
+                                   <?php if($editarAsiento==='SI') {?>
+                                   style="text-align:right;font-weight:bold;" 
+                                   onkeyUp="CalculaIva1(this.value,document.form1.lngPorciento1.value);
+                                            CalculaIRPF(this.value,document.form1.lngPorcientoIRPF.value);TotalIRPF();"
+                                   onblur="solonumerosM(this);
+                                           CalculaIva1(this.value,document.form1.lngPorciento1.value);
+                                           CalculaIRPF(this.value,document.form1.lngPorcientoIRPF.value);
+                                           TotalIRPF();
+                                           formateaCantidad(this);
+                                           formateaNegativoContabilidad(this,'<?php echo $_GET['esAbono'];?>');
+                                           formateaNegativoContabilidad(document.form1.lngIvaContabilidad1,'<?php echo $_GET['esAbono'];?>');
+                                           formateaNegativoContabilidad(document.form1.lngIRPFContabilidad,'<?php echo $_GET['esAbono'];?>');
+                                           formateaNegativoContabilidad(document.form1.lngTotalContabilidad,'<?php echo $_GET['esAbono'];?>');"
+                                   onfocus="onFocusInputTextM(this);entradaCantidad(this,document.form1.lngCantidad1);selecciona_value(this);"
+                                   <?php }else{?>
+                                   readonly
+                                   <?php }?>
+                                    />
+                            <input type="hidden" name="lngCantidad1" value="<?php if(isset($datos['lngCantidad1'])){echo $datos['lngCantidad1'];}else{echo '0.00';} ?>" />
+                          </div>
+                      </td>
+                    </tr>
+                    
+                    
+                    
+                    
+                    
+                    <tr>
+                        <td colspan="2">
+                        <div align="center">
+                            <input type="button" data-theme="a" data-icon="back" data-iconpos="right" value = "Volver" onClick="javascript:volver();" /> 
+                        </div>
+                        </td>
+                        <td colspan="2">
+                            <script languaje="JavaScript"> 
+                                function volver(){
+                                    javascript:history.back();
+                                }
+                            </script>
+                            <input type="button" id="cmdAlta" name="cmdAlta" data-theme="a" data-icon="forward" data-iconpos="right" value="Grabar" onClick="javascript:validar();" /> 
+                            <?php if($editarAsiento==='SI') {?>
+                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="button" data-theme="a" value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('.$_GET['Asiento'].');" />';} ?>  
+                            <input type="hidden"  name="cmdAlta" <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo 'value="Editar"';}else{echo 'value="Alta"';} ?>  />
+                            <input type="hidden"  name="tipo" value="<?php if(isset($datos['tipo'])){echo $datos['tipo'];} ?>" />
+                            <input type="hidden"  name="esAbono" value="<?php if(isset($_GET['esAbono'])){echo $_GET['esAbono'];}else{echo 'NO';} ?>" />
+                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="hidden"  name="Asiento" value="'.$_GET['Asiento'].'" />';} ?>  
+                            <?php } ?>
+                        </td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </form>
+    </div>    
+    <!--indico si se puede editar o no este Asiento    -->
+    <?php if(isset($editar) && $editar=='NO'){ ?>
+    <script language="JavaScript">
+        alert('Este Asiento esta CERRADO. NO se puede EDITAR.');
+    </script>
+    <?php } ?>
+</body>    
+</html>
+<?php    
+}//fin del html_paginaMovil
 ?>

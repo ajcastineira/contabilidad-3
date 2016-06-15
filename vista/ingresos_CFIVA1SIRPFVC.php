@@ -66,7 +66,7 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
                                             $_POST['strCuentaBancos']."',".$_POST["lngPeriodo"].",". $_POST["lngEjercicio"].",'". addslashes($_POST["strConcepto"])."','". $_POST['esAbono']."','". $_SESSION["strUsuario"]."');");
     
     if($varRes==FALSE){
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/error.php?id='.$varRes.'">';
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id='.$varRes.'">';
     }else{
 //        //paso por array los datos del formulario, por si se tuviesen que utilizar mas tarde (son los del POST)
 //        $strPeriodo=$clsCNContabilidad->periodo($_POST["lngPeriodo"]);

@@ -199,9 +199,9 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Aceptar'){
     
     //aqui dirijo a la presentacion en PC o Movil (APP)
     if($_SESSION['navegacion']==='movil'){
-        html_paginaMovil($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER);
+        html_paginaMovil($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER,$Asiento);
     }else{
-        html_pagina($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER);
+        html_pagina($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER,$Asiento);
     }
 }
 
@@ -456,7 +456,7 @@ function rellenaConceptoHaber(i){
 }
 
     
-function html_pagina($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER){
+function html_pagina($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER,$Asiento){
     
 ?>
 <!DOCTYPE html>
@@ -703,7 +703,7 @@ require_once 'cabeceraForm.php';
                      onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOverInputText(this);"
                      value="<?php if(isset($datosFechaAsiento[1])){echo $datosFechaAsiento[1]['periodo'];}?>"
                    <?php if($editar=='NO'){?>
-                       disabled
+                       readonly
                    <?php }?>
               />         
               <input type="hidden" id="lngPeriodo" name="lngPeriodo" value="0" />
@@ -1002,7 +1002,7 @@ require_once 'cabeceraForm.php';
 }//fin del html_pagina
 
 
-function html_paginaMovil($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER){
+function html_paginaMovil($datosUsuario,$datosFechaAsiento,$datosDebeAsiento,$datosHaberAsiento,$editar,$numMovimientos,$sumaDEBE,$sumaHABER,$Asiento){
 require_once '../general/funcionesGenerales.php';
 ?>
 <!DOCTYPE html>
@@ -1015,10 +1015,13 @@ require_once '../general/funcionesGenerales.php';
 librerias_jQuery_Mobile();
 ?>
 <link rel="stylesheet" href="../css/estiloMovil.css" />
+<?php
+scripts($numMovimientos);
+?>
         
 </head>
 <BODY 
-      onLoad="fechaMes(document.getElementById('datFecha'));
+      onLoad="fechaMes_MovilAsientoMovimientos(document.getElementById('datFecha'));
               <?php
                 if(!isset($_GET['Asiento'])){
                     echo 'focusFecha();';
@@ -1075,9 +1078,9 @@ eventosInputText();
                                             <label>Periodo:</label>
                                         </td>
                                         <td>
-                                            <label><font color="2e9b46"><b><span id="strPeriodo"></span></b></font></label>
-                                            <input type="hidden"  name="strPeriodo" value="<?php echo $datos['strPeriodo']; ?>" />
-                                            <input type="hidden" id="lngPeriodo" name="lngPeriodo" value="<?php echo $datos['lngPeriodo']; ?>"/>
+                                            <label><font color="2e9b46"><b><span id="strPeriodoMov"><?php if(isset($datosFechaAsiento[1])){echo $datosFechaAsiento[1]['periodo'];}?></span></b></font></label>
+                                            <input type="hidden" id="strPeriodo" name="strPeriodo" value="<?php if(isset($datosFechaAsiento[1])){echo $datosFechaAsiento[1]['periodo'];}?>" />
+                                            <input type="hidden" id="lngPeriodo" name="lngPeriodo" value="0"/>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1108,127 +1111,230 @@ eventosInputText();
                         </td>
                     </tr>
                     <tr>
-                        
-                   **************** NO VALE     
-                <input class="textbox1" type="text" id="datFecha" name="datFecha" maxlength="38" value=""
-                   <?php if($editar=='NO'){?>
-                       disabled
-                   <?php }else{?>
-                   placeholder="" 
-                   onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOutInputText(this);"
-                   onKeyUp="this.value=formateafechaEntrada(this.value);" 
-                   onfocus="onFocusInputText(this);<?php if(!isset($datosFechaAsiento[1])){echo 'limpiaCampoFecha(this)';}?>"
-                   onblur="onBlurInputText(this);comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes(this);"
-                   onchange="fechaMes(this);comprobarFechaEsCerrada(this);" 
-                   <?php }?>
-                />
-                        
-                        
-                        
                         <td colspan="2">
-                                <input type="text" id="datFecha" name="datFecha" maxlength="38"
-                                       value="<?php if(isset($datosFechaAsiento[1])){echo date("d/m/Y",strtotime($datosFechaAsiento[1]['fecha']));}else{echo $fechaForm;}?>"
-                                        <?php if($editar=='NO'){?>
-                                            disabled
-                                        <?php }else{?>
-                       
-                                       placeholder="<?php if(isset($datosFechaAsiento[1])){echo date("d/m/Y",strtotime($datosFechaAsiento[1]['fecha']));}else{echo $fechaForm;}?>" 
-                                       onfocus="onFocusInputTextM(this);<?php if(!isset($datos['datFecha'])){echo 'limpiaCampoFecha(this);';}?>"
-                                       onblur="comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes_MovilAsiento(this);"
-                                       onchange="fechaMes_MovilAsiento(this);comprobarFechaEsCerrada(this);"
-                                       <?php }?>
-                                       />
+                            <?php
+                            datepicker_español('datFecha');
+                            ?>
+                            <input type="text" id="datFecha" name="datFecha" maxlength="38"
+                                   value="<?php if(isset($datosFechaAsiento[1])){echo date("d/m/Y",strtotime($datosFechaAsiento[1]['fecha']));}else{echo $fechaForm;}?>"
+                                    <?php if($editar=='NO'){?>
+                                        disabled
+                                    <?php }else{?>
+
+                                   placeholder="<?php if(isset($datosFechaAsiento[1])){echo date("d/m/Y",strtotime($datosFechaAsiento[1]['fecha']));}else{echo $fechaForm;}?>" 
+                                   onfocus="onFocusInputTextM(this);<?php if(!isset($datosFechaAsiento[1])){echo 'limpiaCampoFecha(this)';}?>"
+                                   onblur="comprobarFechaEsCerrada(this);comprobarVacioFecha(this,'<?php echo $fechaForm;?>');fechaMes_MovilAsiento(this);"
+                                   onchange="fechaMes_MovilAsientoMovimientos(this);comprobarFechaEsCerrada(this);"
+                                   <?php }?>
+                                   />
                         </td>
                     </tr>
+                    <tr>
+                        <td style="height:20px;"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4">
+                            <label>CUENTA DEBE</label>
+                            <hr/>
+                        </td>
+                    </tr>
+                    
+                    <?php
+                    //se repite un numero de veces esta fila (row)
+                    for($i=1;$i<=$numMovimientos;$i++){
+                    ?>
                     <tr> 
                       <td colspan="4"> 
-                          <div align="left">
-                          <label class="nombreCampo">Compra o Gasto</label>
-                          <?php
-                          //funcion general
-                          autocomplete_cuentas_SubGrupo2y6('strCuenta');
-                          ?>
-                            <input type="text" id="strCuenta" name="strCuenta" tabindex="2" 
-                                  value="<?php echo htmlentities($datos['strCuenta'],ENT_QUOTES,'UTF-8');?>"
-                                 <?php if($editarAsiento==='SI') {?>
-                                  onKeyUp="comprobarCuenta(this,document.getElementById('okStrCuenta'));"  
-                                  onfocus="onFocusInputTextM(this);desactivaCampoComprobacionCuenta(document.getElementById('okStrCuenta'));"
-                                  onblur="onBlurInputText(this);comprobarCuentaBlur(this,document.getElementById('okStrCuenta'));"
-                                 <?php }else{?>
-                                 readonly
-                                 <?php }?>
-                                 />
-                            <input type="hidden" id="okStrCuenta" name="okStrCuenta" value="SI" />
-                          </div>
-                      </td>
-                    </tr>
-                    <tr> 
-                        <td colspan="4">
-                            <div align="left">
-                            <label class="nombreCampo">Concepto</label>
-                            <textarea name="strConcepto" rows=4 cols="20"
-                                          onfocus="onFocusInputTextM(this);"
-                                        <?php if($editarAsiento==='SI') {?>
-                                        <?php }else{?>
-                                        readonly
-                                        <?php }?>
-                                      ><?php echo htmlentities($datos['strConcepto'],ENT_QUOTES,'UTF-8'); ?></textarea> 
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">
-                          <div align="left">
-                            <label>Base Imponible</label>
-                            <input type="text" name="lngCantidadContabilidad1" maxlength="10" id="lngCantidadContabilidad1"
-                                   value="<?php if(isset($datos['lngCantidadContabilidad1'])){echo $datos['lngCantidadContabilidad1'];}else{echo '0,00';} ?>" tabindex="5"
-                                   <?php if($editarAsiento==='SI') {?>
-                                   style="text-align:right;font-weight:bold;" 
-                                   onkeyUp="CalculaIva1(this.value,document.form1.lngPorciento1.value);
-                                            CalculaIRPF(this.value,document.form1.lngPorcientoIRPF.value);TotalIRPF();"
-                                   onblur="solonumerosM(this);
-                                           CalculaIva1(this.value,document.form1.lngPorciento1.value);
-                                           CalculaIRPF(this.value,document.form1.lngPorcientoIRPF.value);
-                                           TotalIRPF();
-                                           formateaCantidad(this);
-                                           formateaNegativoContabilidad(this,'<?php echo $_GET['esAbono'];?>');
-                                           formateaNegativoContabilidad(document.form1.lngIvaContabilidad1,'<?php echo $_GET['esAbono'];?>');
-                                           formateaNegativoContabilidad(document.form1.lngIRPFContabilidad,'<?php echo $_GET['esAbono'];?>');
-                                           formateaNegativoContabilidad(document.form1.lngTotalContabilidad,'<?php echo $_GET['esAbono'];?>');"
-                                   onfocus="onFocusInputTextM(this);entradaCantidad(this,document.form1.lngCantidad1);selecciona_value(this);"
-                                   <?php }else{?>
-                                   readonly
-                                   <?php }?>
-                                    />
-                            <input type="hidden" name="lngCantidad1" value="<?php if(isset($datos['lngCantidad1'])){echo $datos['lngCantidad1'];}else{echo '0.00';} ?>" />
-                          </div>
-                      </td>
-                    </tr>
-                    
-                    
-                    
-                    
-                    
-                    <tr>
-                        <td colspan="2">
-                        <div align="center">
-                            <input type="button" data-theme="a" data-icon="back" data-iconpos="right" value = "Volver" onClick="javascript:volver();" /> 
+                        <article id="post-2" class="hentry">
+                        <div class="entry-summary">
+                            <table border="0" style="width: 100%;">
+                                <tr>
+                                    <td style="width: 22%;"></td>
+                                    <td style="width: 23%;"></td>
+                                    <td style="width: 23%;"></td>
+                                    <td style="width: 22%;"></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="4"> 
+                                    <div align="left">
+                                    <label class="nombreCampo">Cuenta</label>
+                                    <?php
+                                    //funcion general
+                                      autocomplete_cuentas('strCuentaDEBE'.$i);
+                                    ?>
+                                      <input type="text" id="strCuentaDEBE<?php echo $i;?>" name="strCuentaDEBE<?php echo $i;?>" tabindex="2" 
+                                            value="<?php if(isset($datosDebeAsiento[$i])){echo $datosDebeAsiento[$i]['cuenta'];}?>" <?php if($editar=='NO'){echo 'readonly';} ?>
+                                            onKeyUp="comprobarCuenta(this,document.getElementById('okStrCuentaDEBE<?php echo $i;?>'));"  
+                                            onfocus="onFocusInputTextM(this);onFocusInputTextM(document.getElementById('strConceptoDEBE<?php echo $i;?>'));onFocusInputTextM(document.getElementById('lngCuentaDEBE[<?php echo $i;?>]'));comprobarCuentaBlur(this,document.getElementById('okStrCuentaDEBE<?php echo $i;?>'));"
+                                            onblur="rellenaConceptoDebe('<?php echo $i;?>');onBlurInputText(this);onBlurInputText(document.getElementById('strConceptoDEBE<?php echo $i;?>'));onBlurInputText(document.getElementById('lngCuentaDEBE[<?php echo $i;?>]'));comprobarCuentaBlur(this,document.getElementById('okStrCuentaDEBE<?php echo $i;?>'));"
+                                           />
+                                      <input type="hidden" id="idMovDEBE<?php echo $i;?>" name="idMovDEBE<?php echo $i;?>" value="<?php if(!is_array($datosDebeAsiento)){echo $datosDebeAsiento[$i]['IdMovimiento'];}?>"/>
+                                      <input type="hidden" id="okStrCuentaDEBE<?php echo $i;?>" name="okStrCuentaDEBE<?php echo $i;?>" value="SI"/>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr> 
+                                  <td colspan="4">
+                                      <div align="left">
+                                      <label class="nombreCampo">Concepto</label>
+                                      <textarea id="strConceptoDEBE<?php echo $i;?>" name="strConceptoDEBE<?php echo $i;?>" rows=4 cols="20" <?php if($editar=='NO'){echo 'readonly';} ?> 
+                                                    onfocus="javascript:this.style.borderColor='#aaa666';onFocusInputTextM(document.getElementById('strCuentaDEBE<?php echo $i;?>'));onFocusInputTextM(document.getElementById('lngCuentaDEBE[<?php echo $i;?>]'));"
+                                                ><?php if(isset($datosDebeAsiento[$i])){echo htmlentities($datosDebeAsiento[$i]['concepto'],ENT_QUOTES,'UTF-8');}?></textarea> 
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                    <div align="left">
+                                      <label>Cantidad</label>
+                                      <input type="text" id="lngCuentaDEBE[<?php echo $i;?>]" name="lngCuentaDEBEContabilidad<?php echo $i;?>" maxlength="10"
+                                             style="text-align:right;font-weight:bold;"
+                                             value="<?php if(isset($datosDebeAsiento[$i])){if($datosDebeAsiento[$i]['cantidad']==''){echo '0,00';}else{echo number_format($datosDebeAsiento[$i]['cantidad'], 2, ",", ".");}}?>" tabindex="5"
+                                             <?php
+                                             if($editar=='NO'){?>
+                                                readonly
+                                             <?php
+                                             }else{
+                                             ?>
+                                                onfocus="CalculaDEBE();onFocusInputTextM(this);onFocusInputTextM(document.getElementById('strCuentaDEBE<?php echo $i;?>'));onFocusInputTextM(document.getElementById('strConceptoDEBE<?php echo $i;?>'));entradaCantidad(this,document.form1.lngCuentaDEBE<?php echo $i;?>);selecciona_value(this);"
+                                                onblur="onBlurInputText(this);onBlurInputText(document.getElementById('strCuentaDEBE<?php echo $i;?>'));onBlurInputText(document.getElementById('strConceptoDEBE<?php echo $i;?>'));formateaCantidad(this);vaciarSiEs0(this);CalculaDEBE();actualizaCampoHidden(this,document.form1.lngCuentaDEBE<?php echo $i;?>);"
+                                             <?php   
+                                             } 
+                                             ?>
+                                              />
+                                      <input type="hidden" id="lngCuentaDEBE<?php echo $i;?>" name="lngCuentaDEBE<?php echo $i;?>" value="<?php if(isset($datosDebeAsiento[$i])){if($datosDebeAsiento[$i]['cantidad']==''){echo '0,00';}else{echo $datosDebeAsiento[$i]['cantidad'];}}?>" />
+                                    </div>
+                                </td>
+                              </tr>
+                            </table>
                         </div>
+                        </article>
+                    <?php
+                    }
+                    ?>
+                    </tr>
+                    <tr>
+                        <td style="height:30px;"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4">
+                            <label>CUENTA HABER</label>
+                            <hr/>
+                        </td>
+                    </tr>
+                    
+                    <?php
+                    //se repite un numero de veces esta fila (row)
+                    for($j=1;$j<=$numMovimientos;$j++){
+                    ?>
+                    <tr> 
+                      <td colspan="4"> 
+                        <article id="post-2" class="hentry">
+                        <div class="entry-summary">
+                            <table border="0" style="width: 100%;">
+                                <tr>
+                                    <td style="width: 22%;"></td>
+                                    <td style="width: 23%;"></td>
+                                    <td style="width: 23%;"></td>
+                                    <td style="width: 22%;"></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="4"> 
+                                    <div align="left">
+                                    <label class="nombreCampo">Cuenta</label>
+                                    <?php
+                                    //funcion general
+                                    autocomplete_cuentas('strCuentaHABER'.$j);
+                                    ?>
+                                      <input type="text" id="strCuentaHABER<?php echo $j;?>" name="strCuentaHABER<?php echo $j;?>" tabindex="2" 
+                                            value="<?php if(isset($datosHaberAsiento[$j])){echo $datosHaberAsiento[$j]['cuenta'];}?>" <?php if($editar=='NO'){echo 'readonly';} ?>
+                                            onKeyUp="comprobarCuenta(this,document.getElementById('okStrCuentaHABER<?php echo $j;?>'));"  
+                                            onfocus="onFocusInputTextM(this);onFocusInputTextM(document.getElementById('strConceptoHABER<?php echo $j;?>'));onFocusInputTextM(document.getElementById('lngCuentaHABER[<?php echo $j;?>]'));comprobarCuentaBlur(this,document.getElementById('okStrCuentaHABER<?php echo $j;?>'));"
+                                            onblur="rellenaConceptoDebe('<?php echo $j;?>');onBlurInputText(this);onBlurInputText(document.getElementById('strConceptoHABER<?php echo $j;?>'));onBlurInputText(document.getElementById('lngCuentaHABER[<?php echo $j;?>]'));comprobarCuentaBlur(this,document.getElementById('okStrCuentaHABER<?php echo $j;?>'));"
+                                           />
+                                      <input type="hidden" id="idMovHABER<?php echo $j;?>" name="idMovHABER<?php echo $j;?>" value="<?php if(!is_array($datosHaberAsiento)){echo $datosHaberAsiento[$j]['IdMovimiento'];}?>"/>
+                                      <input type="hidden" id="okStrCuentaHABER<?php echo $j;?>" name="okStrCuentaHABER<?php echo $j;?>" value="SI"/>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr> 
+                                  <td colspan="4">
+                                      <div align="left">
+                                      <label class="nombreCampo">Concepto</label>
+                                      <textarea id="strConceptoHABER<?php echo $j;?>" name="strConceptoHABER<?php echo $j;?>" rows=4 cols="20" <?php if($editar=='NO'){echo 'readonly';} ?>
+                                                    onfocus="javascript:this.style.borderColor='#aaa666';onFocusInputTextM(document.getElementById('strCuentaHABER<?php echo $j;?>'));onFocusInputTextM(document.getElementById('lngCuentaHABER[<?php echo $j;?>]'));"
+                                                ><?php if(isset($datosHaberAsiento[$j])){echo htmlentities($datosHaberAsiento[$j]['concepto'],ENT_QUOTES,'UTF-8');}?></textarea> 
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                    <div align="left">
+                                      <label>Cantidad</label>
+                                      <input type="text" id="lngCuentaHABER[<?php echo $j;?>]" name="lngCuentaHABERContabilidad<?php echo $j;?>" maxlength="10"
+                                             style="text-align:right;font-weight:bold;"
+                                             value="<?php if(isset($datosHaberAsiento[$j])){if($datosHaberAsiento[$j]['cantidad']==''){echo '0,00';}else{echo number_format($datosHaberAsiento[$j]['cantidad'], 2, ",", ".");}}?>" tabindex="5"
+                                             <?php
+                                             if($editar=='NO'){?>
+                                                readonly
+                                             <?php
+                                             }else{
+                                             ?>
+                                                onfocus="CalculaHABER();onFocusInputTextM(this);onFocusInputTextM(document.getElementById('strCuentaHABER<?php echo $j;?>'));onFocusInputTextM(document.getElementById('strConceptoHABER<?php echo $j;?>'));entradaCantidad(this,document.form1.lngCuentaHABER<?php echo $j;?>);selecciona_value(this);"
+                                                onblur="onBlurInputText(this);onBlurInputText(document.getElementById('strCuentaHABER<?php echo $j;?>'));onBlurInputText(document.getElementById('strConceptoHABER<?php echo $j;?>'));formateaCantidad(this);vaciarSiEs0(this);CalculaHABER();actualizaCampoHidden(this,document.form1.lngCuentaHABER<?php echo $j;?>);"
+                                             <?php   
+                                             } 
+                                             ?>
+                                              />
+                                      <input type="hidden" id="lngCuentaHABER<?php echo $j;?>" name="lngCuentaHABER<?php echo $j;?>" value="<?php if(isset($datosHaberAsiento[$j])){if($datosHaberAsiento[$j]['cantidad']==''){echo '0,00';}else{echo $datosHaberAsiento[$j]['cantidad'];}}?>" />
+                                    </div>
+                                </td>
+                              </tr>
+                            </table>
+                        </div>
+                        </article>
+                    <?php
+                    }
+                    ?>
+                    </tr>
+                    
+                    
+                    
+                    <tr>
+                      <td colspan="2"> 
+                        <label>TOTAL DEBE</label>
+                        <input style="text-align:right;font-weight:bold;" type="text" id="lngTotalDebe" name="lngTotalDebe" style="text-align:right;font-weight:bold;" value="<?php echo number_format($sumaDEBE, 2, ",", ".");?>" readonly
+                          <?php if($editar=='NO'){?>
+                              readonly
+                          <?php }else{?>
+                             onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOutInputText(this);" onfocus="onFocusInputText(this);" onblur="onBlurInputText(this);"
+                          <?php }?>
+                        />     
+                      </td>
+                      <td colspan="2"> 
+                        <label>TOTAL HABER</label>
+                        <input style="text-align:right;font-weight:bold;" type="text" id="lngTotalHaber" name="lngTotalHaber" style="text-align:right;font-weight:bold;" value="<?php echo number_format($sumaHABER, 2, ",", ".");?>" readonly
+                          <?php if($editar=='NO'){?>
+                              readonly
+                          <?php }else{?>
+                             onMouseOver="onMouseOverInputText(this);" onMouseOut="onMouseOutInputText(this);" onfocus="onFocusInputText(this);" onblur="onBlurInputText(this);"
+                          <?php }?>
+                        />     
+                      </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" id="cmdAlta" name="cmdAlta" data-theme="a" data-icon="forward" data-iconpos="right" value="Grabar" onClick="javascript:validar2();" /> 
                         </td>
                         <td colspan="2">
-                            <script languaje="JavaScript"> 
-                                function volver(){
-                                    javascript:history.back();
-                                }
-                            </script>
-                            <input type="button" id="cmdAlta" name="cmdAlta" data-theme="a" data-icon="forward" data-iconpos="right" value="Grabar" onClick="javascript:validar();" /> 
-                            <?php if($editarAsiento==='SI') {?>
-                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="button" data-theme="a" value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('.$_GET['Asiento'].');" />';} ?>  
-                            <input type="hidden"  name="cmdAlta" <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo 'value="Editar"';}else{echo 'value="Alta"';} ?>  />
-                            <input type="hidden"  name="tipo" value="<?php if(isset($datos['tipo'])){echo $datos['tipo'];} ?>" />
-                            <input type="hidden"  name="esAbono" value="<?php if(isset($_GET['esAbono'])){echo $_GET['esAbono'];}else{echo 'NO';} ?>" />
-                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="hidden"  name="Asiento" value="'.$_GET['Asiento'].'" />';} ?>  
-                            <?php } ?>
+                        <?php if(isset($_GET['Asiento'])){?>
+                            <input type="button" class="buttonAzul"  value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('<?php echo $Asiento;?>');" />
+                        <?php }?>
+                            <input type="hidden"  name="cmdAlta" value="Aceptar" />
+                    <!--        con esta variable hidden sabemos el numero de asiento  asi sabemos si hay que crear o editar asiento-->
+                            <input type="hidden"  name="asiento" value="<?php echo $Asiento;?>" />
                         </td>
                     </tr>                    
                 </tbody>

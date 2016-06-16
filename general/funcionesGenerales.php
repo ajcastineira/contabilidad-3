@@ -1761,6 +1761,61 @@ function fechaMes_MovilAsiento(objeto){
     }
 }
 
+//control de numerico a nombre del mes (Periodo)
+function fechaMes_MovilAsientoMovimientos(objeto){
+    var mesNumero=objeto.value.split('/')[1];
+    var year=objeto.value.split('/')[2];
+    if(mesNumero=='01'){
+        document.getElementById('strPeriodoMov').value='ENERO';
+        document.getElementById('lngPeriodo').value='1';
+    }else if(mesNumero=='02'){
+        document.getElementById('strPeriodoMov').value='FEBRERO';
+        document.getElementById('lngPeriodo').value='2';
+    }else if(mesNumero=='03'){
+        document.getElementById('strPeriodoMov').value='MARZO';
+        document.getElementById('lngPeriodo').value='3';
+    }else if(mesNumero=='04'){
+        document.getElementById('strPeriodoMov').value='ABRIL';
+        document.getElementById('lngPeriodo').value='4';
+    }else if(mesNumero=='05'){
+        document.getElementById('strPeriodoMov').value='MAYO';
+        document.getElementById('lngPeriodo').value='5';
+    }else if(mesNumero=='06'){
+        document.getElementById('strPeriodoMov').value='JUNIO';
+        document.getElementById('lngPeriodo').value='6';
+    }else if(mesNumero=='07'){
+        document.getElementById('strPeriodoMov').value='JULIO';
+        document.getElementById('lngPeriodo').value='7';
+    }else if(mesNumero=='08'){
+        document.getElementById('strPeriodoMov').value='AGOSTO';
+        document.getElementById('lngPeriodo').value='8';
+    }else if(mesNumero=='09'){
+        document.getElementById('strPeriodoMov').value='SEPTIEMBRE';
+        document.getElementById('lngPeriodo').value='9';
+    }else if(mesNumero=='10'){
+        document.getElementById('strPeriodoMov').value='OCTUBRE';
+        document.getElementById('lngPeriodo').value='10';
+    }else if(mesNumero=='11'){
+        document.getElementById('strPeriodoMov').value='NOVIEMBRE';
+        document.getElementById('lngPeriodo').value='11';
+    }else if(mesNumero=='12'){
+        document.getElementById('strPeriodoMov').value='DICIEMBRE';
+        document.getElementById('lngPeriodo').value='12';
+    }else{
+        document.getElementById('strPeriodoMov').value='';
+        document.getElementById('lngPeriodo').value='0';
+    }
+    //paso los datos por innerHTML (app movil)
+    document.getElementById('strPeriodoMov').innerHTML=document.getElementById('strPeriodoMov').value;
+    
+    //actualizar el capo ejercicio (año)
+    if(year!=null){
+        document.getElementById('lngEjercicio').value=year;
+        document.getElementById('lngEjercicio').innerHTML=document.getElementById('lngEjercicio').value;
+        document.getElementById('lngEjercicioH').value=document.getElementById('lngEjercicio').value;
+    }
+}
+
 function comprobarFechaEsCerrada(objeto){
     $.ajax({
       data:{"fecha":objeto.value},  

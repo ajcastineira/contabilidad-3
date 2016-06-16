@@ -2,7 +2,7 @@
 require_once '../CN/clsCNDatosVentas.php';
 
 
-$_SESSION['mapeo'] = $_GET['mapeo'];
+$_SESSION['mapeo'] = $_POST['mapeo'];
 
 
 
@@ -11,8 +11,8 @@ $clsCNDatosVentas = new clsCNDatosVentas();
 $clsCNDatosVentas->setStrBDCliente($_SESSION['mapeo']);
 
 
-$get['mes'] = $_GET['mes'];
-$get['ejercicio'] = $_GET['ejercicio'];
+$get['mes'] = $_POST['mes'];
+$get['ejercicio'] = $_POST['ejercicio'];
 $get['cmdConsultar'] = 'Consultar';
 $get['cmdListar'] = 'OK';
 

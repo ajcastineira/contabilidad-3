@@ -23,12 +23,12 @@ $datos = '';
 if(is_array($arResult)){
     //voy a recorrer todos los dias del mes y ejercicio
     $mes = date('m');
-    if(isset($_GET['mes'])){
-        $mes = $_GET['mes'];
+    if(isset($get['mes'])){
+        $mes = $get['mes'];
     }
     $ejercicio = date('Y');
-    if(isset($_GET['ejercicio'])){
-        $ejercicio = $_GET['ejercicio'];
+    if(isset($get['ejercicio'])){
+        $ejercicio = $get['ejercicio'];
     }
 
     //indico el recorrido por los dias del mes 

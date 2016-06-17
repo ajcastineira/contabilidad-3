@@ -146,6 +146,14 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Aceptar'){
     }
     //compruebo si se puede o no editar (comprobacion de la pagina anterior)   
     
+    //compruebo que este asiento exista
+    if($Asiento !== 0){//veo que no sea el Asiento = 0 (es el nuevo)
+        $OK = $clsCNContabilidad->existeAsiento($Asiento);
+        if($OK === 'NO'){//este asiento o no existe o esta borrado
+            echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/default2.php">';die;
+        }
+    }
+    
     //extraemos los datos de este asiento
     $datosDebeAsiento=$clsCNContabilidad->leeAsiento($Asiento,'D');
     $datosHaberAsiento=$clsCNContabilidad->leeAsiento($Asiento,'H');

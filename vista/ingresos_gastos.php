@@ -1016,7 +1016,7 @@ require_once '../general/funcionesGenerales.php';
 <!DOCTYPE html>
 <html>
 <head>
-<TITLE>Alta de Ingresos - Movimientos  XXXXXXXXXXXX</TITLE>
+<TITLE>Alta de Movimientos - Movimientos</TITLE>
 
 <?php
 //Funciones generales - carga las funciones auxiliares de eventos de los inputText

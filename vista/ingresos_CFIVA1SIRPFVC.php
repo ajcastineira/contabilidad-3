@@ -679,9 +679,6 @@ if(isset($datos['cuentas'])){
            || $IG==='17A' || $IG==='17A2' || $IG==='18A' || $IG==='18A2'){
             $total = formateaNumeroContabilidad(-$total);
         }
-        
-        
-        
 ?>
     $("#linea<?php echo $i;?>:last").after(
             lineaFactura(<?php echo $i+1;?>,'<?php echo $idCuenta; ?>','<?php echo $cantidad; ?>','<?php echo $cuota; ?>','<?php echo $total; ?>')
@@ -721,9 +718,6 @@ if(isset($datos['cuentas'])){
   });
   
 });
-
-
-
 </script>    
 
 
@@ -992,6 +986,7 @@ require_once 'cabeceraForm.php';
             <td style="height: 15px;"></td>
         </tr>
     </table>
+        
     <table width="640" border="0" class="zonaactivafactura" id="lineasFactura">
         <tr>
             <td width="2%" class="subtitulo" style="text-align: right;"></td>
@@ -1343,10 +1338,13 @@ function html_paginaMovil($datosUsuario,$datos,$editarAsiento,$NoE,$clsCNContabi
     require_once '../general/funcionesGenerales.php';
 
 
-
+//*****************************************
 
 //paso a SESSION los datos del presupuesto y los datos qe vienen por post
-$datosPresupuesto=$clsCNContabilidad->datosFactura($_POST['IdFactura']);
+//*********************************    
+$datosPresupuesto = $datos;
+//introduzco los datos que me hacen falta
+$datosPresupuesto['Estado'];
 
 
 $listadoCuentasContables = $clsCNContabilidad->listarCuentasArticulos();
@@ -1356,32 +1354,32 @@ for ($i = 0; $i < count($listadoCuentasContables); $i++) {
     $txtListado = $txtListado . "<option value='".$listadoCuentasContables[$i]['NumCuenta']."'>".$listadoCuentasContables[$i]['cuenta']."</option>";
 }
 
+//var_dump($_POST['IdFactura']);die;
 
-////si venimos de editar tenemos datos en $datosPresupuesto
-if(isset($datos['cuentas'])){
-    //ejecuto la funcion de javascript 'lineaFactura()' por cada linea
-    //y voy sumando el importe y la cuota
-    $totalImportePres=0;
-    $totalCuotaPres=0;
-    for($i=0;$i<count($datos['cuentas']);$i++){
-        $idCuenta = $datos['cuentas'][$i]['idCuenta'];
-        $nombreCuenta = $datos['cuentas'][$i]['idCuenta'];
-        $cantidad = $datos['cuentas'][$i]['lngCantidadContabilidad'];
-        $cuota = $datos['cuentas'][$i]['lngIvaContabilidad'];
-        $iva = round((float)$datos['cuentas'][$i]['cuota'] / (float)$datos['cuentas'][$i]['cantidad'] * 100,0);
-        $total = round((float)$datos['cuentas'][$i]['cantidad'] + (float)$datos['cuentas'][$i]['cuota'],2);
-        $IG = $datos['TipoAsiento'];
-        if($IG==='15N' || $IG==='15N2' || $IG==='16N' || $IG==='16N2'
-           || $IG==='17N' || $IG==='17N2' || $IG==='18N' || $IG==='18N2'){
-            $total = formateaNumeroContabilidad($total);
-        }else 
-        if($IG==='15A' || $IG==='15A2' || $IG==='16A' || $IG==='16A2'
-           || $IG==='17A' || $IG==='17A2' || $IG==='18A' || $IG==='18A2'){
-            $total = formateaNumeroContabilidad(-$total);
-        }
-        
-    }
-}
+////si venimos de editar tenemos datos en $datos
+//if(isset($datos['cuentas'])){
+//    //ejecuto la funcion de javascript 'lineaFactura()' por cada linea
+//    //y voy sumando el importe y la cuota
+//    $totalImportePres=0;
+//    $totalCuotaPres=0;
+//    for($i=0;$i<count($datos['cuentas']);$i++){
+//        $idCuenta = $datos['cuentas'][$i]['idCuenta'];
+//        $nombreCuenta = $datos['cuentas'][$i]['idCuenta'];
+//        $cantidad = $datos['cuentas'][$i]['lngCantidadContabilidad'];
+//        $cuota = $datos['cuentas'][$i]['lngIvaContabilidad'];
+//        $iva = round((float)$datos['cuentas'][$i]['cuota'] / (float)$datos['cuentas'][$i]['cantidad'] * 100,0);
+//        $total = round((float)$datos['cuentas'][$i]['cantidad'] + (float)$datos['cuentas'][$i]['cuota'],2);
+//        $IG = $datos['TipoAsiento'];
+//        if($IG==='15N' || $IG==='15N2' || $IG==='16N' || $IG==='16N2'
+//           || $IG==='17N' || $IG==='17N2' || $IG==='18N' || $IG==='18N2'){
+//            $total = formateaNumeroContabilidad($total);
+//        }else 
+//        if($IG==='15A' || $IG==='15A2' || $IG==='16A' || $IG==='16A2'
+//           || $IG==='17A' || $IG==='17A2' || $IG==='18A' || $IG==='18A2'){
+//            $total = formateaNumeroContabilidad(-$total);
+//        }
+//    }
+//}
 
 //var_dump($datos);die;
 
@@ -1398,7 +1396,7 @@ librerias_jQuery_Mobile();
 
 </head> 
     <body onLoad="fechaMes_MovilAsiento(document.getElementById('datFecha'));
-                  formateoColoresCampo('<?php echo $_GET['esAbono'];?>');
+                  //formateoColoresCampo('<?php //echo $_GET['esAbono'];?>');
                   <?php
                   if($datos['optTipo'] === 1){
                       echo "ActivaSelecBanco(document.getElementById('pantalla'));";
@@ -1607,47 +1605,44 @@ function desFormateaNumeroContabilidad2(numero) {
         
         
         <?php
-        //$datosPresupuesto = $datos;
         
-        if(isset($datosPresupuesto['numFactura'])){
-            $num=$datosPresupuesto['numFactura'];
-        }else
-        if(isset($datosPresupuesto['NumFactura'])){
-            $num=$datosPresupuesto['NumFactura'];
-        }
-        ?>
-        <h3 align="center" color="#FFCC66"><font size="3px">Factura <?php echo $num; ?></font></h3>
-        <?php
+        //var_dump($datosPresupuesto);die;
+        
         //REVISAR ESTO 14/6/2016
         if($datosPresupuesto['Estado']==='Contabilizada'){
         ?>
-            <h3><center><font color="FF0000">Factura contabilizada. Sólo se editan los conceptos</font></center></h3>
+            <h3><center><font color="FF0000">Asiento contabilizado. Sólo se editan los conceptos</font></center></h3>
         <?php
         }
         ?>
         <br/>
         <ul data-role="listview" data-dividertheme="a">
         <?php 
-        if(is_array($datosPresupuesto['DetallePresupuesto'])){ 
+        //var_dump($datosPresupuesto);die;
+        if(is_array($datosPresupuesto['cuentas'])){ 
             //y voy sumando el importe y la cuota
             $totalImportePres=0;
             $totalCuotaPres=0;
             ?>
-            <?php for($i=0;$i<count($datosPresupuesto['DetallePresupuesto']);$i++){
-                //$link="javascript:document.location.href='../movil/altapresupuestoLineaEditar.php?IdLinea=".$i."';"; 
-                $link="javascript:Concepto(".$i.");"; 
-
-                $IdPresupLineaPres=  $datosPresupuesto['DetallePresupuesto'][$i]['IdPresupLineas'];
-                $estaFacturadoPres=  $datosPresupuesto['DetallePresupuesto'][$i]['estaFacturado'];
-                $cantidadPres=  formateaNumeroContabilidad($datosPresupuesto['DetallePresupuesto'][$i]['cantidad']);
-                $conceptoPres=  $datosPresupuesto['DetallePresupuesto'][$i]['concepto'];
-                $precioPres=  formateaNumeroContabilidad($datosPresupuesto['DetallePresupuesto'][$i]['precio']);
-                $importePres=  formateaNumeroContabilidad($datosPresupuesto['DetallePresupuesto'][$i]['importe']);
-                $ivaPres=  formateaNumeroContabilidad($datosPresupuesto['DetallePresupuesto'][$i]['iva']);
-                $cuotaPres=  formateaNumeroContabilidad($datosPresupuesto['DetallePresupuesto'][$i]['cuota']);
-                $totalPres=  formateaNumeroContabilidad($datosPresupuesto['DetallePresupuesto'][$i]['importe']+$datosPresupuesto['DetallePresupuesto'][$i]['cuota']);
-                $totalImportePres=$totalImportePres+$datosPresupuesto['DetallePresupuesto'][$i]['importe'];
-                $totalCuotaPres=$totalCuotaPres+$datosPresupuesto['DetallePresupuesto'][$i]['cuota'];
+            <?php for($i=0;$i<count($datos['cuentas']);$i++){
+                $idCuenta = $datos['cuentas'][$i]['idCuenta'];
+                $nombreCuenta = $datos['cuentas'][$i]['idCuenta'];
+                $cantidad = $datos['cuentas'][$i]['lngCantidadContabilidad'];
+                $cuota = $datos['cuentas'][$i]['lngIvaContabilidad'];
+                $iva = round((float)$datos['cuentas'][$i]['cuota'] / (float)$datos['cuentas'][$i]['cantidad'] * 100,0);
+                $total = round((float)$datos['cuentas'][$i]['cantidad'] + (float)$datos['cuentas'][$i]['cuota'],2);
+                $IG = $datos['TipoAsiento'];
+                if($IG==='15N' || $IG==='15N2' || $IG==='16N' || $IG==='16N2'
+                   || $IG==='17N' || $IG==='17N2' || $IG==='18N' || $IG==='18N2'){
+                    $total = formateaNumeroContabilidad($total);
+                }else 
+                if($IG==='15A' || $IG==='15A2' || $IG==='16A' || $IG==='16A2'
+                   || $IG==='17A' || $IG==='17A2' || $IG==='18A' || $IG==='18A2'){
+                    $total = formateaNumeroContabilidad(-$total);
+                }
+                
+                //var_dump($datosPresupuesto['cuentas']);die;
+                $link="javascript:document.location.href='../movil/altapresupuestoLineaEditar.php?IdLinea=".$i."';"; 
 
                 ?>
                 <li onClick="<?php echo $link; ?>">
@@ -1667,7 +1662,7 @@ function desFormateaNumeroContabilidad2(numero) {
                                     </td>
                                     <td>
                                         <div align="right" style="font-style: initial;"> 
-                                        <?php echo $importePres; ?>
+                                        <?php echo $cantidad; ?>
                                         </div>
                                     </td>
                                 </tr>
@@ -1678,7 +1673,7 @@ function desFormateaNumeroContabilidad2(numero) {
                                     </td>
                                     <td>
                                         <div align="right"> 
-                                        <?php echo $cuotaPres; ?>
+                                        <?php echo $cuota; ?>
                                         </div>
                                     </td>
                                 </tr>
@@ -1689,13 +1684,13 @@ function desFormateaNumeroContabilidad2(numero) {
                                     </td>
                                     <td>
                                         <div align="right"> 
-                                        <?php echo $totalPres; ?>
+                                        <?php echo $total; ?>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <?php echo '<font color="30a53b">&nbsp;&nbsp;&nbsp;&nbsp;Concepto: </font>'.$conceptoPres; ?>
+                        <?php echo '<font color="30a53b">&nbsp;&nbsp;&nbsp;&nbsp;Concepto: </font>'.$datosPresupuesto['cuentas'][$i]['strCuenta']; ?>
                     </a>
                 </li>
             <?php } ?>
@@ -1703,7 +1698,7 @@ function desFormateaNumeroContabilidad2(numero) {
         </ul>        
         
         <!-- Subtotales y Totales-->
-        <a href="#" data-ajax="false">
+<!--        <a href="#" data-ajax="false">-->
             <table border="0" style="width: 100%;">
                 <tbody>
                     <tr>
@@ -1715,19 +1710,6 @@ function desFormateaNumeroContabilidad2(numero) {
                         <td style="width: 40%;"></td>
                         <td style="width: 15%;"></td>
                     </tr>
-                    <?php
-                    if($datosPresupuesto['Estado']<>'Contabilizada'){
-                    ?>
-                    <tr>
-                        <td></td>
-                        <td colspan="2">
-                            <input type="button" data-icon="plus" name="cmdNuevoC" id="cmdNuevoC" data-theme="a" data-mini="true"
-                                   value = "Nueva Linea" onclick="javascript:Concepto('Nuevo');" /> 
-                        </td>
-                    </tr>
-                    <?php
-                    }
-                    ?>
                     <input type="hidden" name='conceptoOpcion' />
                     <tr>
                         <td height="15px"></td>
@@ -1739,7 +1721,8 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                         <td>
                             <div align="right"> 
-                            <?php echo formateaNumeroContabilidad($totalImportePres); ?>
+                                <input type="text" name="totalImporte" readonly
+                                       value="<?php if(isset($datos)){echo $datos['lngCantidadContabilidad'];}else{echo '0,00';} ?>" />
                             </div>
                         </td>
                     </tr>
@@ -1750,7 +1733,8 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                         <td>
                             <div align="right"> 
-                            <?php echo formateaNumeroContabilidad($totalCuotaPres); ?>
+                                <input type="text" name="totalImporte" readonly
+                                       value="<?php if(isset($datos)){echo $datos['lngIvaContabilidad'];}else{echo '0,00';} ?>" />
                             </div>
                         </td>
                     </tr>
@@ -1761,91 +1745,44 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                         <td>
                             <div align="right"> 
-                            <?php echo formateaNumeroContabilidad($totalImportePres+$totalCuotaPres); ?>
+                            <?php 
+                            $totalTotal = $datos['lngCantidad'] + $datos['lngIva'];
+                            if($datos['TipoAsiento']){
+                                $totalTotal = abs($totalTotal);
+                            }
+                            ?>
+                                <input type="text" name="totalImporte"
+                                       value="<?php echo formateaNumeroContabilidad($totalTotal); ?>" />
                             </div>
                         </td>
                     </tr>
-                    
-                    <!--Si del parametro genera 'Tipo IRPF'=0 no se presenta esta columna-->
-                    <!--a no ser que ya este guardado un IRPF>0-->
-                    <?php 
-                    $numIRPF='0';
-                    if(isset($datosPresupuesto['Retencion'])){
-                        $numIRPF=$datosPresupuesto['Retencion'];
-                    }
-                    if(isset($datosPresupuesto['irpf'])){
-                        $numIRPF=$datosPresupuesto['irpf'];
-                    }
+                    <tr>
+                        <td height="15px"><hr/></td>
+                    </tr>
+                    <tr> 
+                        <td colspan="4">
+                            <div align="left">
+                            <label class="nombreCampo">Concepto</label>
+                            <textarea name="strConcepto" rows=4 cols="20"
+                                          onfocus="onFocusInputTextM(this);"
+                                        <?php if($editarAsiento==='SI') {?>
+                                        <?php }else{?>
+                                        readonly
+                                        <?php }?>
+                                      ><?php echo htmlentities($datos['strConcepto'],ENT_QUOTES,'UTF-8'); ?></textarea> 
+                            </div>
+                        </td>
+                    </tr>
 
-                    //si $numIRPF=0, comprobamos si $tipoIRPF=0
-                    $IRPF_SI='SI';
-                    $tipoIRPF=$clsCNContabilidad->Parametro_general('Tipo IRPF',date('Y-m-d H:i:s'),date('Y-m-d H:i:s'));
-                    if($numIRPF==='0'){
-                        if((int)$tipoIRPF===0){
-                            $IRPF_SI='NO';
-                        }
-                    }
 
-                    //por ultimo veo si $tipoIRPF <> 0 , si es asi la casilla de Retencion (IRPF) se presenta
-                    //y si es un presupuesto nuevo (no viene $_GET[IdPresupuesto]) la vble $numIRPF=$tipoIRPF
-                    if(!isset($_SESSION['presupuestoActivo']['IdPresupuesto'])){
-                        $numIRPF=$tipoIRPF;
-                    }
-                    ?>
-                    <?php if($IRPF_SI==='SI'){ ?>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <?php echo '<font color="30a53b">IRPF: </font>'; ?>
-                        </td>
-                        <td>
-                            <select name="irpf" data-native-menu="false" data-theme='a' name="iprf" data-mini="true"
-                                    onChange="facturaCalculoIRPF_M('<?php echo formateaNumeroContabilidad($totalImportePres); ?>','<?php echo formateaNumeroContabilidad($totalCuotaPres); ?>',this.value,document.getElementById('retencion'),document.getElementById('total'));
-                                              DesactivaImprimir();">
-                                <?php
-                                listadoIVA($numIRPF,$datosPresupuesto['Estado']);
-                                ?>          
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <?php echo '<font color="30a53b">Retención: </font>'; ?>
-                        </td>
-                        <td>
-                            <div align="right"> 
-                                <span id="retencion">
-                                    <?php echo formateaNumeroContabilidad($totalImportePres*$datosPresupuesto['irpf']/100); ?>
-                                </span>
-                                <input type="hidden" name="cuotaIRPF" value="<?php echo $totalImportePres*$datosPresupuesto['irpf']/100; ?>" />    
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <?php echo '<font color="30a53b">TOTAL: </font>'; ?>
-                        </td>
-                        <td>
-                            <div align="right"> 
-                                <span id="total">
-                                    <?php echo formateaNumeroContabilidad(($totalImportePres+$totalCuotaPres)- ($totalImportePres*$datosPresupuesto['irpf']/100)); ?>
-                                </span>
-                            </div>
-                        </td>
-                    </tr>
-                    <?php }else{ ?>
-                    <input type="hidden" name="irpf" value="<?php echo $numIRPF; ?>" />
-                    <input type="hidden" name="IRPFcuota" />
-                    <?php } ?>
+
+
                     
-                    <tr>
-                        <td height="15px"></td>
-                    </tr>
+                    
+                    
                 </tbody>
             </table>
-        </a>
+        <!--</a>-->
         <br/>
         
         <!--botones-->

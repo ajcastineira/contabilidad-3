@@ -8901,7 +8901,7 @@ class clsCADContabilidad{
            || $IG==='15A' || $IG==='15A2' || $IG==='16A' || $IG==='16A2'
            || $IG==='17A' || $IG==='17A2' || $IG==='18A' || $IG==='18A2'     ){
             //Extraemos de la tabla 'tbmovimientos' los datos de la cuenta 7
-            $strSQL =  "SELECT idCuenta,cantidad,saldo AS cuota,ejercicio,periodo,concepto,DATE_FORMAT(fechaApunte,'%d/%m/%Y') AS Fecha,Borrado
+            $strSQL =  "SELECT IdMovimiento,idCuenta,cantidad,saldo AS cuota,ejercicio,periodo,concepto,DATE_FORMAT(fechaApunte,'%d/%m/%Y') AS Fecha,Borrado
                         FROM tbmovimientos
                         WHERE asiento=$Asiento
                         AND Borrado=1    
@@ -24498,5 +24498,44 @@ class clsCADContabilidad{
         return $datos;
     }
     
+    
+    function DatosLineaMovimientos($IdLinea){
+        require_once '../general/'.$_SESSION['mapeo'];
+        $db = new Db();
+        $db->conectar($this->getStrBD());
+
+
+        //Extraemos de la tabla 'tbmovimientos' los datos de la cuenta
+        $strSQL =  "SELECT idCuenta,DoH,cantidad,Borrado
+                    FROM tbmovimientos
+                    WHERE asiento=$Asiento
+                    AND Borrado = 1";
+        logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+                " clsCADContabilidad->DatosAsientoNomina()|| SQL : ".$strSQL);
+        
+        $stmt = $db->ejecutar ( $strSQL );
+        $db->desconectar ();
+        
+        $resultado = '';
+        if($stmt){
+            while($row = mysql_fetch_array($stmt)){
+                $reg='';
+                foreach($row as $propiedad=>$valor){
+                    if(!is_numeric($propiedad)){
+                        $reg[$propiedad]=$valor;
+                    }
+                }
+                $resultado[]=$reg;
+            }
+        }else{
+            //si ha fallado la consulta DEVOLVEMOS false
+            logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+                    " clsCADContabilidad->DatosAsientoNomina()<FALSE");
+            return false;
+        }
+
+
+        
+    }
 }
 ?>

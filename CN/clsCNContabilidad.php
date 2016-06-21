@@ -8248,6 +8248,16 @@ class clsCNContabilidad {
         
         return $clsCADContabilidad->AltaNomina($post, $strUsuario,$idEmp);
     }
+    
+    function DatosLineaMovimientos($IdLinea){
+        logger('traza', 'clsCNContabilidad.php-', "Usuario: " . $_SESSION['strUsuario'] . ', Empresa: ' . $_SESSION['strBD'] . ', SesionID: ' . session_id() .
+               " clsCNContabilidad->DatosLineaMovimientos()>");
+        require_once '../CAD/clsCADContabilidad.php';
+        $clsCADContabilidad=new clsCADContabilidad();
+        $clsCADContabilidad->setStrBD($this->getStrBD());
+        
+        return $clsCADContabilidad->DatosLineaMovimientos($IdLinea);
+    }
 }
 
 ?>

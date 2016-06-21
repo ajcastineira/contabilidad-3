@@ -44,8 +44,41 @@ $clsCNUsu->setStrBD($_SESSION['dbContabilidad']);
 //las distintas convinaciones son:
 //  ConFactura+IVA1+SinRetencionIRPF       
 //
-//
-//(ConFactura+IVA1+SinRetencionIRPF)
+
+if(!isset($_SESSION['ingresos_CFIVA1SIRPFVC'])){
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['get'] = $_GET;
+}
+
+//linea nueva, vengo por POST
+if(isset($_POST['conceptoOpcion']) && $_POST['conceptoOpcion']!==''){
+//    $_SESSION['presupuestoActivo']['SePuedeImprimir']=$_POST['SePuedeImprimir'];
+//    $_SESSION['presupuestoActivo']['irpf']=$_POST['irpf'];
+    //paso a un fichero 'altafacturaFinal.php' donde preparo fun formulario 
+    //con todos los datos para que le lleguen igual que por 'vista'
+    //echo "Opcion Nuevo";die;
+    echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../movil/ingresos_CFIVA1SIRPFVC_Linea.php?IdLinea='.$_POST['conceptoOpcion'].'">';die;
+}
+
+//editar linea, vengo por GET
+if(isset($_GET['conceptoOpcion']) && $_GET['conceptoOpcion']!==''){
+//    $_SESSION['presupuestoActivo']['SePuedeImprimir']=$_POST['SePuedeImprimir'];
+//    $_SESSION['presupuestoActivo']['irpf']=$_POST['irpf'];
+    //paso a un fichero 'altafacturaFinal.php' donde preparo fun formulario 
+    //con todos los datos para que le lleguen igual que por 'vista'
+    //echo "Opcion Nuevo";die;
+    echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../movil/ingresos_CFIVA1SIRPFVC_Linea.php?IdLinea='.$_GET['conceptoOpcion'].'">';die;
+}
+
+if(isset($_POST['conceptoOpcion']) && $_POST['conceptoOpcion']==='concepto'){
+    $_SESSION['presupuestoActivo']['SePuedeImprimir']=$_POST['SePuedeImprimir'];
+    $_SESSION['presupuestoActivo']['irpf']=$_POST['irpf'];
+
+    echo "Opcion concepto ???";die;
+    echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../movil/altafacturaLineaEditar.php?IdLinea='.$_POST['conceptoOpcion'].'">';die;
+}
+
+
+
 if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
     //************************************************************************
     logger('info',basename($_SERVER['PHP_SELF']).'-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
@@ -68,32 +101,6 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
     if($varRes==FALSE){
         echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/error.php?id='.$varRes.'">';
     }else{
-//        //paso por array los datos del formulario, por si se tuviesen que utilizar mas tarde (son los del POST)
-//        $strPeriodo=$clsCNContabilidad->periodo($_POST["lngPeriodo"]);
-//        
-//        $datosForm=array(
-//            "strCuenta"=>$_POST['strCuenta'],
-//            "lngIngreso"=>$_POST["lngIngreso"],
-//            "lngIngresoContabilidad"=>$_POST["lngIngresoContabilidad"],
-//            "strCuentaCli"=>$_POST['strCuentaCli'],
-//            "lngCantidad"=>$_POST["lngCantidad"],
-//            "lngCantidadContabilidad"=>$_POST["lngCantidadContabilidad"],
-//            "lngPorcientoSin"=>$_POST["lngPorcientoSin"],
-//            "lngIva"=>$_POST["lngIva"],
-//            "lngIvaContabilidad"=>$_POST["lngIvaContabilidad"],
-//            "datFecha"=>$_POST["datFecha"],
-//            "optTipo"=>$_POST['optTipo'],
-//            "strCuentaBancos"=>$_POST['strCuentaBancos'],
-//            "lngPeriodo"=>$_POST["lngPeriodo"],
-//            "strPeriodo"=>$strPeriodo,
-//            "lngEjercicio"=>$_POST["lngEjercicio"],
-//            "strConcepto"=>$_POST["strConcepto"]
-//        );
-//        $compactada=serialize($datosForm);
-//        $compactada=urlencode($compactada);
-        
-        //voy a la pagina de 'gastos_exito.php'
-//        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/ingresos_exito.php?op=CFIVA1SIRPF&datos='.$compactada.'&esAbono='.$_POST["esAbono"].'">';
         echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/ingresos_exito.php?op=CFIVA1SIRPF">';
     }
     //************************************************************************
@@ -103,21 +110,24 @@ else if(isset($_GET['editar']) && $_GET['editar']==='SI'){
     logger('info',basename($_SERVER['PHP_SELF']).'-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
            " ||||Operaciones->Modificar Asiento||");
 
-    $datosUsuario=$clsCNUsu->DatosUsuario($_SESSION['usuario']);
+    $datosUsuario = $clsCNUsu->DatosUsuario($_SESSION['usuario']);
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'] = $datosUsuario;
     
     //se buscan los datos de este asiento para cargarlos en el formulario
-    $datos=$clsCNContabilidad->DatosAsientoCFIVA1SIRPFVC($_GET['Asiento'],$_GET['esAbono']);
+    $datos = $clsCNContabilidad->DatosAsientoCFIVA1SIRPFVC($_GET['Asiento'],$_GET['esAbono']);
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos'] = $datos;
     
     //vemos si el asiento esta en un perido editable para el iva
-    $editarAsiento=$clsCNContabilidad->AsientoEditable($datos['lngEjercicio'],$datos['lngPeriodo']);
+    $editarAsiento = $clsCNContabilidad->AsientoEditable($datos['lngEjercicio'],$datos['lngPeriodo']);
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'] = $editarAsiento;
 
     //si $datos[Borrado]='0' este asiento esta borrado por lo que redirecciono a 'default2.php'
-    if(isset($datos['Borrado']) && $datos['Borrado']==='1'){
+    if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['Borrado']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['Borrado']==='1'){
         //presento el formulario con los datos
         if($_SESSION['navegacion']==='movil'){
-            html_paginaMovil($datosUsuario,$datos,$editarAsiento,'edicion',$clsCNContabilidad);
+            html_paginaMovil($_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'],$_SESSION['ingresos_CFIVA1SIRPFVC']['datos'],$_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'],'edicion',$clsCNContabilidad);
         }else{
-            html_pagina($datosUsuario,$datos,$editarAsiento,'edicion');
+            html_pagina($_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'],$_SESSION['ingresos_CFIVA1SIRPFVC']['datos'],$_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'],'edicion');
         }    
     }else{
         echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/default2.php">';
@@ -159,16 +169,17 @@ else{//comienzo del else principal
     logger('info',basename($_SERVER['PHP_SELF']).'-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
            " ||||Operaciones->Mis Gastos||");
     
-    $datosUsuario=$clsCNUsu->DatosUsuario($_SESSION['usuario']);
+    $datosUsuario = $clsCNUsu->DatosUsuario($_SESSION['usuario']);
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'] = $datosUsuario;
     
     //recojemos los datos si venimos de pulsar 'VOLVER' en 'gastos_exito.php'
-    if(isset($_GET['datos'])){
-        $datos=stripslashes ($_GET['datos']);
-        $datos=unserialize ($datos);
-        //print_r($datos);
-    }else{
-        $datos=null;
-    }
+//    if(isset($_GET['datos'])){
+//        $datos=stripslashes ($_GET['datos']);
+//        $datos=unserialize ($datos);
+//        //print_r($datos);
+//    }else{
+//        $datos=null;
+//    }
     
     
     if($_SESSION['navegacion']==='movil'){
@@ -1436,7 +1447,7 @@ function anterior(){
 }
 
 function Concepto(opcion){
-    document.form1.opcion.value='concepto';
+    //document.form1.opcion.value='concepto';
     document.form1.conceptoOpcion.value=opcion;
     document.form1.submit();
 }
@@ -1641,8 +1652,8 @@ function desFormateaNumeroContabilidad2(numero) {
                     $total = formateaNumeroContabilidad(-$total);
                 }
                 
-                //var_dump($datosPresupuesto['cuentas']);die;
-                $link="javascript:document.location.href='../movil/altapresupuestoLineaEditar.php?IdLinea=".$i."';"; 
+                //var_dump($datos['cuentas']);die;
+                $link="javascript:document.location.href='../vista/ingresos_CFIVA1SIRPFVC.php?conceptoOpcion=".$datos['cuentas'][$i]['IdMovimiento']."';"; 
 
                 ?>
                 <li onClick="<?php echo $link; ?>">
@@ -1710,6 +1721,19 @@ function desFormateaNumeroContabilidad2(numero) {
                         <td style="width: 40%;"></td>
                         <td style="width: 15%;"></td>
                     </tr>
+                    <?php
+                    if($datosPresupuesto['Estado']<>'Contabilizada'){
+                    ?>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <input type="button" data-icon="plus" name="cmdNuevoC" id="cmdNuevoC" data-theme="a" data-mini="true"
+                                   value = "Nueva Linea" onclick="javascript:Concepto('Nuevo');" /> 
+                        </td>
+                    </tr>
+                    <?php
+                    }
+                    ?>
                     <input type="hidden" name='conceptoOpcion' />
                     <tr>
                         <td height="15px"></td>
@@ -1757,7 +1781,7 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                     </tr>
                     <tr>
-                        <td height="15px"><hr/></td>
+                        <td colspan="4" height="15px"><hr/></td>
                     </tr>
                     <tr> 
                         <td colspan="4">
@@ -1773,76 +1797,133 @@ function desFormateaNumeroContabilidad2(numero) {
                             </div>
                         </td>
                     </tr>
-
-
-
-
+                    <tr>
+                        <td colspan="2">
+                            <?php echo '<font color="30a53b">Base Imponible: </font>'; ?>
+                        </td>
+                        <td>
+                            <div align="right"> 
+                                <input type="text" name="totalImporte" readonly
+                                       value="<?php if(isset($datos)){echo $datos['lngCantidadContabilidad'];}else{echo '0,00';} ?>" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <?php echo '<font color="30a53b">Realizar Cobro: </font>'; ?>
+                        </td>
+                        <td>
+                            <div align="right"> 
+                                <input type="text" name="totalImporte" readonly
+                                       value="<?php if(isset($datos)){echo $datos['lngIvaContabilidad'];}else{echo '0,00';} ?>" />
+                            </div>
+                        </td>
+                    </tr>
                     
-                    
-                    
+                    <!--Si del parametro genera 'Tipo IRPF'=0 no se presenta esta columna-->
+                    <!--a no ser que ya este guardado un IRPF>0-->
+                    <?php 
+                                //var_dump($datos);die;
+                    $numIRPF = '0';
+                    if(isset($datos['lngPorcientoIRPF'])){
+                        $numIRPF = $datos['lngPorcientoIRPF'];
+                    }
+                    if(isset($datos['irpf'])){
+                        $numIRPF = $datos['irpf'];
+                    }
+
+                    //si $numIRPF=0, comprobamos si $tipoIRPF=0
+                    $IRPF_SI='SI';
+                    $tipoIRPF=$clsCNContabilidad->Parametro_general('Tipo IRPF',date('Y-m-d H:i:s'),date('Y-m-d H:i:s'));
+                    if($numIRPF==='0'){
+                        if((int)$tipoIRPF===0){
+                            $IRPF_SI='NO';
+                        }
+                    }
+
+                    //por ultimo veo si $tipoIRPF <> 0 , si es asi la casilla de Retencion (IRPF) se presenta
+                    //y si es un presupuesto nuevo (no viene $_GET[IdPresupuesto]) la vble $numIRPF=$tipoIRPF
+                    if(!isset($_SESSION['presupuestoActivo']['IdPresupuesto'])){
+                        $numIRPF=$tipoIRPF;
+                    }
+                    ?>
+                    <?php if($IRPF_SI==='SI'){ ?>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <?php echo '<font color="30a53b">IRPF: </font>'; ?>
+                        </td>
+                        <td>
+                            <select name="irpf" data-native-menu="false" data-theme='a' name="iprf" data-mini="true"
+                                    onChange="">
+                                <option value='<?php echo $numIRPF; ?>'><?php echo $numIRPF; ?></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <?php echo '<font color="30a53b">Retención: </font>'; ?>
+                        </td>
+                        <td>
+                            <div align="right"> 
+                                <span id="retencion">
+                                    <?php echo formateaNumeroContabilidad($datos['lngCantidad']*$numIRPF/100); ?>
+                                </span>
+                                <input type="hidden" name="cuotaIRPF" value="<?php echo $datos['lngCantidad']*$numIRPF/100; ?>" />    
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <?php echo '<font color="30a53b">TOTAL: </font>'; ?>
+                        </td>
+                        <td>
+                            <div align="right"> 
+                                <span id="total">
+                                    <?php echo formateaNumeroContabilidad(($datos['lngCantidad']+$datos['lngIva']) - ($datos['lngCantidad']*$numIRPF/100)); ?>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <div align="center">
+                            <input type="button" data-theme="a" data-icon="back" data-iconpos="right" value = "Volver" onClick="javascript:volver();" /> 
+                        </div>
+                        </td>
+                        <td colspan="2">
+                            <script languaje="JavaScript"> 
+                                function volver(){
+                                    javascript:history.back();
+                                }
+                            </script>
+                            <input type="button" id="cmdAlta" name="cmdAlta" data-theme="a" data-icon="forward" data-iconpos="right" value="Grabar" onClick="javascript:validar();" /> 
+                            <?php if($editarAsiento==='SI') {?>
+                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="button" data-theme="a" value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('.$_GET['Asiento'].');" />';} ?>  
+                            <input type="hidden"  name="cmdAlta" <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo 'value="Editar"';}else{echo 'value="Alta"';} ?>  />
+                            <input type="hidden"  name="tipo" value="<?php if(isset($datos['tipo'])){echo $datos['tipo'];} ?>" />
+                            <input type="hidden"  name="esAbono" value="<?php if(isset($_GET['esAbono'])){echo $_GET['esAbono'];}else{echo 'NO';} ?>" />
+                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="hidden"  name="Asiento" value="'.$_GET['Asiento'].'" />';} ?>  
+                            <?php } ?>
+                        </td>
+                    </tr>                    
+                    <?php }else{ ?>
+                    <input type="hidden" name="irpf" value="<?php echo $numIRPF; ?>" />
+                    <input type="hidden" name="IRPFcuota" />
+                    <?php } ?>
                 </tbody>
             </table>
         <!--</a>-->
         <br/>
         
-        <!--botones-->
-        <!--<div data-role="footer" data-theme="c" data-position="fixed">-->
-        <table border="0" style="width: 100%;">
-            <tbody>
-                <tr>
-                    <td style="width: 22%;"></td>
-                    <td style="width: 23%;"></td>
-                    <td style="width: 23%;"></td>
-                    <td style="width: 22%;"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="button" data-icon="back" data-theme="a" data-mini="true" id='cmdAnterior'
-                               value = "Anterior" onclick="javascript:anterior();" /> 
-                    </td>
-                    <td colspan="2">
-                        <input type="button" data-icon="star" data-iconpos="right" id='cmdGrabar'
-                               name="cmdAlta" id="cmdAlta" data-theme="a" data-mini="true" 
-                               value = "Grabar" onclick="javascript:validar();"
-                                <?php
-                                if(isset($datosPresupuesto['DetallePresupuesto'])){ 
-                                    if(count($datosPresupuesto['DetallePresupuesto'])>0){
-                                    }else{
-                                        echo 'disabled="true"';
-                                    }
-                                }else{
-                                    echo 'disabled="true"';
-                                }
-                                ?>
-                               /> 
-                        <input type="hidden" name="opcion" value="" />
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td colspan="2">
-                        <a href="#altafacturaLineasEnvio" data-rel="dialog" style="text-decoration: none;">
-                            <input type="button" name="enviar" value="Envio" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-mini="true" id="Envio"
-                                   onclick="javascript:Enviar(<?php echo $_SESSION['presupuestoActivo']['IdFactura']; ?>);" 
-                                   <?php
-                                    if($datosPresupuesto['SePuedeImprimir']==='NO'){
-                                        echo 'disabled="true" ';
-                                    }                                   
-                                    if(isset($datosPresupuesto['DetallePresupuesto'])){ 
-                                        if(count($datosPresupuesto['DetallePresupuesto'])>0){
-                                        }else{
-                                            echo 'disabled="true" ';
-                                        }
-                                    }else{
-                                        echo 'disabled="true" ';
-                                    }
-                                   ?>
-                                   />
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        
+        
+        
+        
+        
+        
         <?php
         if(isset($_SESSION['presupuestoActivo']['SePuedeImprimir'])){
             $SePuedeImp = $_SESSION['presupuestoActivo']['SePuedeImprimir'];
@@ -1850,8 +1931,11 @@ function desFormateaNumeroContabilidad2(numero) {
             $SePuedeImp = 'SI';
         }
         ?>
-        <input type="hidden" id="SePuedeImprimir" name="SePuedeImprimir" value="<?php echo $SePuedeImp;?>" />
-        <input type="hidden" name="ContactoHidden" value="<?php echo $datosPresupuesto['ContactoHidden'];?>" />
+        <input type="hidden" name="editar" value="<?php echo $_GET['editar'];?>" />
+        <input type="hidden" name="Asiento" value="<?php echo $_GET['Asiento'];?>" />
+        <input type="hidden" name="borrar" value="<?php echo $_GET['borrar'];?>" />
+        <input type="hidden" name="esAbono" value="<?php echo $_GET['esAbono'];?>" />
+        
     </form>
     </div>
 

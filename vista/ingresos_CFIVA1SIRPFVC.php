@@ -78,7 +78,7 @@ if(isset($_POST['conceptoOpcion']) && $_POST['conceptoOpcion']==='concepto'){
 }
 
 
-
+//?????????
 if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
     //************************************************************************
     logger('info',basename($_SERVER['PHP_SELF']).'-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
@@ -106,7 +106,7 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
     //************************************************************************
 }
 //se viene del listado de editar asientos (listado_asientos2.php)
-else if(isset($_GET['editar']) && $_GET['editar']==='SI'){
+else if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']==='SI'){
     logger('info',basename($_SERVER['PHP_SELF']).'-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
            " ||||Operaciones->Modificar Asiento||");
 
@@ -114,7 +114,7 @@ else if(isset($_GET['editar']) && $_GET['editar']==='SI'){
     $_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'] = $datosUsuario;
     
     //se buscan los datos de este asiento para cargarlos en el formulario
-    $datos = $clsCNContabilidad->DatosAsientoCFIVA1SIRPFVC($_GET['Asiento'],$_GET['esAbono']);
+    $datos = $clsCNContabilidad->DatosAsientoCFIVA1SIRPFVC($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'],$_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono']);
     $_SESSION['ingresos_CFIVA1SIRPFVC']['datos'] = $datos;
     
     //vemos si el asiento esta en un perido editable para el iva
@@ -184,8 +184,10 @@ else{//comienzo del else principal
     
     if($_SESSION['navegacion']==='movil'){
         //CREO QUE ESTA NO HAY QUE HACERLA
+        echo "Esta sin hacer";die;
         html_paginaMovil($datosUsuario,$datos,'SI','nuevo',$clsCNContabilidad);
     }else{
+        echo "Esta sin hacer";die;
         html_pagina($datosUsuario,$datos,'SI','nuevo');
     }    
 }
@@ -1413,8 +1415,8 @@ librerias_jQuery_Mobile();
                       echo "ActivaSelecBanco(document.getElementById('pantalla'));";
                   }
                   ?>
-                  <?php if(isset($_GET['borrar'])&& $_GET['borrar']=='si'){echo 'borrarAsiento('. $_GET['Asiento'].');';}?>
-                  <?php if(!isset($_GET['editar']) && !isset($_GET['datFecha'])){echo 'focusFecha();';} ?>"
+                  <?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['borrar'])&& $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['borrar']=='si'){echo 'borrarAsiento('. $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'].');';}?>
+                  <?php if(!isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && !isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['datFecha'])){echo 'focusFecha();';} ?>"
           class="api jquery-mobile archive category category-widgets category-2 listing single-author"> 
         
     <div data-role="page" id="altafacturaLineas">
@@ -1653,7 +1655,7 @@ function desFormateaNumeroContabilidad2(numero) {
                 }
                 
                 //var_dump($datos['cuentas']);die;
-                $link="javascript:document.location.href='../vista/ingresos_CFIVA1SIRPFVC.php?conceptoOpcion=".$datos['cuentas'][$i]['IdMovimiento']."';"; 
+                $link="javascript:document.location.href='../vista/ingresos_CFIVA1SIRPFVC.php?conceptoOpcion=".$i."';"; 
 
                 ?>
                 <li onClick="<?php echo $link; ?>">
@@ -1901,11 +1903,11 @@ function desFormateaNumeroContabilidad2(numero) {
                             </script>
                             <input type="button" id="cmdAlta" name="cmdAlta" data-theme="a" data-icon="forward" data-iconpos="right" value="Grabar" onClick="javascript:validar();" /> 
                             <?php if($editarAsiento==='SI') {?>
-                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="button" data-theme="a" value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('.$_GET['Asiento'].');" />';} ?>  
-                            <input type="hidden"  name="cmdAlta" <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo 'value="Editar"';}else{echo 'value="Alta"';} ?>  />
+                            <?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']==='SI'){echo '<input type="button" data-theme="a" value="Eliminar" name="cmdBorrar" onclick="javascript:borrarAsiento('.$_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'].');" />';} ?>  
+                            <input type="hidden"  name="cmdAlta" <?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']==='SI'){echo 'value="Editar"';}else{echo 'value="Alta"';} ?>  />
                             <input type="hidden"  name="tipo" value="<?php if(isset($datos['tipo'])){echo $datos['tipo'];} ?>" />
-                            <input type="hidden"  name="esAbono" value="<?php if(isset($_GET['esAbono'])){echo $_GET['esAbono'];}else{echo 'NO';} ?>" />
-                            <?php if(isset($_GET['editar']) && $_GET['editar']==='SI'){echo '<input type="hidden"  name="Asiento" value="'.$_GET['Asiento'].'" />';} ?>  
+                            <input type="hidden"  name="esAbono" value="<?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono'])){echo $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono'];}else{echo 'NO';} ?>" />
+                            <?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']==='SI'){echo '<input type="hidden"  name="Asiento" value="'.$_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'].'" />';} ?>  
                             <?php } ?>
                         </td>
                     </tr>                    
@@ -1931,10 +1933,10 @@ function desFormateaNumeroContabilidad2(numero) {
             $SePuedeImp = 'SI';
         }
         ?>
-        <input type="hidden" name="editar" value="<?php echo $_GET['editar'];?>" />
-        <input type="hidden" name="Asiento" value="<?php echo $_GET['Asiento'];?>" />
-        <input type="hidden" name="borrar" value="<?php echo $_GET['borrar'];?>" />
-        <input type="hidden" name="esAbono" value="<?php echo $_GET['esAbono'];?>" />
+        <input type="hidden" name="editar" value="<?php echo $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar'];?>" />
+        <input type="hidden" name="Asiento" value="<?php echo $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'];?>" />
+        <input type="hidden" name="borrar" value="<?php echo $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['borrar'];?>" />
+        <input type="hidden" name="esAbono" value="<?php echo $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono'];?>" />
         
     </form>
     </div>

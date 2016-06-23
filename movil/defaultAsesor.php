@@ -32,6 +32,10 @@ if ($lngPermiso==0)
 //Si devuelve 1 entonces que siga el flujo 
 /**************************************************************/
 
+//borro la vble de session
+unset($_SESSION['presupuestoActivo']);
+unset($_SESSION['ingresos_CFIVA1SIRPFVC']);
+
 
 
 //print_r($_SESSION);

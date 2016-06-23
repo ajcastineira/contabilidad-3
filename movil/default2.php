@@ -27,6 +27,11 @@ if ($lngPermiso==0)
 //Si devuelve 1 entonces que siga el flujo 
 /**************************************************************/
 
+//borro la vble de session
+unset($_SESSION['presupuestoActivo']);
+unset($_SESSION['ingresos_CFIVA1SIRPFVC']);
+
+
 logger('info','gastos_entrada.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['mapeo'].', SesionID: '.  session_id().
        " ||||Operaciones->Mis Gastos||(Menu eleccion)");
 

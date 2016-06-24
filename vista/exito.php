@@ -2,6 +2,10 @@
 session_start();
 require_once '../general/funcionesGenerales.php';
 
+//borro vbles de session
+unset($_SESSION['ingresos_CFIVA1SIRPFVC']);
+
+
 ////Control de Sesion
 //ControlaLoginTimeOut();
 //

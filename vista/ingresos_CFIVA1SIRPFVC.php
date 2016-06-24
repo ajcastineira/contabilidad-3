@@ -31,7 +31,6 @@ if ($lngPermiso==0)
 
 
 
-//print_r($_SESSION);
 $clsCNContabilidad=new clsCNContabilidad();
 $clsCNContabilidad->setStrBD($_SESSION['mapeo']);
 $clsCNUsu=new clsCNUsu();
@@ -105,34 +104,6 @@ if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Alta'){
     }
     //************************************************************************
 }
-//se viene del listado de editar asientos (listado_asientos2.php)
-else if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']==='SI'){
-    logger('info',basename($_SERVER['PHP_SELF']).'-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
-           " ||||Operaciones->Modificar Asiento||");
-
-    $datosUsuario = $clsCNUsu->DatosUsuario($_SESSION['usuario']);
-    $_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'] = $datosUsuario;
-    
-    //se buscan los datos de este asiento para cargarlos en el formulario
-    $datos = $clsCNContabilidad->DatosAsientoCFIVA1SIRPFVC($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'],$_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono']);
-    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos'] = $datos;
-    
-    //vemos si el asiento esta en un perido editable para el iva
-    $editarAsiento = $clsCNContabilidad->AsientoEditable($datos['lngEjercicio'],$datos['lngPeriodo']);
-    $_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'] = $editarAsiento;
-
-    //si $datos[Borrado]='0' este asiento esta borrado por lo que redirecciono a 'default2.php'
-    if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['Borrado']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['Borrado']==='1'){
-        //presento el formulario con los datos
-        if($_SESSION['navegacion']==='movil'){
-            html_paginaMovil($_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'],$_SESSION['ingresos_CFIVA1SIRPFVC']['datos'],$_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'],'edicion',$clsCNContabilidad);
-        }else{
-            html_pagina($_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'],$_SESSION['ingresos_CFIVA1SIRPFVC']['datos'],$_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'],'edicion');
-        }    
-    }else{
-        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/default2.php">';
-    }    
-}
 //se viende de dar a aceptar a editar un asiento
 else if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Editar'){
 
@@ -162,6 +133,40 @@ else if(isset($_POST['cmdAlta']) && $_POST['cmdAlta']=='Editar'){
             //voy a la pagina de 'exito.php'
             echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/exito.php?Id=Asiento editado correctamente">';
         }
+    }    
+}
+//se viene del listado de editar asientos (listado_asientos2.php)
+else if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']==='SI'){
+    logger('info',basename($_SERVER['PHP_SELF']).'-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+           " ||||Operaciones->Modificar Asiento||");
+
+    if(!isset($_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'])){
+        $datosUsuario = $clsCNUsu->DatosUsuario($_SESSION['usuario']);
+        $_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'] = $datosUsuario;
+    }
+    
+    if(!isset($_SESSION['ingresos_CFIVA1SIRPFVC']['datos'])){
+        //se buscan los datos de este asiento para cargarlos en el formulario
+        $datos = $clsCNContabilidad->DatosAsientoCFIVA1SIRPFVC($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'],$_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono']);
+        $_SESSION['ingresos_CFIVA1SIRPFVC']['datos'] = $datos;
+    }
+    
+    if(!isset($_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'])){
+        //vemos si el asiento esta en un perido editable para el iva
+        $editarAsiento = $clsCNContabilidad->AsientoEditable($datos['lngEjercicio'],$datos['lngPeriodo']);
+        $_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'] = $editarAsiento;
+    }
+    
+    //si $datos[Borrado]='0' este asiento esta borrado por lo que redirecciono a 'default2.php'
+    if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['Borrado']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['Borrado']==='1'){
+        //presento el formulario con los datos
+        if($_SESSION['navegacion']==='movil'){
+            html_paginaMovil($_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'],$_SESSION['ingresos_CFIVA1SIRPFVC']['datos'],$_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'],'edicion',$clsCNContabilidad);
+        }else{
+            html_pagina($_SESSION['ingresos_CFIVA1SIRPFVC']['datosUsuario'],$_SESSION['ingresos_CFIVA1SIRPFVC']['datos'],$_SESSION['ingresos_CFIVA1SIRPFVC']['editarAsiento'],'edicion');
+        }    
+    }else{
+        echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/default2.php">';
     }    
 }
 //se viene de 'gastos_entrada.php'
@@ -324,7 +329,7 @@ function validar()
     //compruebo que los arrays lleven datos (lentgh)
     //si fuese 0 es que no se a introducido ninguna linea de factura y eso es incongruente
     if(importes.length===0){
-        textoError=textoError+"Debe introducidir alguna linea en el presupuesto.\n";
+        textoError=textoError+"Debe introducidir alguna linea en la factura.\n";
         esValido=false;
     }
     
@@ -1429,7 +1434,26 @@ function validar()
 {
   esValido=true;
   textoError='';
-  
+
+
+
+//  if(esValido==true){
+//      //compruebo si el asiento es 15N o 15N2
+//      //si es 15N el asiento esta hecho con los datos de origen de la factura
+//      //si es 15N2 ya no esta ligada a la factura origen
+//      var tipoAsiento = document.form1.TipoAsiento.value;
+//      if(tipoAsiento === '15N' || tipoAsiento === '16N' || tipoAsiento === '17N' || tipoAsiento === '18N'){
+//          alert('Está modificando únicamente el asiento contable. No se realizará ningún cambio en la factura origen.');
+//      }
+//      document.getElementById("cmdAlta").value = "Enviando...";
+//      document.getElementById("cmdAlta").disabled = true;
+//      document.form1.submit();
+//  }else{
+//      return false;
+//  }  
+
+
+
   
   if(esValido===true){
     document.form1.opcion.value='Grabar';
@@ -1634,14 +1658,16 @@ function desFormateaNumeroContabilidad2(numero) {
         //var_dump($datosPresupuesto);die;
         if(is_array($datosPresupuesto['cuentas'])){ 
             //y voy sumando el importe y la cuota
-            $totalImportePres=0;
-            $totalCuotaPres=0;
+            $totalImportePres = 0;
+            $totalCuotaPres = 0;
             ?>
             <?php for($i=0;$i<count($datos['cuentas']);$i++){
                 $idCuenta = $datos['cuentas'][$i]['idCuenta'];
                 $nombreCuenta = $datos['cuentas'][$i]['idCuenta'];
                 $cantidad = $datos['cuentas'][$i]['lngCantidadContabilidad'];
+                $totalImportePres = (float)$totalImportePres + (float)$datos['cuentas'][$i]['cantidad'];
                 $cuota = $datos['cuentas'][$i]['lngIvaContabilidad'];
+                $totalCuotaPres = (float)$totalCuotaPres + (float)$datos['cuentas'][$i]['cuota'];
                 $iva = round((float)$datos['cuentas'][$i]['cuota'] / (float)$datos['cuentas'][$i]['cantidad'] * 100,0);
                 $total = round((float)$datos['cuentas'][$i]['cantidad'] + (float)$datos['cuentas'][$i]['cuota'],2);
                 $IG = $datos['TipoAsiento'];
@@ -1748,7 +1774,7 @@ function desFormateaNumeroContabilidad2(numero) {
                         <td>
                             <div align="right"> 
                                 <input type="text" name="totalImporte" readonly
-                                       value="<?php if(isset($datos)){echo $datos['lngCantidadContabilidad'];}else{echo '0,00';} ?>" />
+                                       value="<?php if(isset($datos)){echo $totalImportePres;}else{echo '0,00';} ?>" />
                             </div>
                         </td>
                     </tr>
@@ -1760,7 +1786,7 @@ function desFormateaNumeroContabilidad2(numero) {
                         <td>
                             <div align="right"> 
                                 <input type="text" name="totalImporte" readonly
-                                       value="<?php if(isset($datos)){echo $datos['lngIvaContabilidad'];}else{echo '0,00';} ?>" />
+                                       value="<?php if(isset($datos)){echo $totalCuotaPres;}else{echo '0,00';} ?>" />
                             </div>
                         </td>
                     </tr>
@@ -1772,12 +1798,12 @@ function desFormateaNumeroContabilidad2(numero) {
                         <td>
                             <div align="right"> 
                             <?php 
-                            $totalTotal = $datos['lngCantidad'] + $datos['lngIva'];
+                            $totalTotal = $totalImportePres + $totalCuotaPres;
                             if($datos['TipoAsiento']){
                                 $totalTotal = abs($totalTotal);
                             }
                             ?>
-                                <input type="text" name="totalImporte"
+                                <input type="text" name="totalImporte" readonly
                                        value="<?php echo formateaNumeroContabilidad($totalTotal); ?>" />
                             </div>
                         </td>

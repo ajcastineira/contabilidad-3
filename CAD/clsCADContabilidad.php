@@ -4577,55 +4577,55 @@ class clsCADContabilidad{
                     " clsCADContabilidad->tbmovimientos_iva_insertarDato()<OK");
         }
         
-
-        //POR ULTIMO SE INSERTA EN LA TABLA DEL IRPF tbretenciones_irpf
-        //obtengo el idMovimiento
-        $strSQL = "SELECT Id FROM tbretenciones_irpf ORDER BY Id DESC LIMIT 0,1";
-        logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
-                " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()|| SQL : ".$strSQL);
-        $stmt = $db->ejecutar ( $strSQL );
-        if($stmt){
-            $num=  mysql_num_rows($stmt);
-            $Id=0;
-            if($num>0){
-                $row=  mysql_fetch_assoc($stmt);
-                $Id=$row['Id']+1;
-            }else{
-                $Id=1;
-            }
-        }else{
-            //si ha fallado la consulta hacemos ROLLBACK Y DEVOLVEMOS false
-            $db->ejecutar ("ROLLBACK");
-            $db->desconectar ();
-            logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
-                    " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()<ROLLBACK");
-            return false;
-        }
-        logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
-                " clsCADContabilidad->AltaGastosMovimientosIRPF()|| Id : ".$Id);
-        
-        //ahora hacemos la insercion del IRPF
-        //comprobamos si es asiento normal o abono
-        if($esAbono==='NO'){//asiento normal->el importe de IRPF es positivo
-            $strSQL="INSERT INTO tbretenciones_irpf (Id,IdAsiento,IdCliProv,BaseImponible,Retencion,ImporteRetencion,
-                                                    Borrado,datFechaStatus,lngIdEmpleadoStatus,TipoAsiento,Clave)".
-                    " VALUES ($Id,$asiento,$IdCliProv,$lngCantidad,$lngPorcientoIRPF,$lngIRPF,1,now(),".$_SESSION['usuario'].",'".$tipoAsiento."','G')";
-        }else{//Abono->el importe del IRPF es negativo
-            $strSQL="INSERT INTO tbretenciones_irpf (Id,IdAsiento,IdCliProv,BaseImponible,Retencion,ImporteRetencion,
-                                                    Borrado,datFechaStatus,lngIdEmpleadoStatus,TipoAsiento,Clave)".
-                    " VALUES ($Id,$asiento,$IdCliProv,-$lngCantidad,$lngPorcientoIRPF,-$lngIRPF,1,now(),".$_SESSION['usuario'].",'".$tipoAsiento."','G')";
-        }
-        logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
-                " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()|| SQL : ".$strSQL);
-        $stmt = $db->ejecutar ( $strSQL );
-        if(!$stmt){
-            //si ha fallado la insercion hacemos ROLLBACK Y DEVOLVEMOS false
-            $db->ejecutar ("ROLLBACK");
-            $db->desconectar ();
-            logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
-                    " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()<ROLLBACK");
-            return false;
-        }
+//EN LAS VENTAS NO VA EL IRPF A LA TABLA tbretenciones_irpf  **********
+//        //POR ULTIMO SE INSERTA EN LA TABLA DEL IRPF tbretenciones_irpf
+//        //obtengo el idMovimiento
+//        $strSQL = "SELECT Id FROM tbretenciones_irpf ORDER BY Id DESC LIMIT 0,1";
+//        logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+//                " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()|| SQL : ".$strSQL);
+//        $stmt = $db->ejecutar ( $strSQL );
+//        if($stmt){
+//            $num=  mysql_num_rows($stmt);
+//            $Id=0;
+//            if($num>0){
+//                $row=  mysql_fetch_assoc($stmt);
+//                $Id=$row['Id']+1;
+//            }else{
+//                $Id=1;
+//            }
+//        }else{
+//            //si ha fallado la consulta hacemos ROLLBACK Y DEVOLVEMOS false
+//            $db->ejecutar ("ROLLBACK");
+//            $db->desconectar ();
+//            logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+//                    " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()<ROLLBACK");
+//            return false;
+//        }
+//        logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+//                " clsCADContabilidad->AltaGastosMovimientosIRPF()|| Id : ".$Id);
+//        
+//        //ahora hacemos la insercion del IRPF
+//        //comprobamos si es asiento normal o abono
+//        if($esAbono==='NO'){//asiento normal->el importe de IRPF es positivo
+//            $strSQL="INSERT INTO tbretenciones_irpf (Id,IdAsiento,IdCliProv,BaseImponible,Retencion,ImporteRetencion,
+//                                                    Borrado,datFechaStatus,lngIdEmpleadoStatus,TipoAsiento,Clave)".
+//                    " VALUES ($Id,$asiento,$IdCliProv,$lngCantidad,$lngPorcientoIRPF,$lngIRPF,1,now(),".$_SESSION['usuario'].",'".$tipoAsiento."','G')";
+//        }else{//Abono->el importe del IRPF es negativo
+//            $strSQL="INSERT INTO tbretenciones_irpf (Id,IdAsiento,IdCliProv,BaseImponible,Retencion,ImporteRetencion,
+//                                                    Borrado,datFechaStatus,lngIdEmpleadoStatus,TipoAsiento,Clave)".
+//                    " VALUES ($Id,$asiento,$IdCliProv,-$lngCantidad,$lngPorcientoIRPF,-$lngIRPF,1,now(),".$_SESSION['usuario'].",'".$tipoAsiento."','G')";
+//        }
+//        logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+//                " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()|| SQL : ".$strSQL);
+//        $stmt = $db->ejecutar ( $strSQL );
+//        if(!$stmt){
+//            //si ha fallado la insercion hacemos ROLLBACK Y DEVOLVEMOS false
+//            $db->ejecutar ("ROLLBACK");
+//            $db->desconectar ();
+//            logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
+//                    " clsCADContabilidad->AltaIngresosMovimientosIVA_VariosIRPF_VariasCuentas()<ROLLBACK");
+//            return false;
+//        }
         
         
         //si todas las operaciones contra la BBDD se han efectuado correctamente se hace COMMIT y devolvemos true

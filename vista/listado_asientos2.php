@@ -28,6 +28,10 @@ if ($lngPermiso==0)
 /**************************************************************/
 
 
+//borro vbles de session
+unset($_SESSION['ingresos_CFIVA1SIRPFVC']);
+
+
 logger('info','listado_asientos.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['mapeo'].', SesionID: '.  session_id().
        " ||||Operaciones->Modificar Asiento||");
 

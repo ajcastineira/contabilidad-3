@@ -46,51 +46,46 @@ $cuentaContable = $clsCNContabilidad->Parametro_general('cuentaContable', date('
 
 //compruebo si viene de submitirse este formulario y es editar
 if(isset($_POST['opcion']) && $_POST['opcion']==='Nuevo'){
-    echo "Nueva linea OK";die;
+    //var_dump($_POST);die;
     
-//    //doy de alta una linea mas del concepto nuevo
-//    $count=count($_SESSION['presupuestoActivo']['DetallePresupuesto']);
-//    
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['IdArticulo']= $_POST['IdArticulo'];
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['cuenta']= $_POST['cuenta'];
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['cantidad']= desFormateaNumeroContabilidad($_POST['cantidad']);
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['precio']=desFormateaNumeroContabilidad($_POST['precio']);
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['importe']=desFormateaNumeroContabilidad($_POST['importe']);
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['iva']=desFormateaNumeroContabilidad($_POST['iva']);
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['cuota']=desFormateaNumeroContabilidad($_POST['cuota']);
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['total']=desFormateaNumeroContabilidad($_POST['total']);
-//    $_SESSION['presupuestoActivo']['DetallePresupuesto'][$count]['concepto']=$_POST['concepto'];
-//    $_SESSION['presupuestoActivo']['SePuedeImprimir']=$_POST['SePuedeImprimir'];
+    $nuevo = '';
+    //guardamos estos datos en la vble $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][]
+    $nuevo['idCuenta'] = $_POST['cuenta'];
+    $nuevo['strCuenta'] = $_POST['nombreCuenta'];
+    $nuevo['cantidad'] = desFormateaNumeroContabilidad($_POST['importe']);
+    $nuevo['lngCantidadContabilidad'] = $_POST['importe'];
+    $nuevo['cuota'] = desFormateaNumeroContabilidad($_POST['cuota']);
+    $nuevo['lngIvaContabilidad'] = $_POST['cuota'];
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][] = $nuevo;
     
-    //ahora volvemos a la pagina de altafacturaLineas
+    //ahora volvemos a la pagina de ingresos_CFIVA1SIRPFVC
     echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/ingresos_CFIVA1SIRPFVC.php">';die;
 }else
 
 //compruebo si viene de submitirse este formulario y es editar
 if(isset($_POST['opcion']) && $_POST['opcion']==='Editar'){
-    echo "Editar linea OK -  no guarda en SESSION los datos o no los presenta bien en la pagina principal";
-//    var_dump($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas']);die;
     
     //guardamos estos datos en la vble $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]
     $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['idCuenta'] = $_POST['cuenta'];
     $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['strCuenta'] = $_POST['nombreCuenta'];
-    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['cantidad'] = $_POST['importe'];
-    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['cuota'] = $_POST['cuota'];
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['cantidad'] = desFormateaNumeroContabilidad($_POST['importe']);
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['lngCantidadContabilidad'] = $_POST['importe'];
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['cuota'] = desFormateaNumeroContabilidad($_POST['cuota']);
+    $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_POST['IdLinea']]['lngIvaContabilidad'] = $_POST['cuota'];
     
-    //ahora volvemos a la pagina de altafacturaLineas
+    //ahora volvemos a la pagina de ingresos_CFIVA1SIRPFVC
     echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/ingresos_CFIVA1SIRPFVC.php">';die;
 }else
     
 //compruebo si viene de submitirse este formulario y es borrar
 if(isset($_POST['opcion']) && $_POST['opcion']==='Borrar'){
-    echo "Borrar linea OK";die;
+    //var_dump($_POST);die;
     
-//    //borro de la vble de session esta linea (concepto) (borro y reordeno el array)
-//    array_splice($_SESSION['presupuestoActivo']['DetallePresupuesto'],$_POST['IdLinea'],1);
-//    $_SESSION['presupuestoActivo']['SePuedeImprimir']='NO';
+    //borro de la vble de session esta linea (concepto) (borro y reordeno el array)
+    array_splice($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'],$_POST['IdLinea'],1);
     
-    //ahora volvemos a la pagina de altafacturaLineas
-    echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../movil/altafacturaLineas.php">';die;
+    //ahora volvemos a la pagina de ingresos_CFIVA1SIRPFVC
+    echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../vista/ingresos_CFIVA1SIRPFVC.php">';die;
 }
 //controlo que traigo $_GET[IdLinea], sino vuelvo a default2.php
 if(!isset($_GET['IdLinea']) && $_GET['IdLinea'] !== ''){
@@ -382,7 +377,10 @@ function copiaHidden(precio,precioHidden){
 
 
 function copiarCuentaHidden(cuenta,cuentaHidden){
-    cuentaHidden.value = cuenta.value;
+    //este dato viene de la forma (708000000 - Devolución ventas mercaderías)
+    //la divido y cojo la primera parte, el numero de cuenta
+    var dividir = cuenta.value.split('-');
+    cuentaHidden.value = dividir[0].trim();
 }
 
 </script>
@@ -415,8 +413,8 @@ function copiarCuentaHidden(cuenta,cuentaHidden){
                         ?>
                         <label>Cuenta de Ingreso</label>
                         <input type="hidden" id="cuenta" name="cuenta" value="<?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_GET['IdLinea']]['idCuenta'])){echo $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_GET['IdLinea']]['idCuenta'];} ?>">
-                        <textarea id="nombreCuenta" name="nombreCuenta" rows=4 cols="20" onfocus="javascript:document.form1.concepto.style.borderColor='#aaa666';"
-                                  onkeypress="" onkeyup="" onChange="copiarCuentaHidden(this,document.form1.cuenta)"
+                        <textarea id="nombreCuenta" name="nombreCuenta" rows=4 cols="20" onfocus="javascript:document.form1.nombreCuenta.style.borderColor='#aaa666';"
+                                  onkeypress="" onkeyup="" onblur="copiarCuentaHidden(this,document.form1.cuenta)"
                                   ><?php echo htmlentities($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_GET['IdLinea']]['strCuenta'],ENT_QUOTES,'UTF-8');?></textarea>
                     </td>
                 </tr>
@@ -427,7 +425,7 @@ function copiarCuentaHidden(cuenta,cuentaHidden){
                         <input type="text" name="importe" id="importe"
                                onfocus="onFocusInputTextM(this);desFormateaCantidad(this);" 
                                onblur="solonumerosM(this);formateaCantidad(this);
-                                       asientoCalculoImporte(this,document.form1.iva,document.form1.cuota,document.form1.total);sumas();"
+                                       asientoCalculoImporte(this,document.form1.iva,document.form1.cuota,document.form1.total);"
                                value="<?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_GET['IdLinea']]['cantidad'])){echo formateaNumeroContabilidad($_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_GET['IdLinea']]['cantidad']);} ?>" />
                     </td>
                     <td colspan="2">

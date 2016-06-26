@@ -434,7 +434,7 @@ function copiarCuentaHidden(cuenta,cuentaHidden){
                         $cuota = $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_GET['IdLinea']]['cuota'];
                         $cantidad = $_SESSION['ingresos_CFIVA1SIRPFVC']['datos']['cuentas'][$_GET['IdLinea']]['cantidad'];
                         $total = $cuota + $cantidad;
-                        $iva = (int)($cuota / $cantidad * 100);
+                        $iva = (int)round($cuota / $cantidad * 100,2);
                         //$iva=formateaNumeroContabilidad($_SESSION['presupuestoActivo']['DetallePresupuesto'][$linea]['iva']);
                         if($iva===0){
                         $textoiva='<option value="0" selected>0</option>'.

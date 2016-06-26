@@ -187,6 +187,7 @@ else{//comienzo del else principal
 //    }
     
     
+    echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL=../'.$_SESSION['navegacion'].'/default2.php">';
     if($_SESSION['navegacion']==='movil'){
         //CREO QUE ESTA NO HAY QUE HACERLA
         echo "Esta sin hacer";die;
@@ -225,22 +226,12 @@ function validar()
     //compruebo que las sumas de las cuentas y las del asiento (Base Imponible, cuota y total) sean las mismas
     if(document.form1.totalImporte.value !== document.form1.lngCantidadContabilidad.value){
         textoError=textoError+"La base imponible no suma "+document.form1.lngCantidadContabilidad.value+". Debe corregir esta desviación.\n";
-//        document.form1.totalImporte.style.borderColor='#FF0000';
-//        document.form1.lngCantidadContabilidad.style.borderColor='#FF0000';
         esValido=false;
     }
     if(document.form1.totalCuota.value !== document.form1.lngIvaContabilidad.value){
         textoError=textoError+"El IVA Soportado no suma "+document.form1.lngIvaContabilidad.value+". Debe corregir esta desviación.\n";
-//        document.form1.totalCuota.style.borderColor='#FF0000';
-//        document.form1.lngIvaContabilidad.style.borderColor='#FF0000';
         esValido=false;
     }
-//    if(document.form1.totalTotal.value !== document.form1.lngIngresoContabilidad.value){
-//        textoError=textoError+"El IVA Soportado no suma "+document.form1.lngIngresoContabilidad.value+". Debe corregir esta desviación.\n";
-//        document.form1.totalTotal.style.borderColor='#FF0000';
-//        document.form1.lngIngresoContabilidad.style.borderColor='#FF0000';
-//        esValido=false;
-//    }
   
   
   
@@ -1452,6 +1443,17 @@ function validar()
 //      return false;
 //  }  
 
+    //compruebo que las sumas de las cuentas y las del asiento (Base Imponible, cuota y total) sean las mismas
+    if(document.form1.totalImporte.value !== document.form1.lngCantidadContabilidad.value){
+        textoError=textoError+"La base imponible no suma "+document.form1.lngCantidadContabilidad.value+". Debe corregir esta desviación.\n";
+        esValido=false;
+    }
+    if(document.form1.totalCuota.value !== document.form1.lngIvaContabilidad.value){
+        textoError=textoError+"El IVA Soportado no suma "+document.form1.lngIvaContabilidad.value+". Debe corregir esta desviación.\n";
+        esValido=false;
+    }
+
+
 
 
   
@@ -1537,6 +1539,13 @@ function desFormateaNumeroContabilidad2(numero) {
     return numero;
 }
 
+//borrar Asiento
+function borrarAsiento(id){
+    if (confirm("¿Desea borrar el Asiento de la base de datos?"))
+    {
+        window.location='../vista/asientoBorrar.php?id='+id;
+    }
+}
 
 
 
@@ -1703,6 +1712,7 @@ function desFormateaNumeroContabilidad2(numero) {
                                         <div align="right" style="font-style: initial;"> 
                                         <?php echo $cantidad; ?>
                                         </div>
+                                        <input type="hidden" name="importe<?php echo $i+1; ?>" value="<?php echo $cantidad; ?>"/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1714,6 +1724,7 @@ function desFormateaNumeroContabilidad2(numero) {
                                         <div align="right"> 
                                         <?php echo $cuota; ?>
                                         </div>
+                                        <input type="hidden" name="cuota<?php echo $i+1; ?>" value="<?php echo $cuota; ?>"/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1724,6 +1735,10 @@ function desFormateaNumeroContabilidad2(numero) {
                                     <td>
                                         <div align="right"> 
                                         <?php echo $total; ?>
+                                        <input type="hidden" name="total<?php echo $i+1; ?>" value="<?php echo $total; ?>"/>
+                                        <input type="hidden" name="cuenta<?php echo $i+1; ?>" value="<?php echo $idCuenta; ?>"/>
+                                        <input type="hidden" name="nombreCuenta<?php echo $i+1; ?>" value="<?php echo $nombreCuenta; ?>"/>
+                                        <input type="hidden" name="iva<?php echo $i+1; ?>" value="<?php echo $iva; ?>"/>
                                         </div>
                                     </td>
                                 </tr>
@@ -1774,7 +1789,7 @@ function desFormateaNumeroContabilidad2(numero) {
                         <td>
                             <div align="right"> 
                                 <input type="text" name="totalImporte" readonly
-                                       value="<?php if(isset($datos)){echo $totalImportePres;}else{echo '0,00';} ?>" />
+                                       value="<?php if(isset($datos)){echo formateaNumeroContabilidad($totalImportePres);}else{echo '0,00';} ?>" />
                             </div>
                         </td>
                     </tr>
@@ -1785,8 +1800,8 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                         <td>
                             <div align="right"> 
-                                <input type="text" name="totalImporte" readonly
-                                       value="<?php if(isset($datos)){echo $totalCuotaPres;}else{echo '0,00';} ?>" />
+                                <input type="text" name="totalCuota" readonly
+                                       value="<?php if(isset($datos)){echo formateaNumeroContabilidad($totalCuotaPres);}else{echo '0,00';} ?>" />
                             </div>
                         </td>
                     </tr>
@@ -1803,7 +1818,7 @@ function desFormateaNumeroContabilidad2(numero) {
                                 $totalTotal = abs($totalTotal);
                             }
                             ?>
-                                <input type="text" name="totalImporte" readonly
+                                <input type="text" name="total" readonly
                                        value="<?php echo formateaNumeroContabilidad($totalTotal); ?>" />
                             </div>
                         </td>
@@ -1831,7 +1846,7 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                         <td>
                             <div align="right"> 
-                                <input type="text" name="totalImporte" readonly
+                                <input type="text" name="lngCantidadContabilidad" readonly
                                        value="<?php if(isset($datos)){echo $datos['lngCantidadContabilidad'];}else{echo '0,00';} ?>" />
                             </div>
                         </td>
@@ -1842,7 +1857,7 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                         <td>
                             <div align="right"> 
-                                <input type="text" name="totalImporte" readonly
+                                <input type="text" name="lngIvaContabilidad" readonly
                                        value="<?php if(isset($datos)){echo $datos['lngIvaContabilidad'];}else{echo '0,00';} ?>" />
                             </div>
                         </td>
@@ -1909,8 +1924,12 @@ function desFormateaNumeroContabilidad2(numero) {
                         </td>
                         <td>
                             <div align="right"> 
+                                <?php 
+                                $totalTotal = formateaNumeroContabilidad(($datos['lngCantidad']+$datos['lngIva']) - ($datos['lngCantidad']*$numIRPF/100)); 
+                                ?>
+                                <input type="hidden" name="totalTotal" value="<?php echo $totalTotal; ?>" />
                                 <span id="total">
-                                    <?php echo formateaNumeroContabilidad(($datos['lngCantidad']+$datos['lngIva']) - ($datos['lngCantidad']*$numIRPF/100)); ?>
+                                    <?php echo $totalTotal; ?>
                                 </span>
                             </div>
                         </td>
@@ -1935,23 +1954,24 @@ function desFormateaNumeroContabilidad2(numero) {
                             <input type="hidden"  name="esAbono" value="<?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono'])){echo $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['esAbono'];}else{echo 'NO';} ?>" />
                             <?php if(isset($_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']) && $_SESSION['ingresos_CFIVA1SIRPFVC']['get']['editar']==='SI'){echo '<input type="hidden"  name="Asiento" value="'.$_SESSION['ingresos_CFIVA1SIRPFVC']['get']['Asiento'].'" />';} ?>  
                             <?php } ?>
+                            <input type="hidden" name="opcion" />
                         </td>
                     </tr>                    
                     <?php }else{ ?>
                     <input type="hidden" name="irpf" value="<?php echo $numIRPF; ?>" />
                     <input type="hidden" name="IRPFcuota" />
                     <?php } ?>
+                    <input type="hidden" name="lngIRPFContabilidad" value="<?php echo $datos['lngIRPFContabilidad']; ?>" />
+                    <input type="hidden" name="lngIngresoContabilidad" value="<?php echo $datos['lngIngresoContabilidad']; ?>" />
+                    <input type="hidden" name="optTipo" value="<?php echo $datos['optTipo']; ?>" />
+                    <input type="hidden" id="okStrCuentaBancos" name="okStrCuentaBancos" value="<?php if($NoE==='nuevo'){echo 'NO';}else if($NoE==='edicion'){echo 'SI';} ?>" />
+                    <input type="hidden" name="linea" value="0" />     
+                    <input type="hidden" name="TipoAsiento" value="<?php echo $datos['TipoAsiento']; ?>" />     
+                    <input type="hidden" name="porcientoIRPF" value="<?php echo $datos['lngPorcientoIRPF']; ?>" />     
                 </tbody>
             </table>
         <!--</a>-->
         <br/>
-        
-        
-        
-        
-        
-        
-        
         <?php
         if(isset($_SESSION['presupuestoActivo']['SePuedeImprimir'])){
             $SePuedeImp = $_SESSION['presupuestoActivo']['SePuedeImprimir'];

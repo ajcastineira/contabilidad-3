@@ -5562,17 +5562,25 @@ class clsCNContabilidad {
         }
         
         //ahora pongo los valores absolutos (sin negativo)
+        //controlo el numero de cuentas de ventas (UNA o VARIAS)
+        $numeroCuentas = 'UNA';
+        $numCuentaAux = 0;
         for ($i = 0; $i < count($cuentaVentas); $i++) {
             $cuentaVentas[$i]['importe'] = abs($cuentaVentas[$i]['importe']);
             $cuentaVentas[$i]['cuota'] = abs($cuentaVentas[$i]['cuota']);
+            //voy comparando la posicion actual con la anterior y si son iguales son VARIAS, sino es UNA
+            //una vez que el dato es VARIAS esta comparacion ya no es relevante
+            if($i > 0 && $cuentaVentas[$i-1]['cuenta'] !== $cuentaVentas[$i]['cuenta']){
+                $numeroCuentas = 'VARIAS';
+            }
         }
         
         
-        //tipo de cuenta
-        $numeroCuentas = 'UNA';
-        if(count($cuentaVentas)>1){
-            $numeroCuentas = 'VARIAS';
-        }
+//        //tipo de cuenta
+//        $numeroCuentas = 'UNA';
+//        if(count($cuentaVentas)>1){
+//            $numeroCuentas = 'VARIAS';
+//        }
         
         
         //ahora segun las combinaciones de estas tres variables (IVA, IRPF y cuentas)
@@ -5777,10 +5785,10 @@ class clsCNContabilidad {
 //            $esAbono='NO';
             $strUsuario=$_SESSION["strUsuario"];
             
-            $lngCantidad1=$importe0; $lngIva1='0'; $lngPorciento1='0';
-            $lngCantidad2=$importe4; $lngIva2=$cuota4; $lngPorciento2='4';
-            $lngCantidad3=$importe10; $lngIva3=$cuota10; $lngPorciento3='10';
-            $lngCantidad4=$importe21; $lngIva4=$cuota21; $lngPorciento4='21';
+            $lngCantidad1=$importes[0]; $lngIva1='0'; $lngPorciento1='0';
+            $lngCantidad2=$importes[4]; $lngIva2=$cuotas[4]; $lngPorciento2='4';
+            $lngCantidad3=$importes[10]; $lngIva3=$cuotas[10]; $lngPorciento3='10';
+            $lngCantidad4=$importes[21]; $lngIva4=$cuotas[21]; $lngPorciento4='21';
             
             //13N - Ingreso VARIOS IVA - Sin IRPF - 1 Cuenta
             if($numeroCuentas === 'UNA'){
@@ -5855,10 +5863,10 @@ class clsCNContabilidad {
 //            $esAbono='NO';
             $strUsuario=$_SESSION["strUsuario"];
             
-            $lngCantidad1=$importe0; $lngIva1='0'; $lngPorciento1='0';
-            $lngCantidad2=$importe4; $lngIva2=$cuota4; $lngPorciento2='4';
-            $lngCantidad3=$importe10; $lngIva3=$cuota10; $lngPorciento3='10';
-            $lngCantidad4=$importe21; $lngIva4=$cuota21; $lngPorciento4='21';
+            $lngCantidad1=$importes[0]; $lngIva1='0'; $lngPorciento1='0';
+            $lngCantidad2=$importes[4]; $lngIva2=$cuotas[4]; $lngPorciento2='4';
+            $lngCantidad3=$importes[10]; $lngIva3=$cuotas[10]; $lngPorciento3='10';
+            $lngCantidad4=$importes[21]; $lngIva4=$cuotas[21]; $lngPorciento4='21';
             
             $lngPorcientoIRPF=$datosFactura['Retencion'];
             $lngIRPF=round($datosFactura['Retencion']*$importe/100,2);
@@ -8097,6 +8105,7 @@ class clsCNContabilidad {
         
         //voy a preparar el array con las cuentas de ventas y sus datos
         $cuentaVentas = '';
+        //var_dump($post);die;//*************************************************
         foreach ($post as $key => $value) {
             if(substr($key,0,6) === 'cuenta'){
                 $num = substr($key,6,1);

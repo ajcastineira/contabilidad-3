@@ -1432,8 +1432,12 @@ $fechaTexto=$day.' de '.$mes.' de '.$year;
             </td>
         </tr>
         <?php }else{ ?>
-        <input type="hidden" name="irpf" value="<?php echo $numIRPF; ?>" />
-        <input type="hidden" name="IRPFcuota" />
+        <tr>
+            <td>
+                <input type="hidden" name="irpf" value="<?php echo $numIRPF; ?>" />
+                <input type="hidden" name="IRPFcuota" />
+            </td>
+        </tr>
         <?php } ?>
         
         <tr>

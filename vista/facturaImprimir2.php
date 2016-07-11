@@ -380,7 +380,7 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
     $pdf->totalCuota=0;
     for ($i=0;$i<count($pdf->datosPresupuesto['DetalleFactura']);$i++){
         //metemos las palabras que hay en el texto en un array
-        $palabras=  explode(' ',utf8_decode($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
+        $palabras = explode(' ',($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
         //prepararmos un array con las lineas de texto rellenas de palabras que no sobrepasen 40 caracteres
         $linea='';
         $k=0;//indice de $palabras
@@ -393,8 +393,8 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
             }else{
                 //es mayor o igual , no se incluye
                 $lineas[]=$linea;
-                $linea=$palabras[$k];
-            }
+                    $linea=$palabras[$k];
+                }
             $k++;
         }
 
@@ -423,10 +423,11 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
                 $pdf->Cell($pdf->columCantidad+0.1, $altura, '','L',0,'R',$pdf->fill);
             }
             $pdf->SetLineWidth(0.1);
+            $lineas[$j] = str_replace("€","Euro",$lineas[$j]);
             if($j==0){
-                $pdf->Cell($pdf->columConcepto, $altura, trim($lineas[$j]) ,'L',0,'L',$pdf->fill);
+                $pdf->Cell($pdf->columConcepto, $altura, utf8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
             }else{
-                $pdf->Cell($pdf->columConcepto, $altura, trim($lineas[$j]) ,'L',0,'L',$pdf->fill);
+                $pdf->Cell($pdf->columConcepto, $altura, utf8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
             }
             if($j==0){
                 if($pdf->datosPresupuesto['DetalleFactura'][$i]['precio']==='0'){
@@ -520,7 +521,7 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
     $totalCuota=0;
     for ($i=0;$i<count($pdf->datosPresupuesto['DetalleFactura']);$i++){
         //metemos las palabras que hay en el texto en un array
-        $palabras=  explode(' ',utf8_decode($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
+        $palabras=  explode(' ',($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
         //prepararmos un array con las lineas de texto rellenas de palabras que no sobrepasen 40 caracteres
         $linea='';
         $k=0;//indice de $palabras
@@ -561,9 +562,10 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
 //            }
 //            $pdf->SetLineWidth(0.1);
             if($j==0){
-                $pdf->Cell($pdf->columConcepto-0.1, $altura, trim($lineas[$j]) ,'L',0,'L',$pdf->fill);
+                $lineas[$j] = str_replace("€","Euro",$lineas[$j]);
+                $pdf->Cell($pdf->columConcepto-0.1, $altura, uft8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
             }else{
-                $pdf->Cell($pdf->columConcepto-0.1, $altura, trim($lineas[$j]) ,'L',0,'L',$pdf->fill);
+                $pdf->Cell($pdf->columConcepto-0.1, $altura, uft8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
             }
 //            if($j==0){
 //                $pdf->Cell($columPrecio, $altura, formateaNumeroContabilidad($pdf->datosPresupuesto['DetalleFactura'][$i]['precio']),'L',0,'R',$pdf->fill);

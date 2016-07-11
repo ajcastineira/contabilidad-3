@@ -367,7 +367,7 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
     $totalCuota=0;
     for ($i=0;$i<count($pdf->datosPresupuesto['DetalleFactura']);$i++){
         //metemos las palabras que hay en el texto en un array
-        $palabras=  explode(' ',utf8_decode($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
+        $palabras=  explode(' ',($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
         //prepararmos un array con las lineas de texto rellenas de palabras que no sobrepasen 40 caracteres
         $linea='';
         $k=0;//indice de $palabras
@@ -411,9 +411,10 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
             }
             $pdf->SetLineWidth(0.1);
             if($j==0){
-                $pdf->Cell($columConcepto, $altura, $lineas[$j] ,'L',0,'L',$pdf->fill);
+                $lineas[$j] = str_replace("€","Euro",$lineas[$j]);
+                $pdf->Cell($columConcepto, $altura, utf8_decode($lineas[$j]) ,'L',0,'L',$pdf->fill);
             }else{
-                $pdf->Cell($columConcepto, $altura, $lineas[$j] ,'L',0,'L',$pdf->fill);
+                $pdf->Cell($columConcepto, $altura, utf8_decode($lineas[$j]) ,'L',0,'L',$pdf->fill);
             }
             if($j==0){
                 if($pdf->datosPresupuesto['DetalleFactura'][$i]['precio']==='0'){
@@ -507,7 +508,7 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
     $totalCuota=0;
     for ($i=0;$i<count($pdf->datosPresupuesto['DetalleFactura']);$i++){
         //metemos las palabras que hay en el texto en un array
-        $palabras=  explode(' ',utf8_decode($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
+        $palabras=  explode(' ',($pdf->datosPresupuesto['DetalleFactura'][$i]['concepto']));
         //prepararmos un array con las lineas de texto rellenas de palabras que no sobrepasen 40 caracteres
         $linea='';
         $k=0;//indice de $palabras
@@ -548,9 +549,10 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
 //            }
 //            $pdf->SetLineWidth(0.1);
             if($j==0){
-                $pdf->Cell($columConcepto-0.1, $altura, $lineas[$j] ,'L',0,'L',$pdf->fill);
+                $lineas[$j] = str_replace("€","Euro",$lineas[$j]);
+                $pdf->Cell($columConcepto-0.1, $altura, utf8_decode($lineas[$j]) ,'L',0,'L',$pdf->fill);
             }else{
-                $pdf->Cell($columConcepto-0.1, $altura, $lineas[$j] ,'L',0,'L',$pdf->fill);
+                $pdf->Cell($columConcepto-0.1, $altura, utf8_decode($lineas[$j]) ,'L',0,'L',$pdf->fill);
             }
 //            if($j==0){
 //                $pdf->Cell($columPrecio, $altura, formateaNumeroContabilidad($pdf->datosPresupuesto['DetalleFactura'][$i]['precio']),'L',0,'R',$pdf->fill);

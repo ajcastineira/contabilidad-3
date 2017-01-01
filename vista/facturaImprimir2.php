@@ -563,9 +563,9 @@ if($CONcolumnas==='SI'){// van las columnas de cantidad y precio
 //            $pdf->SetLineWidth(0.1);
             if($j==0){
                 $lineas[$j] = str_replace("€","Euro",$lineas[$j]);
-                $pdf->Cell($pdf->columConcepto-0.1, $altura, uft8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
+                $pdf->Cell($pdf->columConcepto-0.1, $altura, utf8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
             }else{
-                $pdf->Cell($pdf->columConcepto-0.1, $altura, uft8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
+                $pdf->Cell($pdf->columConcepto-0.1, $altura, utf8_decode(trim($lineas[$j])) ,'L',0,'L',$pdf->fill);
             }
 //            if($j==0){
 //                $pdf->Cell($columPrecio, $altura, formateaNumeroContabilidad($pdf->datosPresupuesto['DetalleFactura'][$i]['precio']),'L',0,'R',$pdf->fill);

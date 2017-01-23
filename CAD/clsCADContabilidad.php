@@ -23216,8 +23216,12 @@ class clsCADContabilidad{
         //-------
 
         //Numero Factura Nuevo (en editar no esta el numero de factura todavia)
+        //extraigo el año de la fecha
+        $ejercicio = explode('-',$datos['fecha']);
+        $ejercicio = $ejercicio[0];
+        
         $strSQL = "
-                    SELECT IF(ISNULL(MAX(Factura)),1,MAX(Factura)+1) AS Factura FROM tbventas WHERE DATE_FORMAT(Fecha,'%Y') = ".date('Y')."
+                    SELECT IF(ISNULL(MAX(Factura)),1,MAX(Factura)+1) AS Factura FROM tbventas WHERE DATE_FORMAT(Fecha,'%Y') = ".$ejercicio."
                    ";
         logger('traza','clsCADContabilidad.php-' ,"Usuario: ".$_SESSION['strUsuario'].', Empresa: '.$_SESSION['strBD'].', SesionID: '.  session_id().
                     " clsCADContabilidad->contabilizarVentas()|| SQL : ".$strSQL);

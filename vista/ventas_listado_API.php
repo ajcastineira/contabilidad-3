@@ -15,6 +15,7 @@ $get['mes'] = $_POST['mes'];
 $get['ejercicio'] = $_POST['ejercicio'];
 $get['cmdConsultar'] = 'Consultar';
 $get['cmdListar'] = 'OK';
+$IvaGenerico = $_POST['iva'];
 
 
 $arResult = $clsCNDatosVentas->ListadoVentas($get);

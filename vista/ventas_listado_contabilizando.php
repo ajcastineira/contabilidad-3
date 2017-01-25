@@ -229,10 +229,13 @@ function contabilizarBancos(asiento,tipo){
           url: '../vista/ventas_contBancos_AJAX.php',
           async: false,
           type:"get",
-          success: function(data) {
+          success: function(data) {//
             $('#numValue').html(data+$('#numValue').html());
           }
         });
+        
+        //$('#numValue').load('../vista/ventas_contBancos_AJAX.php',{"IdBanco":asiento.IdBanco,"CuentaBanco":asiento.CuentaBanco,"Cantidad":asiento.Cantidad,"fecha":asiento.Fecha});
+        
     }
 }
 

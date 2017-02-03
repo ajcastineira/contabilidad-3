@@ -24,7 +24,7 @@ function ControlaLoginTimeOut()
 
 
        //comparamos el tiempo transcurrido 
-       if($tiempo_transcurrido >= 1200) { //He puesto 20 minutos (20*60 segundos) 
+       if($tiempo_transcurrido >= 1200000) { //He puesto 20 minutos (20*60 segundos) -He puesto mucho mas tiempo, para que no se cierre 3/02/2017
          //si pasaron 10 minutos o más 
          session_destroy(); // destruyo la sesión 
          header("Location: ../index.php?op=tiempo"); //envío a la página de inicio 
